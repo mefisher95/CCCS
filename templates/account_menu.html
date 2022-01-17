@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <div id ="mybanner" class="banner" style="color: white">
+        <b>Credit Menu</b>
+    </div>
+    <div style="margin-left:15%;padding:10% 20%;height:20%;" id="main">
+        <br>
+        <br>
+        <a href="{{ url_for('account_menu', account_num = 0)}}">View All Accounts</a>
+        <br>
+        <br>
+        <table border = 1>
+            {% if Account_num == 0 %}
+                <tr>
+                    <th>Account Name</th>
+                    <th>Amount</th>
+                    <th>Account Type</th>
+                </tr>
+                {% for account in Account_data %}
+                    <tr>
+                        <td align = "right"> {{ account['tag'] }}</td>
+                        <td align = "right"> ${{ "{:.2f}".format(account['balance']) }}</td>
+                        {% if account['account_type'] == 1 %}
+                        <td align = "right"> Checking</td>
+                        {% else %}
+                        <td align = "right"> Savings</td>
+                        {% endif %}
+                        <td align = "right"> <a href="{{ url_for('delete_account', account_num = account['account'])}}">Delete</a>
+                        <td align = "right"> <a href="{{ url_for('account_menu', account_num = account['account'])}}">View</a>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <th>Account Name</th>
+                    <th>Amount</th>
+                    <th>Account Type</th>
+                </tr>
+                <tr>
+                    <td align = "right"> {{ Account_data['tag'] }}</td>
+                    <td align = "right"> ${{ "{:.2f}".format(Account_data['balance']) }}</td>
+                    {% if Account_data['account_type'] == 1 %}
+                    <td align = "right"> Checking</td>
+                    {% else %}
+                    <td align = "right"> Savings</td>
+                    {% endif %}
+                    <td align = "right"> <a href='{{ url_for('delete_account', account_num = Account_data['account'])}}'>Delete</a>
+                </tr>
+                <br><br>
+                <tr>
+                    <th>Amount</th>
+                    <th>Trans Type</th>
+                    <th>Time Added</th>
+                </tr>
+                {% for trans in Account_data.trans_total %}
+                    <tr>
+                        {% if trans['trans_type'] == 0 %}
+                        <td align = "right"> Debit</td>
+                        {% else %}
+                        <td align = "right"> Credit</td>
+                        {% endif %}
+                        <td align = "right"> ${{ "{:.2f}".format(trans['amount']) }}</td>
+                        <td align = "right"> {{ trans['datetime'] }}</td>
+                        <td align = "right"> <a href='{{ url_for('remove_trans', trans_amount=trans['amount'], trans_date=trans['date'])}}'>Delete</a>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        </table>
+        <br><br>
+        <a href='{{ url_for('create_account')}}'>Create Account</a>
+        <br><br>
+        <form action = "" method ='POST'>
+            <strong>Add Transaction</strong> <br><br>
+            $<input type="text" name = "amount" placeholder="Transaction Amount" size = 15>
+             <select name = "type">
+                <option value=1>Credit</option>
+                <option value=0>Debit</option>
+            </select>
+            <select name = "account">
+                {% if Account_num == 0 %}
+                    {% for account in Account_data %}
+                        <option value={{account['account']}}>{{account['tag']}}</option>
+                    {% endfor %}
+                {% else %}
+                    <option value={{Account_data['account']}}>{{Account_data['tag']}}</option>
+                {% endif %}
+            </select>
+            <input type="submit" value ="Add Transaction">
+            <br><br>
+        </form>
+    </div>
+{% endblock %}
