@@ -7,7 +7,7 @@ from flask import Flask
 
 def load_data():
     import json
-    with open('app/static/site-data.json') as site_data:
+    with open('mysite/static/site-data.json') as site_data:
         return json.load(site_data)
 
 
