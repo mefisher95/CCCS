@@ -1,91 +1,45 @@
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        h1 {
-            background-color: #111;
-            color: white;
-        }
-
-        body {
-            font-family: "Lato", sans-serif;
-        }
-        .banner{
-            height: 50px;
-            width: 100%;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            padding-top: 2%;
-            text-align: right;
-            font-family: "Lato", sans-serif;
-            font-size: 25px;
-        }
-
-        /* The side navigation menu */
-        .sidenav {
-            height: 100%; /* 100% Full-height */
-            width: 200px; /* 0 width - change this with JavaScript */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Stay on top */
-            top: 0; /* Stay at the top */
-            left: 0;
-            background-color: #111; /* Black*/
-            overflow-x: hidden; /* Disable horizontal scroll */
-            padding-top: 60px; /* Place content 60px from the top */
-        }
-
-        /* The navigation menu links */
-        .sidenav a {
-            padding: 6px 6px 6px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-        }
-
-        /* When you mouse over the navigation links, change their color */
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-
-        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-        #main {
-            margin-left: 200px;
-        }
-
-        @media screen and (max-height:450px) {
-            .sidenav { padding-top: 15px; }
-            .sidenav a { font-size: 18px; }
-        }
-
-    </style>
     <head>
-        {% block head %}
-            <b>NaniMoney!!</b>
-        {% endblock %}
-    </head>
-    <body style="background-color:white;">
+            <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <div id="mySidenav" class="sidenav">
-            <br>
-            <a><b style="color:white">BudgetMe</b></a>
-            <br>
-            <a href="/main_menu">Home</a>
-            <a href="{{ url_for('account_menu', account_num = 0)}}">Accounts</a>
-            <a href="/income_menu">Income</a>
-            <a href="/expense_menu">Expenses</a>
-            <a href="#">Goals</a>
-            <a href="/logout">Logout</a>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="/static/CSS/base.css">
+        <link rel="stylesheet" href="/static/CSS/menu-bar.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background: #002855">
+            <a class="navbar-brand" href="#">
+                <img alt="" height="24" class="d-inline-block align-text-top" src="{{url_for('static', filename=menu_data['site-logo'])}}">
+                {{ menu_data['site-title'] }}
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                {% for item in menu_data['menu-links'] %}
+                    <a class="nav-item nav-link" href= "{{menu_data['menu-links'][item]['link']}}"> {{ menu_data['menu-links'][item]['name'] }}</a>
+                {% endfor %}
+              </div>
+            </div>
+        </nav>
+
+
+        <div class = "card-body">
+            <div class= "card-body" style="border-radius: 2%; background-color: #002855;">
+                <div class= "card-body" style="border-radius: 2%; background-color: white;">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
         </div>
 
-
-        {% block content %}
-
-        {% endblock %}
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
-
 </html>

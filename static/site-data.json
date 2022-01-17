@@ -1,0 +1,10 @@
+{
+    "menu-links" : 
+    {
+        "home" : { "link" : "/", "name": "Home"},
+        "project" : {"link" : "/proj", "name" : "Projects"},
+        "about" : { "link" : "/about", "name" : "About"}
+    },
+    "site-title" : "",
+    "site-logo": "/images/logos/CCCS.png"
+}
