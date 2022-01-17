@@ -1,14 +1,32 @@
 {% extends "base.html" %}
 
 {% block content %}
-<body>
-    <h1>
-        Welcome to the Columbia College Computer Science Department!
+<body >
 
-
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Q3O7Xc3gVHU" allowfullscreen style = "width: 50%"></iframe>
+    <div class = "card text-center">
+        <div class = "card-header">
+            <a name="intro"></a>
+            <h1>Welcome to the Columbia College Computer Science Department! </h1>
         </div>
-    </h1>
+        <div class = "card-body">
+            <div class="embed-responsive embed-responsive-16by9 text-center">
+                <iframe src="https://www.youtube.com/embed/Q3O7Xc3gVHU" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class = "card text-center">
+        <div class = "card-header">
+            <a name="test"></a>
+
+            <h1>Welcome to the Columbia College Computer Science Department! </h1>
+        </div>
+        <div class = "card-body">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Q3O7Xc3gVHU" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 {% endblock %} 

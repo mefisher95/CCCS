@@ -1,43 +1,55 @@
 <html>
     <head>
-            <!-- Required meta tags -->
+        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+        <!-- Stylesheet data -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="/static/CSS/base.css">
         <link rel="stylesheet" href="/static/CSS/menu-bar.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
+
+
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark " style="background: #002855">
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background: #002855; position: fixed; top: 0;width: 100%; z-index: 100;">
+
+            <!-- Create site logo with title and logo -->
             <a class="navbar-brand" href="#">
                 <img alt="" height="24" class="d-inline-block align-text-top" src="{{url_for('static', filename=menu_data['site-logo'])}}">
                 {{ menu_data['site-title'] }}
             </a>
+
+
+            <!-- Toggleable menu bar: only accesable on small screens -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Create menu links. collapses down on small screen view -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 {% for item in menu_data['menu-links'] %}
                     <a class="nav-item nav-link" href= "{{menu_data['menu-links'][item]['link']}}"> {{ menu_data['menu-links'][item]['name'] }}</a>
                 {% endfor %}
+                    <a class="nav-item nav-link border-md-right" href="#intro">Intro</a>
+                    <a class="nav-item nav-link border-md-right" href="#test">test</a>
+
+                
               </div>
             </div>
         </nav>
 
+        <!-- page content -->
 
-        <div class = "card-body">
-            <div class= "card-body" style="border-radius: 2%; background-color: #002855;">
-                <div class= "card-body" style="border-radius: 2%; background-color: white;">
-                    {% block content %}
-                    {% endblock %}
-                </div>
-            </div>
-        </div>
+                            <div class= "card-body col-md-8" style="border-radius: 2%; margin: auto; margin-top: 10%; background-color: silver;">
+                                {% block content %}
+                                {% endblock %}
+                            </div>
 
+
+        <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
