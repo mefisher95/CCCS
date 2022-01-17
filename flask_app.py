@@ -1,6 +1,6 @@
 from flask.templating import render_template
 from werkzeug import datastructures
-from app import *
+from mysite import *
 from flask import Flask
 
 # from app.Menu_data import Menu_data
