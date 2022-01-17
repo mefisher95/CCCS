@@ -1,5 +1,4 @@
 from flask.templating import render_template
-from werkzeug import datastructures
 from mysite import *
 from flask import Flask
 
@@ -7,7 +6,7 @@ from flask import Flask
 
 def load_data():
     import json
-    with open('mysite/static/site-data.json') as site_data:
+    with open('app/static/site-data.json') as site_data:
         return json.load(site_data)
 
 

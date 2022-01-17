@@ -1,13 +1,11 @@
 from flask.templating import render_template
-from werkzeug import datastructures
-from app import *
-from flask import Flask
+from mysite import *
 
 # from app.Menu_data import Menu_data
 
 def load_data():
     import json
-    with open('app/static/site-data.json') as site_data:
+    with open('mysite/static/site-data.json') as site_data:
         return json.load(site_data)
 
 
