@@ -30,4 +30,4 @@ def documentation() -> None:
     """
     menu_data = load_data()
 
-    return render_template('documentation.html', menu_data = menu_data)
+    return render_template("/static/HTML/autodoc/index.html", menu_data = menu_data)
