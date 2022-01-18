@@ -3,7 +3,8 @@
     {
         "home" : { "link" : "/", "name": "Home"},
         "project" : {"link" : "/", "name" : "Projects"},
-        "about" : { "link" : "/", "name" : "About"}
+        "about" : { "link" : "/", "name" : "About"},
+        "document" : { "link" : "/site-documentation", "name" : "Documentation"}
     },
     "site-title" : "",
     "site-logo": "/images/logos/CCCS.png"
