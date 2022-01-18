@@ -1,6 +1,9 @@
+from ast import arg
+import imp
 from subprocess import run
+from sys import argv
 
-def make() -> None:
+def ship() -> None:
     """
     quick form packageing tool that runs the autodoc tool and pushes code to github
 
@@ -18,4 +21,15 @@ def make() -> None:
     run('git commit -m "quick push"', shell=True)
     run('git push', shell=True)
 
-make()
+def deploy() -> None:
+    run('git pull', shell=True)
+    run(['doxygen', 'cccs_autodoc_file'])
+
+    
+
+
+if __name__ == "__main__":
+    print(argv)
+
+    if argv[1] == "ship": ship()
+    elif argv[1] == "delpoy": ship()
