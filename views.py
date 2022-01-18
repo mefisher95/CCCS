@@ -14,11 +14,11 @@ def index():
     # data = Menu_data.Menu_data()
 
     menu_data = load_data()
-    print(menu_data)
 
     return render_template('home.html', menu_data = menu_data)
 
-# def main():
-#     in 
-#     if __name__ == "__main__":
-#         app.run()
+@app.route("/site-documentation")
+def documentation() -> None:
+    menu_data = load_data()
+
+    return render_template('documentation.html', menu_data = menu_data)
