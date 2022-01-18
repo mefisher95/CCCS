@@ -7,6 +7,8 @@ def ship() -> None:
     """
     quick form packaging tool that runs the autodoc tool and pushes code to github
 
+    call with '''python pymake ship'''
+
     executes:
     doxygen cccs_autodoc_file
     git add.
@@ -24,6 +26,8 @@ def ship() -> None:
 def deploy() -> None:
     """
     fucntion to pull and unpack site data, and serve it to the site
+
+    call with '''python pymake deploy'''
     
     executes:
     doxygen cccs_autodoc_file
