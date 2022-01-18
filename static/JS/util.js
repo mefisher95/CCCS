@@ -1,0 +1,1 @@
+function parse (s) { return JSON.parse(s); }
