@@ -1,22 +1,12 @@
 C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacemysite_1_1views_aa34bc0c8bf0b8d0cdddc4fe3a75703af_cgraph.dot:1: error: Problems running dot: exit code=-1, command='dot', arguments='"C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacemysite_1_1views_aa34bc0c8bf0b8d0cdddc4fe3a75703af_cgraph.dot" -Tpng -o "C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacemysite_1_1views_aa34bc0c8bf0b8d0cdddc4fe3a75703af_cgraph.png"'
 
-C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacemysite_1_1views_ae8cba6f037737370f8a64d68703a64b8_icgraph.dot:1: error: Problems running dot: exit code=-1, command='dot', arguments='"C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacemysite_1_1views_ae8cba6f037737370f8a64d68703a64b8_icgraph.dot" -Tpng -o "C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacemysite_1_1views_ae8cba6f037737370f8a64d68703a64b8_icgraph.png"'
-
-C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacepymake_a4e43179838d04b73c6e65624aa07db82_cgraph.dot:1: error: Problems running dot: exit code=-1, command='dot', arguments='"C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacepymake_a4e43179838d04b73c6e65624aa07db82_cgraph.dot" -Tpng -o "C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacepymake_a4e43179838d04b73c6e65624aa07db82_cgraph.png"'
-
-C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacepymake_a4e43179838d04b73c6e65624aa07db82_icgraph.dot:1: error: Problems running dot: exit code=-1, command='dot', arguments='"C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacepymake_a4e43179838d04b73c6e65624aa07db82_icgraph.dot" -Tpng -o "C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacepymake_a4e43179838d04b73c6e65624aa07db82_icgraph.png"'
-
 C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/graph_legend.dot:1: error: Problems running dot: exit code=-1, command='dot', arguments='"C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/graph_legend.dot" -Tpng -o "C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/graph_legend.png"'
+
+C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacemysite_1_1views_ae8cba6f037737370f8a64d68703a64b8_icgraph.dot:1: error: Problems running dot: exit code=-1, command='dot', arguments='"C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacemysite_1_1views_ae8cba6f037737370f8a64d68703a64b8_icgraph.dot" -Tpng -o "C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacemysite_1_1views_ae8cba6f037737370f8a64d68703a64b8_icgraph.png"'
 
 error: problems opening map file C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacemysite_1_1views_aa34bc0c8bf0b8d0cdddc4fe3a75703af_cgraph.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
 error: problems opening map file C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacemysite_1_1views_ae8cba6f037737370f8a64d68703a64b8_icgraph.map for inclusion in the docs!
-If you installed Graphviz/dot after a previous failing run, 
-try deleting the output directory and rerun doxygen.
-error: problems opening map file C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacepymake_a4e43179838d04b73c6e65624aa07db82_cgraph.map for inclusion in the docs!
-If you installed Graphviz/dot after a previous failing run, 
-try deleting the output directory and rerun doxygen.
-error: problems opening map file C:/Users/mfish/Desktop/michael_project/cccs/mysite/static/HTML/autodoc/namespacepymake_a4e43179838d04b73c6e65624aa07db82_icgraph.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
