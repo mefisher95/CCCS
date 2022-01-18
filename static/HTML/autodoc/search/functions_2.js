@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../namespace____main____.html#a340d1ece8e317ac7387b5ab1b0ce73e9',1,'__main__']]],
-  ['make_1',['make',['../namespacepymake.html#a19a3d333ea106541fd142d414a83c2f7',1,'pymake']]]
+  ['main_0',['main',['../namespacemysite_1_1site__utils_1_1____main____.html#a36d9bdcffa8393890c21304d24d1faf5',1,'mysite::site_utils::__main__']]],
+  ['make_1',['make',['../namespacemysite_1_1site__utils_1_1pymake.html#a1c9ff6868825cc9b992fd372bf21287d',1,'mysite::site_utils::pymake']]]
 ];
