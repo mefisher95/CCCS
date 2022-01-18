@@ -1,6 +1,15 @@
 from subprocess import run
 
-def make():
+def make() -> None:
+    """
+    quick form packageing tool that runs the autodoc tool and pushes code to github
+
+    executes:
+    doxygen cccs_autodoc_file
+    git add.
+    git commit -m "quick push"
+    git push
+    """
 
     run(['doxygen', 'cccs_autodoc_file'])
     # import os
