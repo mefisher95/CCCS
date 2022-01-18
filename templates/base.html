@@ -32,20 +32,17 @@
                 {% for item in menu_data['menu-links'] %}
                     <a class="nav-item nav-link" href= "{{menu_data['menu-links'][item]['link']}}"> {{ menu_data['menu-links'][item]['name'] }}</a>
                 {% endfor %}
-                    <a class="nav-item nav-link border-md-right" href="#intro">Intro</a>
-                    <a class="nav-item nav-link border-md-right" href="#test">test</a>
 
-                
               </div>
             </div>
         </nav>
 
         <!-- page content -->
 
-                            <div class= "card-body col-md-8" style="border-radius: 2%; margin: auto; margin-top: 10%; background-color: silver;">
-                                {% block content %}
-                                {% endblock %}
-                            </div>
+        <!-- <div class= "card-body col-md-8" style="border-radius: 2%; margin: auto; margin-top: 10%; background-color: silver;"> -->
+            {% block content %}
+            {% endblock %}
+        <!-- </div> -->
 
 
         <!-- Scripts -->
