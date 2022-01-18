@@ -7,12 +7,12 @@
 # import ast
 # import write_HTML
 
-import subprocess
+
+from pymake import make
+
 
 def main():
-    subprocess.run('git add .', shell=True)
-    subprocess.run('git commit -m "quick push"', shell=True)
-    subprocess.run('git push', shell=True)
+    make()
 
 
 
