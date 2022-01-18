@@ -5,7 +5,7 @@ from sys import argv
 
 def ship() -> None:
     """
-    quick form packageing tool that runs the autodoc tool and pushes code to github
+    quick form packaging tool that runs the autodoc tool and pushes code to github
 
     executes:
     doxygen cccs_autodoc_file
@@ -22,6 +22,13 @@ def ship() -> None:
     run('git push', shell=True)
 
 def deploy() -> None:
+    """
+    fucntion to pull and unpack site data, and serve it to the site
+    
+    executes:
+    doxygen cccs_autodoc_file
+    git pull
+    """
     run('git pull', shell=True)
     run(['doxygen', 'cccs_autodoc_file'])
 
