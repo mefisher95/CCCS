@@ -28,7 +28,6 @@ var namespacemysite =
     [ "views", "namespacemysite_1_1views.html", [
       [ "documentation", "namespacemysite_1_1views.html#aeb0f0fc8fee95d8e065af72d7d5c9580", null ],
       [ "index", "namespacemysite_1_1views.html#aa34bc0c8bf0b8d0cdddc4fe3a75703af", null ],
-      [ "load_menu_data", "namespacemysite_1_1views.html#acd429e48a695607691e12521dfdd5702", null ],
       [ "load_page_data", "namespacemysite_1_1views.html#a476bd9ff965c75446a459246ff265cbe", null ]
     ] ],
     [ "app", "namespacemysite.html#ac912d3d61e036a9f259a53f6ce936bef", null ],
