@@ -40,7 +40,7 @@ class Database_handler():
 
 
     ##### Menu data ##########
-    def get_menu_data(self) -> list[dict]:
+    def get_menu_data(self) -> list:
         try:
             menu_data = self.db.session.query(Menu_data.link, Menu_data.name)
             return [obj._asdict() for obj in menu_data]
