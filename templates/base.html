@@ -8,6 +8,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="{{ url_for('static', filename='CSS/base.css') }}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <title>{{ site_data['site_title'] }}</title>
+        <link rel = "icon" type = "image/png" href = "{{ url_for('static', filename = site_data['fav_icon']) }}">
+
+        <!-- <link rel = "icon" type = "image/png" href = "\static\images\logos\favicon.png"> -->
+
+    
     </head>
 
 
@@ -16,8 +23,8 @@
 
             <!-- Create site logo with title and logo -->
             <a class="navbar-brand" href="#">
-                <img alt="" height="24" class="d-inline-block align-text-top" src="{{ url_for('static', filename=menu_data['site-logo']) }}">
-                {{ menu_data['site-title'] }}
+                <img alt="" height="24" class="d-inline-block align-text-top" src="{{ url_for('static', filename=site_data['site_logo']) }}">
+                <!-- {{ menu_data['site-title'] }} -->
             </a>
 
 
@@ -29,8 +36,8 @@
             <!-- Create menu links. collapses down on small screen view -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                {% for item in menu_data['menu-links'] %}
-                    <a class="nav-item nav-link" href= "{{menu_data['menu-links'][item]['link']}}"> {{ menu_data['menu-links'][item]['name'] }}</a>
+                {% for item in menu_data %}
+                    <a class="nav-item nav-link" href= "{{item['link']}}"> {{ item['name'] }}</a>
                 {% endfor %}
 
               </div>
@@ -43,6 +50,7 @@
             {% endblock %}
 
         <!-- Scripts -->
+
         <script src = "{{url_for('static', filename='JS/util.js')}}"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

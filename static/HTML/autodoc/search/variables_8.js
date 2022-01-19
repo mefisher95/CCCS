@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['user_5fchars_0',['USER_CHARS',['../namespacemysite_1_1config.html#a5b46975b3d32f10f0735236d247b418d',1,'mysite::config']]],
-  ['user_5flength_1',['USER_LENGTH',['../namespacemysite_1_1config.html#a5d85cf03b45a02c2366330eb238e3373',1,'mysite::config']]],
-  ['user_5fmin_5flength_2',['USER_MIN_LENGTH',['../namespacemysite_1_1config.html#a7af6c50a8a784fddc928c45f8578dd81',1,'mysite::config']]]
+  ['password_5fmax_5flength_0',['PASSWORD_MAX_LENGTH',['../namespacemysite_1_1config.html#a54f22345ee1fb7dbb8ba7d9a7dace877',1,'mysite::config']]],
+  ['password_5fmin_5flength_1',['PASSWORD_MIN_LENGTH',['../namespacemysite_1_1config.html#a1f1683b51d12bee2e39e9f1c7c04edb9',1,'mysite::config']]]
 ];

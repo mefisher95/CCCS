@@ -1,4 +1,3 @@
-from fileinput import filename
 from flask import url_for, render_template
 from mysite import *
 import json
@@ -30,11 +29,19 @@ def index():
     """
     # data = Menu_data.Menu_data()
 
-    menu_data = load_menu_data()
+    from mysite.Database.Database_handler import Database_handler
+    db = Database_handler()
+
+    menu_data = db.get_menu_data()
+    site_data = db.get_site_data()
     page_data = load_page_data()
+
+    print(menu_data)
+    print(site_data)
 
     return render_template('home.html', 
                             menu_data = menu_data,
+                            site_data = site_data,
                             page_data = page_data)
 
 @app.route("/site-documentation")

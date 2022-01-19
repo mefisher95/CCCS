@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hash_5frounds_0',['HASH_ROUNDS',['../namespacemysite_1_1config.html#a1787f41287f0d482a5ce53ec2a6348c2',1,'mysite::config']]],
-  ['hashed_5fpassword_5flength_1',['HASHED_PASSWORD_LENGTH',['../namespacemysite_1_1config.html#abf585d1495fbd075c9bb73de10cf2360',1,'mysite::config']]]
+  ['get_5fmenu_5fdata_0',['get_menu_data',['../class_database__handler_1_1_database__handler.html#a417b92c2a12ba700e9861b9f3073c96d',1,'Database_handler::Database_handler']]],
+  ['get_5fsite_5fdata_1',['get_site_data',['../class_database__handler_1_1_database__handler.html#a4a5ed4adb8d4b9f541a9ad7f0f935d40',1,'Database_handler::Database_handler']]]
 ];

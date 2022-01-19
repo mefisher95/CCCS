@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['load_5fmenu_5fdata_0',['load_menu_data',['../namespacemysite_1_1views.html#acd429e48a695607691e12521dfdd5702',1,'mysite::views']]],
-  ['load_5fpage_5fdata_1',['load_page_data',['../namespacemysite_1_1views.html#a476bd9ff965c75446a459246ff265cbe',1,'mysite::views']]],
-  ['login_5fmanager_2',['login_manager',['../namespacemysite.html#a9d1f94fff67dd52d6a96c46a5d28c13d',1,'mysite']]]
+  ['id_0',['id',['../class_menu__data_1_1_menu__data.html#a50e6238f96dbcbadf205b94133afd431',1,'Menu_data.Menu_data.id()'],['../class_site__data_1_1_site__data.html#aed6fca207f3eaec296d16931512063e0',1,'Site_data.Site_data.id()']]],
+  ['index_1',['index',['../namespacemysite_1_1views.html#aa34bc0c8bf0b8d0cdddc4fe3a75703af',1,'mysite::views']]]
 ];
