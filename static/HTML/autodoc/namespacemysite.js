@@ -24,7 +24,6 @@ var namespacemysite =
       [ "USER_LENGTH", "namespacemysite_1_1config.html#a5d85cf03b45a02c2366330eb238e3373", null ],
       [ "USER_MIN_LENGTH", "namespacemysite_1_1config.html#a7af6c50a8a784fddc928c45f8578dd81", null ]
     ] ],
-    [ "flask_app", "namespacemysite_1_1flask__app.html", null ],
     [ "views", "namespacemysite_1_1views.html", [
       [ "documentation", "namespacemysite_1_1views.html#aeb0f0fc8fee95d8e065af72d7d5c9580", null ],
       [ "index", "namespacemysite_1_1views.html#aa34bc0c8bf0b8d0cdddc4fe3a75703af", null ],
