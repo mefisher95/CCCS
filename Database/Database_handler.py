@@ -43,7 +43,7 @@ class Database_handler():
     def get_menu_data(self) -> list[dict]:
         try:
             menu_data = self.db.session.query(Menu_data.link, Menu_data.name)
-            return [dict(obj) for obj in menu_data]
+            return [obj._asdict() for obj in menu_data]
 
         except Exception as error:
             log_error(error)
@@ -68,7 +68,7 @@ class Database_handler():
     def get_site_data(self) -> dict:
         try:
             site_data  = self.db.session.query(Site_data.site_title, Site_data.site_logo, Site_data.fav_icon)
-            return [dict(obj) for obj in site_data][0]
+            return [obj._asdict() for obj in site_data][0]
 
         except Exception as error:
             log_error(error)
