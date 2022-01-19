@@ -1,0 +1,96 @@
+TIMESTAMP >>> 2022-01-19 23:00:35.621414
+(mysql.connector.errors.ProgrammingError) 1044 (42000): Access denied for user 'mefisher2'@'%' to database 'mefisher2$cccs' [SQL: "CREATE DATABASE mefisher2$cccs CHARACTER SET = 'utf8'"] (Background on this error at: http://sqlalche.me/e/f405)
+
+TIMESTAMP >>> 2022-01-19 23:00:35.904761
+(mysql.connector.errors.ProgrammingError) 1044 (42000): Access denied for user 'mefisher2'@'%' to database 'mefisher2$cccs' [SQL: "CREATE DATABASE mefisher2$cccs CHARACTER SET = 'utf8'"] (Background on this error at: http://sqlalche.me/e/f405)
+
+TIMESTAMP >>> 2022-01-19 23:00:37.150947
+(mysql.connector.errors.ProgrammingError) 1044 (42000): Access denied for user 'mefisher2'@'%' to database 'mefisher2$cccs' [SQL: "CREATE DATABASE mefisher2$cccs CHARACTER SET = 'utf8'"] (Background on this error at: http://sqlalche.me/e/f405)
+
+TIMESTAMP >>> 2022-01-19 23:01:25.031539
+(mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'mefisher2$cccs.Menu_data' doesn't exist [SQL: 'SELECT `Menu_data`.link AS `Menu_data_link`, `Menu_data`.name AS `Menu_data_name` \nFROM `Menu_data`'] (Background on this error at: http://sqlalche.me/e/f405)
+
+TIMESTAMP >>> 2022-01-19 23:01:25.039155
+(mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'mefisher2$cccs.Site_data' doesn't exist [SQL: 'SELECT `Site_data`.site_title AS `Site_data_site_title`, `Site_data`.site_logo AS `Site_data_site_logo`, `Site_data`.fav_icon AS `Site_data_fav_icon` \nFROM `Site_data`'] (Background on this error at: http://sqlalche.me/e/f405)
+
+TIMESTAMP >>> 2022-01-19 23:01:30.760570
+(mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'mefisher2$cccs.Menu_data' doesn't exist [SQL: 'SELECT `Menu_data`.link AS `Menu_data_link`, `Menu_data`.name AS `Menu_data_name` \nFROM `Menu_data`'] (Background on this error at: http://sqlalche.me/e/f405)
+
+TIMESTAMP >>> 2022-01-19 23:01:30.771222
+(mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'mefisher2$cccs.Site_data' doesn't exist [SQL: 'SELECT `Site_data`.site_title AS `Site_data_site_title`, `Site_data`.site_logo AS `Site_data_site_logo`, `Site_data`.fav_icon AS `Site_data_fav_icon` \nFROM `Site_data`'] (Background on this error at: http://sqlalche.me/e/f405)
+
+TIMESTAMP >>> 2022-01-19 23:06:27.619115
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:06:27.631320
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:06:27.793510
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:06:27.800008
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:07:58.382623
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:07:59.489308
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:09:24.549688
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:09:25.711014
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:10:41.272212
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:10:42.171145
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:12:18.161504
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:12:18.807706
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:12:19.261811
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:13:09.987034
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:13:10.152510
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:15:22.430885
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:15:25.491362
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:15:41.929251
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:15:42.704644
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:21:52.523482
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:22:01.141201
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:26:20.360597
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:26:21.461216
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:26:22.834521
+tuple indices must be integers or slices, not str
+
+TIMESTAMP >>> 2022-01-19 23:26:49.746459
+tuple indices must be integers or slices, not str
+
