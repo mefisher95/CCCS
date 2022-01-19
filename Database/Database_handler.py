@@ -31,12 +31,12 @@ class Database_handler():
             except Exception as error:
                 log_error(error)
 
-            self.db.create_all()
-            self.set_menu_data("/", "Home")
-            self.set_menu_data("/", "About")
-            self.set_menu_data("/site-documentation", "Documentation")
+        self.db.create_all()
+        self.set_menu_data("/", "Home")
+        self.set_menu_data("/", "About")
+        self.set_menu_data("/site-documentation", "Documentation")
 
-            self.set_site_data("CCCS - Development", "/images/logos/CCCS.png", "/images/logos/favicon.ico")
+        self.set_site_data("CCCS - Development", "/images/logos/CCCS.png", "/images/logos/favicon.ico")
 
 
     ##### Menu data ##########
