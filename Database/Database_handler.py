@@ -25,7 +25,11 @@ class Database_handler():
         self.db = db
 
         if not database_exists(config.SQLALCHEMY_DATABASE_URI):
-            create_database(config.SQLALCHEMY_DATABASE_URI)
+
+            try:
+                create_database(config.SQLALCHEMY_DATABASE_URI)
+            except Exception as error:
+                log_error(error)
 
             self.db.create_all()
             self.set_menu_data("/", "Home")
