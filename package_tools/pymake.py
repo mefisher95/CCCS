@@ -1,5 +1,3 @@
-from ast import arg
-import imp
 from subprocess import run
 from sys import argv
 

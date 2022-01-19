@@ -6,5 +6,5 @@ digraph "mysite.views.documentation"
   rankdir="LR";
   Node1 [label="mysite.views.documentation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mysite.views.load_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemysite_1_1views.html#ae8cba6f037737370f8a64d68703a64b8",tooltip=" "];
+  Node2 [label="mysite.views.load_menu_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemysite_1_1views.html#acd429e48a695607691e12521dfdd5702",tooltip=" "];
 }

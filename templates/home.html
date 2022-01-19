@@ -21,11 +21,12 @@
                 {% for embeded in section["embeded-item"] %}
                     <div class ="embed-responsive embed-responsive-16by9 text-center">
                         <iframe 
-                        src="{{ embeded['link'] }}"
-                        {% for arg in embeded['args'] %}
-                        {{ arg | safe }}
-                        {% endfor %}
-                        > </iframe>
+                            src="{{ embeded['link'] }}"
+                            {% for arg in embeded['args'] %}
+                            {{ arg | safe }}
+                            {% endfor %}
+                            > 
+                        </iframe>
                     </div>
                 {% endfor %}
             {% endif %}

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pymake_0',['pymake',['../namespacepymake.html',1,'']]],
-  ['pymake_2epy_1',['pymake.py',['../pymake_8py.html',1,'']]]
+  ['index_0',['index',['../namespacemysite_1_1views.html#aa34bc0c8bf0b8d0cdddc4fe3a75703af',1,'mysite::views']]]
 ];
