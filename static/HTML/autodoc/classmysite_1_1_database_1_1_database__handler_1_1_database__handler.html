@@ -94,16 +94,12 @@ $(document).ready(function(){initNavTree('classmysite_1_1_database_1_1_database_
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1838703fa9b60dcb056466f088f2b315"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a1838703fa9b60dcb056466f088f2b315">__init__</a> (self)</td></tr>
 <tr class="separator:a1838703fa9b60dcb056466f088f2b315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bddbae2ccadc1e076ff942cf466c6b6"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a8bddbae2ccadc1e076ff942cf466c6b6">get_menu_data</a> (self)</td></tr>
-<tr class="memdesc:a8bddbae2ccadc1e076ff942cf466c6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Menu data ##########.  <a href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a8bddbae2ccadc1e076ff942cf466c6b6">More...</a><br /></td></tr>
-<tr class="separator:a8bddbae2ccadc1e076ff942cf466c6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac24ca452549c28a1b3288272fccda795"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#ac24ca452549c28a1b3288272fccda795">set_menu_data</a> (self, str link, str name)</td></tr>
-<tr class="separator:ac24ca452549c28a1b3288272fccda795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a669b894de434c3fd4d889943a0bf927a"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a669b894de434c3fd4d889943a0bf927a">get_site_data</a> (self)</td></tr>
-<tr class="memdesc:a669b894de434c3fd4d889943a0bf927a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Site Data ##########.  <a href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a669b894de434c3fd4d889943a0bf927a">More...</a><br /></td></tr>
-<tr class="separator:a669b894de434c3fd4d889943a0bf927a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6d6aed2c2b28b4e51920bcc74d160f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#ae6d6aed2c2b28b4e51920bcc74d160f7">set_site_data</a> (self, str site_title, str site_logo, str fav_icon)</td></tr>
-<tr class="separator:ae6d6aed2c2b28b4e51920bcc74d160f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d1bda64a8fb28f99015b0ee58edca8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#af2d1bda64a8fb28f99015b0ee58edca8">set_Announcement</a> (self, str message, datetime event_time=None)</td></tr>
+<tr class="separator:af2d1bda64a8fb28f99015b0ee58edca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aec8da4b9c9871d52d83e21b9c73277"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a5aec8da4b9c9871d52d83e21b9c73277">get_all_Announcement</a> (self)</td></tr>
+<tr class="separator:a5aec8da4b9c9871d52d83e21b9c73277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0335521966d9179f4c76d8d1c986d08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#af0335521966d9179f4c76d8d1c986d08">delete_Announcement_list</a> (self, list announcement_list)</td></tr>
+<tr class="separator:af0335521966d9179f4c76d8d1c986d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -130,64 +126,14 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8bddbae2ccadc1e076ff942cf466c6b6" name="a8bddbae2ccadc1e076ff942cf466c6b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bddbae2ccadc1e076ff942cf466c6b6">&#9670;&nbsp;</a></span>get_menu_data()</h2>
+<a id="af0335521966d9179f4c76d8d1c986d08" name="af0335521966d9179f4c76d8d1c986d08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0335521966d9179f4c76d8d1c986d08">&#9670;&nbsp;</a></span>delete_Announcement_list()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> list mysite.Database.Database_handler.Database_handler.get_menu_data </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Menu data ##########. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_a8bddbae2ccadc1e076ff942cf466c6b6_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_a8bddbae2ccadc1e076ff942cf466c6b6_cgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="a669b894de434c3fd4d889943a0bf927a" name="a669b894de434c3fd4d889943a0bf927a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a669b894de434c3fd4d889943a0bf927a">&#9670;&nbsp;</a></span>get_site_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"> dict mysite.Database.Database_handler.Database_handler.get_site_data </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Site Data ##########. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_a669b894de434c3fd4d889943a0bf927a_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_a669b894de434c3fd4d889943a0bf927a_cgraph" alt=""/></div>
-</div>
-
-</div>
-</div>
-<a id="ac24ca452549c28a1b3288272fccda795" name="ac24ca452549c28a1b3288272fccda795"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac24ca452549c28a1b3288272fccda795">&#9670;&nbsp;</a></span>set_menu_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"> bool mysite.Database.Database_handler.Database_handler.set_menu_data </td>
+          <td class="memname"> bool mysite.Database.Database_handler.Database_handler.delete_Announcement_list </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -195,14 +141,8 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">str&#160;</td>
-          <td class="paramname"><em>link</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">str&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
+          <td class="paramtype">list&#160;</td>
+          <td class="paramname"><em>announcement_list</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -214,19 +154,42 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_ac24ca452549c28a1b3288272fccda795_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_ac24ca452549c28a1b3288272fccda795_cgraph" alt=""/></div>
+<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_af0335521966d9179f4c76d8d1c986d08_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_af0335521966d9179f4c76d8d1c986d08_cgraph" alt=""/></div>
 </div>
 
 </div>
 </div>
-<a id="ae6d6aed2c2b28b4e51920bcc74d160f7" name="ae6d6aed2c2b28b4e51920bcc74d160f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6d6aed2c2b28b4e51920bcc74d160f7">&#9670;&nbsp;</a></span>set_site_data()</h2>
+<a id="a5aec8da4b9c9871d52d83e21b9c73277" name="a5aec8da4b9c9871d52d83e21b9c73277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aec8da4b9c9871d52d83e21b9c73277">&#9670;&nbsp;</a></span>get_all_Announcement()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> bool mysite.Database.Database_handler.Database_handler.set_site_data </td>
+          <td class="memname"> list mysite.Database.Database_handler.Database_handler.get_all_Announcement </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_a5aec8da4b9c9871d52d83e21b9c73277_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_a5aec8da4b9c9871d52d83e21b9c73277_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="af2d1bda64a8fb28f99015b0ee58edca8" name="af2d1bda64a8fb28f99015b0ee58edca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d1bda64a8fb28f99015b0ee58edca8">&#9670;&nbsp;</a></span>set_Announcement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool mysite.Database.Database_handler.Database_handler.set_Announcement </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -235,19 +198,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">str&#160;</td>
-          <td class="paramname"><em>site_title</em>, </td>
+          <td class="paramname"><em>message</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">str&#160;</td>
-          <td class="paramname"><em>site_logo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">str&#160;</td>
-          <td class="paramname"><em>fav_icon</em>&#160;</td>
+          <td class="paramtype">datetime &#160;</td>
+          <td class="paramname"><em>event_time</em> = <code>None</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -259,7 +216,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_ae6d6aed2c2b28b4e51920bcc74d160f7_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_ae6d6aed2c2b28b4e51920bcc74d160f7_cgraph" alt=""/></div>
+<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_af2d1bda64a8fb28f99015b0ee58edca8_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_af2d1bda64a8fb28f99015b0ee58edca8_cgraph" alt=""/></div>
 </div>
 
 </div>

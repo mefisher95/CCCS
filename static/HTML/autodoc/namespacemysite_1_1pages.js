@@ -1,11 +1,15 @@
 var namespacemysite_1_1pages =
 [
+    [ "home", "namespacemysite_1_1pages_1_1home.html", [
+      [ "home", "namespacemysite_1_1pages_1_1home.html#a1b7d3dcc1edfea4b5312608ec0918209", null ]
+    ] ],
     [ "index", "namespacemysite_1_1pages_1_1index.html", [
-      [ "index", "namespacemysite_1_1pages_1_1index.html#a119d842a22c1452670d783ef484a83aa", null ],
-      [ "load_page_data", "namespacemysite_1_1pages_1_1index.html#aef8391b1373d6bbc12612b69bff17255", null ]
+      [ "index", "namespacemysite_1_1pages_1_1index.html#a119d842a22c1452670d783ef484a83aa", null ]
+    ] ],
+    [ "manage_announcements", "namespacemysite_1_1pages_1_1manage__announcements.html", [
+      [ "create_announcements", "namespacemysite_1_1pages_1_1manage__announcements.html#a817b2a7892f01f279357cb9f2f7d45ab", null ]
     ] ],
     [ "site_documenation", "namespacemysite_1_1pages_1_1site__documenation.html", [
-      [ "documentation", "namespacemysite_1_1pages_1_1site__documenation.html#a6078eb5c63284eaff8f82b525a4c5ec5", null ],
-      [ "load_page_data", "namespacemysite_1_1pages_1_1site__documenation.html#a2c566cd6ba7f5b7248d204c2e0374c30", null ]
+      [ "documentation", "namespacemysite_1_1pages_1_1site__documenation.html#a6078eb5c63284eaff8f82b525a4c5ec5", null ]
     ] ]
 ];

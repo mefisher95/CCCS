@@ -94,3 +94,63 @@ tuple indices must be integers or slices, not str
 TIMESTAMP >>> 2022-01-19 23:26:49.746459
 tuple indices must be integers or slices, not str
 
+TIMESTAMP >>> 2022-01-20 00:53:56.727073
+'Announcement' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-20 00:54:01.405486
+'Announcement' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-20 00:54:35.839622
+'Announcement' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-20 00:54:55.084052
+'Announcement' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-20 00:54:59.776532
+'Announcement' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-20 00:55:11.699786
+'Announcement' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-20 00:56:25.378439
+'Announcement' object is not iterable
+
+TIMESTAMP >>> 2022-01-20 00:56:30.256051
+'Announcement' object is not iterable
+
+TIMESTAMP >>> 2022-01-20 01:12:20.800543
+(mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`announcement`.`event_time` at row 1
+[SQL: INSERT INTO `Announcement` (message, event_time, create_time) VALUES (%(message)s, %(event_time)s, %(create_time)s)]
+[parameters: {'message': '', 'event_time': '', 'create_time': datetime.datetime(2022, 1, 20, 1, 12, 20, 796172)}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+
+TIMESTAMP >>> 2022-01-20 01:26:08.141849
+(mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`announcement`.`event_time` at row 1
+[SQL: INSERT INTO `Announcement` (message, event_time, create_time) VALUES (%(message)s, %(event_time)s, %(create_time)s)]
+[parameters: {'message': '', 'event_time': '', 'create_time': datetime.datetime(2022, 1, 20, 1, 26, 8, 138854)}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+
+TIMESTAMP >>> 2022-01-20 01:26:29.885586
+(mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`announcement`.`event_time` at row 1
+[SQL: INSERT INTO `Announcement` (message, event_time, create_time) VALUES (%(message)s, %(event_time)s, %(create_time)s)]
+[parameters: {'message': '', 'event_time': '', 'create_time': datetime.datetime(2022, 1, 20, 1, 26, 29, 882700)}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+
+TIMESTAMP >>> 2022-01-20 01:36:16.112501
+(mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`announcement`.`event_time` at row 1
+[SQL: INSERT INTO `Announcement` (message, event_time, create_time) VALUES (%(message)s, %(event_time)s, %(create_time)s)]
+[parameters: {'message': '', 'event_time': '', 'create_time': datetime.datetime(2022, 1, 20, 1, 36, 16, 110474)}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+
+TIMESTAMP >>> 2022-01-20 01:42:29.606256
+(mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`announcement`.`event_time` at row 1
+[SQL: INSERT INTO `Announcement` (message, event_time, create_time) VALUES (%(message)s, %(event_time)s, %(create_time)s)]
+[parameters: {'message': 'testing event message', 'event_time': '', 'create_time': datetime.datetime(2022, 1, 20, 1, 42, 29, 603264)}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+
+TIMESTAMP >>> 2022-01-20 01:42:29.607261
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`announcement`.`event_time` at row 1
+[SQL: INSERT INTO `Announcement` (message, event_time, create_time) VALUES (%(message)s, %(event_time)s, %(create_time)s)]
+[parameters: {'message': 'testing event message', 'event_time': '', 'create_time': datetime.datetime(2022, 1, 20, 1, 42, 29, 603264)}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+

@@ -114,6 +114,8 @@ Variables</h2></td></tr>
 <tr class="separator:a17750af9a992dccc7ace8b85e15b903f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74713c972840b969257e705ad0ed7af0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemysite_1_1config_1_1site__info.html#a74713c972840b969257e705ad0ed7af0">SITE_FAVICON</a> = &quot;/images/logos/favicon.ico&quot;</td></tr>
 <tr class="separator:a74713c972840b969257e705ad0ed7af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7f5dd74682f9c9664bd8b71c8e36ee"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemysite_1_1config_1_1site__info.html#acc7f5dd74682f9c9664bd8b71c8e36ee">SITE_DATA</a></td></tr>
+<tr class="separator:acc7f5dd74682f9c9664bd8b71c8e36ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="af910e7f6d9ceca72e8751389c39aecd7" name="af910e7f6d9ceca72e8751389c39aecd7"></a>
@@ -223,8 +225,9 @@ Here is the caller graph for this function:</div>
 <b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  [</div>
 <div class="line"><span class="lineno">    2</span>    ROUTES[<span class="stringliteral">&#39;home&#39;</span>],</div>
 <div class="line"><span class="lineno">    3</span>    ROUTES[<span class="stringliteral">&#39;about&#39;</span>],</div>
-<div class="line"><span class="lineno">    4</span>    ROUTES[<span class="stringliteral">&#39;document&#39;</span>]</div>
-<div class="line"><span class="lineno">    5</span>]</div>
+<div class="line"><span class="lineno">    4</span>    ROUTES[<span class="stringliteral">&#39;document&#39;</span>],</div>
+<div class="line"><span class="lineno">    5</span>    ROUTES[<span class="stringliteral">&#39;manage_announcements&#39;</span>]</div>
+<div class="line"><span class="lineno">    6</span>]</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -240,9 +243,29 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  {</div>
-<div class="line"><span class="lineno">    2</span>        <span class="stringliteral">&quot;home&quot;</span> : { <span class="stringliteral">&quot;link&quot;</span> : <span class="stringliteral">&quot;/&quot;</span>, <span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;Home&quot;</span>},</div>
+<div class="line"><span class="lineno">    2</span>        <span class="stringliteral">&quot;home&quot;</span> : { <span class="stringliteral">&quot;link&quot;</span> : <span class="stringliteral">&quot;/home&quot;</span>, <span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;Home&quot;</span>},</div>
 <div class="line"><span class="lineno">    3</span>        <span class="stringliteral">&quot;about&quot;</span> : { <span class="stringliteral">&quot;link&quot;</span> : <span class="stringliteral">&quot;/&quot;</span>, <span class="stringliteral">&quot;name&quot;</span> : <span class="stringliteral">&quot;About&quot;</span>},</div>
-<div class="line"><span class="lineno">    4</span>        <span class="stringliteral">&quot;document&quot;</span> : { <span class="stringliteral">&quot;link&quot;</span> : <span class="stringliteral">&quot;/site-documentation&quot;</span>, <span class="stringliteral">&quot;name&quot;</span> : <span class="stringliteral">&quot;Documentation&quot;</span>}</div>
+<div class="line"><span class="lineno">    4</span>        <span class="stringliteral">&quot;document&quot;</span> : { <span class="stringliteral">&quot;link&quot;</span> : <span class="stringliteral">&quot;/site-documentation&quot;</span>, <span class="stringliteral">&quot;name&quot;</span> : <span class="stringliteral">&quot;Documentation&quot;</span>},</div>
+<div class="line"><span class="lineno">    5</span>        <span class="stringliteral">&quot;manage_announcements&quot;</span> : { <span class="stringliteral">&quot;link&quot;</span>:<span class="stringliteral">&quot;/manage_announcements&quot;</span>, <span class="stringliteral">&quot;name&quot;</span> : <span class="stringliteral">&quot;Manage Announcements&quot;</span>}</div>
+<div class="line"><span class="lineno">    6</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acc7f5dd74682f9c9664bd8b71c8e36ee" name="acc7f5dd74682f9c9664bd8b71c8e36ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7f5dd74682f9c9664bd8b71c8e36ee">&#9670;&nbsp;</a></span>SITE_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dictionary mysite.config.site_info.SITE_DATA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  { </div>
+<div class="line"><span class="lineno">    2</span>    <span class="stringliteral">&#39;site_title&#39;</span> : SITE_TITLE,</div>
+<div class="line"><span class="lineno">    3</span>    <span class="stringliteral">&#39;site_logo&#39;</span> : SITE_LOGO,</div>
+<div class="line"><span class="lineno">    4</span>    <span class="stringliteral">&#39;fav_icon&#39;</span> : SITE_FAVICON</div>
 <div class="line"><span class="lineno">    5</span>    }</div>
 </div><!-- fragment -->
 </div>

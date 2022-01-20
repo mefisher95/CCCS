@@ -6,11 +6,9 @@ digraph "error_logger.log_error"
   rankdir="RL";
   Node1 [label="error_logger.log_error",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mysite.Database.Database\l_handler.Database_handler.get\l_menu_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a8bddbae2ccadc1e076ff942cf466c6b6",tooltip="Menu data ##########."];
+  Node2 [label="mysite.Database.Database\l_handler.Database_handler.delete\l_Announcement_list",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#af0335521966d9179f4c76d8d1c986d08",tooltip=" "];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="mysite.Database.Database\l_handler.Database_handler.get\l_site_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a669b894de434c3fd4d889943a0bf927a",tooltip="Site Data ##########."];
+  Node3 [label="mysite.Database.Database\l_handler.Database_handler.get\l_all_Announcement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a5aec8da4b9c9871d52d83e21b9c73277",tooltip=" "];
   Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="mysite.Database.Database\l_handler.Database_handler.set\l_menu_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#ac24ca452549c28a1b3288272fccda795",tooltip=" "];
-  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="mysite.Database.Database\l_handler.Database_handler.set\l_site_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#ae6d6aed2c2b28b4e51920bcc74d160f7",tooltip=" "];
+  Node4 [label="mysite.Database.Database\l_handler.Database_handler.set\l_Announcement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#af2d1bda64a8fb28f99015b0ee58edca8",tooltip=" "];
 }

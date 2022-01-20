@@ -34,6 +34,7 @@ var namespacemysite_1_1config =
       [ "AUTHORS", "namespacemysite_1_1config_1_1site__info.html#a6fce82ffd5aa58e52d7709a13eef7205", null ],
       [ "MENU_LINKS", "namespacemysite_1_1config_1_1site__info.html#a9ba07218d10414073b85dbe778b82f4c", null ],
       [ "ROUTES", "namespacemysite_1_1config_1_1site__info.html#ae5fb4841bb3b9be847da80d1a20abae3", null ],
+      [ "SITE_DATA", "namespacemysite_1_1config_1_1site__info.html#acc7f5dd74682f9c9664bd8b71c8e36ee", null ],
       [ "SITE_FAVICON", "namespacemysite_1_1config_1_1site__info.html#a74713c972840b969257e705ad0ed7af0", null ],
       [ "SITE_LOGO", "namespacemysite_1_1config_1_1site__info.html#a17750af9a992dccc7ace8b85e15b903f", null ],
       [ "SITE_TITLE", "namespacemysite_1_1config_1_1site__info.html#a3fb77a110996c19797fef31975d516b0", null ]

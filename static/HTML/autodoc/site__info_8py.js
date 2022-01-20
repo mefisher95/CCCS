@@ -7,6 +7,7 @@ var site__info_8py =
     [ "AUTHORS", "site__info_8py.html#a6fce82ffd5aa58e52d7709a13eef7205", null ],
     [ "MENU_LINKS", "site__info_8py.html#a9ba07218d10414073b85dbe778b82f4c", null ],
     [ "ROUTES", "site__info_8py.html#ae5fb4841bb3b9be847da80d1a20abae3", null ],
+    [ "SITE_DATA", "site__info_8py.html#acc7f5dd74682f9c9664bd8b71c8e36ee", null ],
     [ "SITE_FAVICON", "site__info_8py.html#a74713c972840b969257e705ad0ed7af0", null ],
     [ "SITE_LOGO", "site__info_8py.html#a17750af9a992dccc7ace8b85e15b903f", null ],
     [ "SITE_TITLE", "site__info_8py.html#a3fb77a110996c19797fef31975d516b0", null ]

@@ -1,10 +1,13 @@
+from copy import error
+from logging import exception
+from tkinter import Menu
 from mysite import db, app, database_config
 from sqlalchemy_utils import database_exists, create_database
+from datetime import datetime
 
 from mysite.utils.error_logger import log_error
 
-from mysite.Database.Menu_data import Menu_data
-from mysite.Database.Site_data import Site_data
+from mysite.Database.Announcement import Announcement
 
 
 USER_LENGTH = app.config['USER_LENGTH']
@@ -32,62 +35,46 @@ class Database_handler():
                 log_error(error)
 
         self.db.create_all()
-        self.set_menu_data("/", "Home")
-        self.set_menu_data("/", "About")
-        self.set_menu_data("/site-documentation", "Documentation")
 
-        self.set_site_data("CCCS - Development", "/images/logos/CCCS.png", "/images/logos/favicon.ico")
-
-
-    ##### Menu data ##########
-    def get_menu_data(self) -> list:
+    def set_Announcement(self, message : str, event_time : datetime = None) -> bool:
         try:
-            menu_data = self.db.session.query(Menu_data.link, Menu_data.name)
-            return [obj._asdict() for obj in menu_data]
-
-        except Exception as error:
-            log_error(error)
-            return [{}]
-
-    def set_menu_data(self, link : str, name : str) -> bool:
-        try:
-            self.db.session.add(Menu_data(
-                link = link, 
-                name = name
+            if event_time is "" : event_time = None
+            self.db.session.add(Announcement(
+                message = message,
+                event_time = event_time,
+                create_time = datetime.now()
             ))
 
             self.db.session.commit()
-            return True
 
-        except Exception as error:
-            log_error(error)
-            return False
-        
-    
-    ##### Site Data ##########
-    def get_site_data(self) -> dict:
-        try:
-            site_data  = self.db.session.query(Site_data.site_title, Site_data.site_logo, Site_data.fav_icon)
-            return [obj._asdict() for obj in site_data][0]
-
-        except Exception as error:
-            log_error(error)
-            return {}
-
-    def set_site_data(self, site_title : str, site_logo : str, fav_icon : str) -> bool:
-        try:
-            self.db.session.add(Site_data(
-                site_title = site_title,
-                site_logo = site_logo,
-                fav_icon = fav_icon
-            ))
-
-            self.db.session.commit()
             return True
 
         except Exception as error:
             log_error(error)
             return False
 
-            
-            
+    def get_all_Announcement(self) -> list:
+        try:
+            announcements = self.db.session.query(
+                Announcement.event_time, 
+                Announcement.create_time,
+                Announcement.id,
+                Announcement.message)
+
+            return [x._asdict() for x in announcements]
+
+        except Exception as error:
+            log_error(error)
+            return []
+
+    def delete_Announcement_list(self, announcement_list : list) -> bool:
+        try:
+            for id in announcement_list:
+                print('deleteing', id)
+                Announcement.query.filter_by(id = id).delete()
+
+            self.db.session.commit()
+            return True
+        except Exception as error:
+            log_error(error)
+            return False

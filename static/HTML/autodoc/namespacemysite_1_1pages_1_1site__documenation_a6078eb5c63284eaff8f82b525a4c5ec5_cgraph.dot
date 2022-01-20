@@ -9,6 +9,4 @@ digraph "mysite.pages.site_documenation.documentation"
   Node2 [label="mysite.config.site\l_info.get_menu_links",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemysite_1_1config_1_1site__info.html#a7f152e7085c3529fb172dae4a0be2260",tooltip=" "];
   Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="mysite.config.site\l_info.get_site_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemysite_1_1config_1_1site__info.html#a9291b1d06369294689986bdd872d63d8",tooltip=" "];
-  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="mysite.pages.site_documenation.load\l_page_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemysite_1_1pages_1_1site__documenation.html#a2c566cd6ba7f5b7248d204c2e0374c30",tooltip=" "];
 }
