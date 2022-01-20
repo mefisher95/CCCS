@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['database_5fhandler_0',['Database_handler',['../namespace_database__handler.html',1,'']]]
+  ['error_5flogger_0',['error_logger',['../namespaceerror__logger.html',1,'']]]
 ];

@@ -6,11 +6,11 @@ digraph "error_logger.log_error"
   rankdir="RL";
   Node1 [label="error_logger.log_error",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="Database_handler.Database\l_handler.get_menu_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_database__handler_1_1_database__handler.html#a0ab8bee18fbae53ffdc80427d7523b8f",tooltip="Menu data ##########."];
+  Node2 [label="mysite.Database.Database\l_handler.Database_handler.get\l_menu_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a8bddbae2ccadc1e076ff942cf466c6b6",tooltip="Menu data ##########."];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="Database_handler.Database\l_handler.get_site_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_database__handler_1_1_database__handler.html#a4a5ed4adb8d4b9f541a9ad7f0f935d40",tooltip="Site Data ##########."];
+  Node3 [label="mysite.Database.Database\l_handler.Database_handler.get\l_site_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a669b894de434c3fd4d889943a0bf927a",tooltip="Site Data ##########."];
   Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="Database_handler.Database\l_handler.set_menu_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_database__handler_1_1_database__handler.html#a609e0ca5a40ef53f97d7dfc7a5bc4618",tooltip=" "];
+  Node4 [label="mysite.Database.Database\l_handler.Database_handler.set\l_menu_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#ac24ca452549c28a1b3288272fccda795",tooltip=" "];
   Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="Database_handler.Database\l_handler.set_site_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_database__handler_1_1_database__handler.html#a098e28467bdedc1791a4d198c4d303e2",tooltip=" "];
+  Node5 [label="mysite.Database.Database\l_handler.Database_handler.set\l_site_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#ae6d6aed2c2b28b4e51920bcc74d160f7",tooltip=" "];
 }

@@ -1,4 +1,4 @@
-from mysite import db, app, config
+from mysite import db, app, database_config
 from sqlalchemy_utils import database_exists, create_database
 
 from mysite.utils.error_logger import log_error
@@ -24,10 +24,10 @@ class Database_handler():
 
         self.db = db
 
-        if not database_exists(config.SQLALCHEMY_DATABASE_URI):
+        if not database_exists(database_config.SQLALCHEMY_DATABASE_URI):
 
             try:
-                create_database(config.SQLALCHEMY_DATABASE_URI)
+                create_database(database_config.SQLALCHEMY_DATABASE_URI)
             except Exception as error:
                 log_error(error)
 

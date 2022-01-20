@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['index_0',['index',['../namespacemysite_1_1views.html#aa34bc0c8bf0b8d0cdddc4fe3a75703af',1,'mysite::views']]]
+  ['index_0',['index',['../namespacemysite_1_1pages_1_1index.html#a119d842a22c1452670d783ef484a83aa',1,'mysite::pages::index']]]
 ];

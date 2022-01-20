@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['random_5flength_0',['RANDOM_LENGTH',['../namespacemysite_1_1config.html#a8724097d7ccbc3dcf6f73136ee6dee88',1,'mysite.config.RANDOM_LENGTH()'],['../namespace_database__handler.html#a565f64bdc06ba6adb2fd76b9c66e9691',1,'Database_handler.RANDOM_LENGTH()']]]
+  ['password_5fmax_5flength_0',['PASSWORD_MAX_LENGTH',['../namespacemysite_1_1config_1_1database__config.html#a9bd89fedb66f5e650069103adc0d8ebf',1,'mysite::config::database_config']]],
+  ['password_5fmin_5flength_1',['PASSWORD_MIN_LENGTH',['../namespacemysite_1_1config_1_1database__config.html#ab0a4201869be79f8bd0a4a92bbe25846',1,'mysite::config::database_config']]]
 ];

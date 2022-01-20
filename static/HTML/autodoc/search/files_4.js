@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['menu_5fdata_2epy_0',['Menu_data.py',['../_menu__data_8py.html',1,'']]]
+  ['flask_5fconfig_2epy_0',['flask_config.py',['../flask__config_8py.html',1,'']]]
 ];
