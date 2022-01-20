@@ -28,7 +28,9 @@
                             {% endif %}
                         </td>
                         <td> {{ announcement['message'] }} </td>
-                        <td> <input type="checkbox" class = "form-check-input" name = "delete_list" value= "{{announcement['id']}}"" ></td>
+                        <td style="text-align: center; vertical-align: middle;"> 
+                            <input  type="checkbox" class = "form-check-input" name = "delete_list" value= "{{announcement['id']}}"" >
+                        </td>
                     </tr>
                     {% endfor %}
 
