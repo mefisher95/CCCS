@@ -1,10 +1,9 @@
-from copy import error
-from logging import exception
-from tkinter import Menu
-from mysite import db, app, database_config
+
 from sqlalchemy_utils import database_exists, create_database
 from datetime import datetime
+from operator import itemgetter
 
+from mysite import db, app, database_config
 from mysite.utils.error_logger import log_error
 
 from mysite.Database.Announcement import Announcement
@@ -59,9 +58,10 @@ class Database_handler():
                 Announcement.event_time, 
                 Announcement.create_time,
                 Announcement.id,
-                Announcement.message)
+                Announcement.message
+            )
 
-            return [x._asdict() for x in announcements]
+            return sorted([x._asdict() for x in announcements], key=lambda d: (d['event_time'] is not None, d['event_time']))
 
         except Exception as error:
             log_error(error)

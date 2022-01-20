@@ -154,3 +154,24 @@ This Session's transaction has been rolled back due to a previous exception duri
 [parameters: {'message': 'testing event message', 'event_time': '', 'create_time': datetime.datetime(2022, 1, 20, 1, 42, 29, 603264)}]
 (Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
 
+TIMESTAMP >>> 2022-01-20 03:01:20.341090
+'str' object is not callable
+
+TIMESTAMP >>> 2022-01-20 03:01:29.044253
+'str' object is not callable
+
+TIMESTAMP >>> 2022-01-20 03:01:37.656507
+'str' object is not callable
+
+TIMESTAMP >>> 2022-01-20 03:04:08.459261
+'str' object is not callable
+
+TIMESTAMP >>> 2022-01-20 03:04:56.495786
+'str' object is not callable
+
+TIMESTAMP >>> 2022-01-20 03:06:52.391441
+'str' object is not callable
+
+TIMESTAMP >>> 2022-01-20 03:07:48.099609
+'<' not supported between instances of 'NoneType' and 'datetime.datetime'
+
