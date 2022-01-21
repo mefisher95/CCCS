@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['announcement_0',['Announcement',['../namespacemysite_1_1_database_1_1_announcement.html',1,'mysite::Database']]],
+  ['announcements_0',['Announcements',['../namespacemysite_1_1_database_1_1_announcements.html',1,'mysite::Database']]],
   ['config_1',['config',['../namespacemysite_1_1config.html',1,'mysite']]],
   ['config_5fall_2',['config_all',['../namespacemysite_1_1config_1_1config__all.html',1,'mysite::config']]],
   ['database_3',['Database',['../namespacemysite_1_1_database.html',1,'mysite']]],
@@ -14,6 +14,9 @@ var searchData=
   ['mysite_11',['mysite',['../namespacemysite.html',1,'']]],
   ['new_5fstudent_5finfo_12',['new_student_info',['../namespacemysite_1_1pages_1_1new__student__info.html',1,'mysite::pages']]],
   ['pages_13',['pages',['../namespacemysite_1_1pages.html',1,'mysite']]],
-  ['site_5fdocumenation_14',['site_documenation',['../namespacemysite_1_1pages_1_1site__documenation.html',1,'mysite::pages']]],
-  ['site_5finfo_15',['site_info',['../namespacemysite_1_1pages_1_1site__info.html',1,'mysite::pages']]]
+  ['register_14',['register',['../namespacemysite_1_1pages_1_1register.html',1,'mysite::pages']]],
+  ['registration_15',['Registration',['../namespacemysite_1_1_database_1_1_registration.html',1,'mysite::Database']]],
+  ['site_5fdocumenation_16',['site_documenation',['../namespacemysite_1_1pages_1_1site__documenation.html',1,'mysite::pages']]],
+  ['site_5finfo_17',['site_info',['../namespacemysite_1_1pages_1_1site__info.html',1,'mysite::pages']]],
+  ['users_18',['Users',['../namespacemysite_1_1_database_1_1_users.html',1,'mysite::Database']]]
 ];

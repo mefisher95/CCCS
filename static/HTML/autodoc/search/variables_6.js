@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['link_0',['link',['../classmysite_1_1pages_1_1site__info_1_1_route.html#ad9e94ebe6af0a7bbf183395f38d53267',1,'mysite::pages::site_info::Route']]],
-  ['login_5fmanager_1',['login_manager',['../namespacemysite.html#a9d1f94fff67dd52d6a96c46a5d28c13d',1,'mysite']]]
+  ['given_5fname_0',['given_name',['../classmysite_1_1_database_1_1_registration_1_1_registrations.html#ae40079473b456fd9d52baa9ffa75c976',1,'mysite.Database.Registration.Registrations.given_name()'],['../classmysite_1_1_database_1_1_users_1_1_users.html#a755dd0072feae65abd7045aa5c11b169',1,'mysite.Database.Users.Users.given_name()']]]
 ];

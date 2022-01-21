@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['index_0',['index',['../namespacemysite_1_1pages_1_1index.html#a119d842a22c1452670d783ef484a83aa',1,'mysite::pages::index']]]
+  ['hashfun_0',['hashfun',['../namespacesecurity__utils.html#af213aa99fdea93a4f37691a5052f1b9c',1,'security_utils']]],
+  ['home_1',['home',['../namespacemysite_1_1pages_1_1home.html#a1b7d3dcc1edfea4b5312608ec0918209',1,'mysite::pages::home']]]
 ];

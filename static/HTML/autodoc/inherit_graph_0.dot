@@ -6,5 +6,9 @@ digraph "Graphical Class Hierarchy"
   rankdir="LR";
   Node0 [label="db.Model",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="mysite.Database.Announcement.\lAnnouncement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_announcement_1_1_announcement.html",tooltip=" "];
+  Node1 [label="mysite.Database.Announcements.\lAnnouncements",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_announcements_1_1_announcements.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mysite.Database.Registration.\lRegistrations",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_registration_1_1_registrations.html",tooltip=" "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mysite.Database.Users.Users",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_users_1_1_users.html",tooltip=" "];
 }

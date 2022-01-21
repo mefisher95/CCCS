@@ -1,0 +1,65 @@
+<form action = "{{ url_for('manage_site_data')}}" method="post">
+    <div class="card" >
+        <div class = "card-header">
+            <h2>Manage Announcements</h2>
+        </div>
+        <div class="card-body">
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th scope = "col">Date Created</th>
+                        <th scope = "col">Event Date</th>
+                        <th scope = "col">Announcement</th>
+                        <th scope = "col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if all_announcements | length > 0 %}
+
+                    {% for announcement in all_announcements %}
+                        <tr>
+                            <td> {{ announcement['create_time'].strftime("%B %d, %Y - %H:%M") }} </td>
+                            <td> 
+                                {% if announcement['event_time'] %}
+                                {{ announcement['event_time'].strftime("%B %d, %Y") }} 
+                                {% endif %}
+                            </td>
+                            <td> {{ announcement['message'] }} </td>
+                            <td style="text-align: center; vertical-align: middle;"> 
+                                <input  type="checkbox" class = "form-check-input" name = "delete_list" value= "{{announcement['id']}}"" >
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    {% else %}
+                        <tr>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+                <tfoot>
+                    <td>
+                    </td>
+                    <td>
+                        <input type="date" class="datepicker" name="event_date">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" name="event_message">
+                    </td>
+                    <td>
+                        <input type="submit" class="btn btn-primary CCCS-button" name="announcement_submit">
+                    </td>
+
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</form>

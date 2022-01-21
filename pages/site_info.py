@@ -14,15 +14,16 @@ class Route:
 ROUTES = { 
         "index" : Route("/", "Index"),
         "home" : Route("/home", "Home"),
-        "about" : Route("/about", "About"),
         "document" : Route("/site-documentation", "Documentation"),
         "manage_site_data" : Route("/manage_site", "Manage Site"),
-        "new_student_info" : Route("/new_student_info", "New Student Information")
+        "new_student_info" : Route("/new_student_info", "New Student Information"),
+        "register" : Route("/SellUsYourSoul", "Register"),
+        "finalize_register" : Route("/SoulSold", "Finalize Registration"),
+        "login" : Route("/login", "Login")
     }
 
 MENU_LINKS = [
     ROUTES['home'],
-    ROUTES['about'],
     ROUTES['document'],
     ROUTES['manage_site_data']
 ]

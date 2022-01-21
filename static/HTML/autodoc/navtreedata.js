@@ -51,7 +51,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"____init_____8py.html"
+"____init_____8py.html",
+"pages.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

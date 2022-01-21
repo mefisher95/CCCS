@@ -1,4 +1,4 @@
 var manage__site__data_8py =
 [
-    [ "create_announcements", "manage__site__data_8py.html#a6ae816b3f82f7bfd3ea9f459f4fbcf67", null ]
+    [ "manage_site_data", "manage__site__data_8py.html#aa67be7b10c177db89decbdf724496af8", null ]
 ];

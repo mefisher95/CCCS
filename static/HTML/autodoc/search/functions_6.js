@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['log_5ferror_0',['log_error',['../namespaceerror__logger.html#af09319fc4e67533f62f9e92a63a351d6',1,'error_logger']]]
+  ['index_0',['index',['../namespacemysite_1_1pages_1_1index.html#a119d842a22c1452670d783ef484a83aa',1,'mysite::pages::index']]]
 ];

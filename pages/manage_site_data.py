@@ -5,7 +5,7 @@ import datetime
 from mysite.config.config_all import *
 
 @app.route(ROUTES['manage_site_data'].link, methods = ['GET', 'POST'])
-def create_announcements() -> None:
+def manage_site_data() -> None:
 
 
     if request.method == "POST":
@@ -19,6 +19,11 @@ def create_announcements() -> None:
 
         if event_message is not "": database_conn.set_Announcement(event_message, event_date)
         if len(delete_list): database_conn.delete_Announcement_list(delete_list)
+
+        print(request.form)
+        # print('test', request.form(['announcement']))
+        x = request.form.get('announcement_submit')
+        print(x)
 
 
     all_announcements = database_conn.get_all_Announcement()

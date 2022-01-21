@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['set_5fannouncement_0',['set_Announcement',['../classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#af2d1bda64a8fb28f99015b0ee58edca8',1,'mysite::Database::Database_handler::Database_handler']]],
-  ['ship_1',['ship',['../namespacepymake.html#a0ff1796ca10a612147b497ed5b8d0ba3',1,'pymake']]]
+  ['manage_5fsite_5fdata_0',['manage_site_data',['../namespacemysite_1_1pages_1_1manage__site__data.html#aa67be7b10c177db89decbdf724496af8',1,'mysite::pages::manage_site_data']]]
 ];

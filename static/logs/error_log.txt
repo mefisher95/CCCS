@@ -175,3 +175,135 @@ TIMESTAMP >>> 2022-01-20 03:06:52.391441
 TIMESTAMP >>> 2022-01-20 03:07:48.099609
 '<' not supported between instances of 'NoneType' and 'datetime.datetime'
 
+TIMESTAMP >>> 2022-01-21 00:26:35.238279
+(mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'cccs.announcements' doesn't exist
+[SQL: SELECT `Announcements`.event_time AS `Announcements_event_time`, `Announcements`.create_time AS `Announcements_create_time`, `Announcements`.id AS `Announcements_id`, `Announcements`.message AS `Announcements_message` 
+FROM `Announcements`]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+TIMESTAMP >>> 2022-01-21 00:26:43.243916
+(mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'cccs.announcements' doesn't exist
+[SQL: SELECT `Announcements`.event_time AS `Announcements_event_time`, `Announcements`.create_time AS `Announcements_create_time`, `Announcements`.id AS `Announcements_id`, `Announcements`.message AS `Announcements_message` 
+FROM `Announcements`]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+TIMESTAMP >>> 2022-01-21 01:41:46.409871
+type object 'datetime.datetime' has no attribute 'datetime'
+
+TIMESTAMP >>> 2022-01-21 01:42:28.389158
+type object 'datetime.datetime' has no attribute 'datetime'
+
+TIMESTAMP >>> 2022-01-21 01:43:05.917478
+type object 'datetime.datetime' has no attribute 'datetime'
+
+TIMESTAMP >>> 2022-01-21 01:58:23.725551
+Textual column expression 'mefisher2' should be explicitly declared with text('mefisher2'), or use column('mefisher2') for more specificity
+
+TIMESTAMP >>> 2022-01-21 02:00:02.126189
+Textual column expression 'mefisher2' should be explicitly declared with text('mefisher2'), or use column('mefisher2') for more specificity
+
+TIMESTAMP >>> 2022-01-21 02:00:23.899517
+Textual column expression 'mefisher2' should be explicitly declared with text('mefisher2'), or use column('mefisher2') for more specificity
+
+TIMESTAMP >>> 2022-01-21 02:01:01.164908
+Textual column expression 'mefisher2' should be explicitly declared with text('mefisher2'), or use column('mefisher2') for more specificity
+
+TIMESTAMP >>> 2022-01-21 02:01:03.869136
+Textual column expression 'mefisher2' should be explicitly declared with text('mefisher2'), or use column('mefisher2') for more specificity
+
+TIMESTAMP >>> 2022-01-21 02:01:29.284997
+Textual column expression 'mefisher2' should be explicitly declared with text('mefisher2'), or use column('mefisher2') for more specificity
+
+TIMESTAMP >>> 2022-01-21 02:01:31.185965
+Textual column expression 'mefisher2' should be explicitly declared with text('mefisher2'), or use column('mefisher2') for more specificity
+
+TIMESTAMP >>> 2022-01-21 02:04:17.146546
+'BaseQuery' object has no attribute 'fiter_by'
+
+TIMESTAMP >>> 2022-01-21 02:04:17.151532
+'BaseQuery' object has no attribute 'fiter_by'
+
+TIMESTAMP >>> 2022-01-21 02:05:07.014249
+list index out of range
+
+TIMESTAMP >>> 2022-01-21 02:10:26.477882
+'Registrations' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-21 02:11:37.176924
+'BaseQuery' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-21 02:12:11.797976
+'Registrations' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-21 02:15:35.225202
+'Registrations' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-21 02:18:24.761639
+'Registrations' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-21 02:18:58.611545
+'Registrations' object has no attribute 'fname'
+
+TIMESTAMP >>> 2022-01-21 02:19:20.771639
+'Registrations' object has no attribute 'fname'
+
+TIMESTAMP >>> 2022-01-21 02:31:33.467858
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Registrations` (given_name, family_name, email, username, hashedpassword, salt, code, expiration) VALUES (%(given_name)s, %(family_name)s, %(email)s, %(username)s, %(hashedpassword)s, %(salt)s, %(code)s, %(expiration)s)]
+[parameters: {'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu', 'username': 'mefisher2', 'hashedpassword': '63ad48f6b92910198697eaf362958a75aca2fa4db2663b11d181de0c991a8e2e', 'salt': 'ouC5qExFaePI0cTl', 'code': 'vRhsaDFVjWBMlXiz', 'expiration': datetime.datetime(2022, 1, 21, 2, 46, 33, 462179)}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-21 02:32:54.063488
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Registrations` (given_name, family_name, email, username, hashedpassword, salt, code, expiration) VALUES (%(given_name)s, %(family_name)s, %(email)s, %(username)s, %(hashedpassword)s, %(salt)s, %(code)s, %(expiration)s)]
+[parameters: {'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu', 'username': 'mefisher2', 'hashedpassword': 'eb16b895b32dc6bc2368d66392e4a168a73fe87d58c03a4d153f7cfddef60377', 'salt': 'dF3PHKEWlhnL01s6', 'code': 'WeflJg3ktNmqc6yo', 'expiration': datetime.datetime(2022, 1, 21, 2, 47, 54, 55506)}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-21 02:36:43.939521
+'BaseQuery' object has no attribute 'fiter_by'
+
+TIMESTAMP >>> 2022-01-21 02:36:43.942514
+Python type module cannot be converted
+
+TIMESTAMP >>> 2022-01-21 02:41:54.039724
+'BaseQuery' object has no attribute 'fiter_by'
+
+TIMESTAMP >>> 2022-01-21 02:41:54.042716
+Python type module cannot be converted
+
+TIMESTAMP >>> 2022-01-21 02:43:12.384957
+'BaseQuery' object has no attribute 'fiter_by'
+
+TIMESTAMP >>> 2022-01-21 02:43:12.386952
+Python type module cannot be converted
+
+TIMESTAMP >>> 2022-01-21 02:43:57.651875
+'BaseQuery' object has no attribute 'fiter_by'
+
+TIMESTAMP >>> 2022-01-21 02:43:57.653748
+Python type module cannot be converted
+
+TIMESTAMP >>> 2022-01-21 02:44:24.430720
+'BaseQuery' object has no attribute 'fiter_by'
+
+TIMESTAMP >>> 2022-01-21 02:44:24.433712
+Python type module cannot be converted
+
+TIMESTAMP >>> 2022-01-21 02:45:02.990365
+'BaseQuery' object has no attribute 'fiter_by'
+
+TIMESTAMP >>> 2022-01-21 02:45:02.994354
+Python type module cannot be converted
+
+TIMESTAMP >>> 2022-01-21 02:46:12.689677
+'BaseQuery' object has no attribute 'flter_by'
+
+TIMESTAMP >>> 2022-01-21 02:46:12.691705
+Python type module cannot be converted
+
+TIMESTAMP >>> 2022-01-21 02:47:07.117418
+Python type module cannot be converted
+
+TIMESTAMP >>> 2022-01-21 02:49:36.737063
+Python type module cannot be converted
+

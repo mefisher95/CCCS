@@ -5,6 +5,7 @@ var dir_208d2690607c4e3d3fabfa1d18673d36 =
     [ "index.py", "index_8py.html", "index_8py" ],
     [ "manage_site_data.py", "manage__site__data_8py.html", "manage__site__data_8py" ],
     [ "new_student_info.py", "new__student__info_8py.html", "new__student__info_8py" ],
+    [ "register.py", "register_8py.html", "register_8py" ],
     [ "site_documenation.py", "site__documenation_8py.html", "site__documenation_8py" ],
     [ "site_info.py", "site__info_8py.html", "site__info_8py" ]
 ];

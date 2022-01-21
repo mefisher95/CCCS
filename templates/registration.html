@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{ super() }}
+
+<body>
+    <div class="card col-md-8" style="margin: auto;">
+        <div class = "card text-center">
+            <div class="card-header">
+                <h1>Sign Up</h1>
+            </div>
+            <div class="card-body text-left">
+                <form action = "{{ url_for('registration')}}" method="post">
+                    <div class="row justify-content-center">
+                        <div class="form-group col-6">
+                            <label for="given_name">Given Name</label>
+                            <input id = "given_name" type="text" class="form-control" placeholder="Given Name" name="given_name">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="form-group col-6">
+                            <label for="family_name">Family Name</label>
+                            <input id = "family_name" type="text" class="form-control" placeholder="Family Name" name="family_name">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="form-group col-6">
+                            <label for="username">Username</label>
+                            <input id="username"type="text" class="form-control" placeholder="Username" name="username">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="form-group col-6">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" class="form-control" placeholder="Email" name="email">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="form-group col-6">
+                            <label for="password1">Password</label>
+                            <input id="password1" type="password" class="form-control" placeholder="Password" name="password">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="form-group col-6">
+                            <label for="password2">Retype Password</label>
+                            <input id="password2" type="password" class="form-control" placeholder="Retype Password">
+                        </div>
+                    </div>
+                        
+                    <div class="text-center"> 
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+{% endblock %}

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['announcement_0',['Announcement',['../namespacemysite_1_1_database_1_1_announcement.html',1,'mysite::Database']]],
+  ['announcements_0',['Announcements',['../namespacemysite_1_1_database_1_1_announcements.html',1,'mysite::Database']]],
   ['config_1',['config',['../namespacemysite_1_1config.html',1,'mysite']]],
   ['config_5fall_2',['config_all',['../namespacemysite_1_1config_1_1config__all.html',1,'mysite::config']]],
   ['database_3',['Database',['../namespacemysite_1_1_database.html',1,'mysite']]],
@@ -10,13 +10,16 @@ var searchData=
   ['flask_5fconfig_7',['flask_config',['../namespacemysite_1_1config_1_1flask__config.html',1,'mysite::config']]],
   ['home_8',['home',['../namespacemysite_1_1pages_1_1home.html',1,'mysite::pages']]],
   ['index_9',['index',['../namespacemysite_1_1pages_1_1index.html',1,'mysite::pages']]],
-  ['manage_5fsite_5fdata_10',['manage_site_data',['../namespacemysite_1_1pages_1_1manage__site__data.html',1,'mysite::pages']]],
+  ['manage_5fsite_5fdata_10',['manage_site_data',['../namespacemysite_1_1pages_1_1manage__site__data.html#aa67be7b10c177db89decbdf724496af8',1,'mysite.pages.manage_site_data.manage_site_data()'],['../namespacemysite_1_1pages_1_1manage__site__data.html',1,'mysite.pages.manage_site_data']]],
   ['manage_5fsite_5fdata_2epy_11',['manage_site_data.py',['../manage__site__data_8py.html',1,'']]],
   ['menu_5flinks_12',['MENU_LINKS',['../namespacemysite_1_1pages_1_1site__info.html#aaf6d194d6787f9f61574f93edf93804f',1,'mysite::pages::site_info']]],
-  ['message_13',['message',['../classmysite_1_1_database_1_1_announcement_1_1_announcement.html#a28fd5c64645cc2bef3c4ceed2692e8b1',1,'mysite::Database::Announcement::Announcement']]],
+  ['message_13',['message',['../classmysite_1_1_database_1_1_announcements_1_1_announcements.html#a90b33b280de40608166c390cb3cc454c',1,'mysite::Database::Announcements::Announcements']]],
   ['mysite_14',['mysite',['../namespacemysite.html',1,'']]],
   ['new_5fstudent_5finfo_15',['new_student_info',['../namespacemysite_1_1pages_1_1new__student__info.html',1,'mysite::pages']]],
   ['pages_16',['pages',['../namespacemysite_1_1pages.html',1,'mysite']]],
-  ['site_5fdocumenation_17',['site_documenation',['../namespacemysite_1_1pages_1_1site__documenation.html',1,'mysite::pages']]],
-  ['site_5finfo_18',['site_info',['../namespacemysite_1_1pages_1_1site__info.html',1,'mysite::pages']]]
+  ['register_17',['register',['../namespacemysite_1_1pages_1_1register.html',1,'mysite::pages']]],
+  ['registration_18',['Registration',['../namespacemysite_1_1_database_1_1_registration.html',1,'mysite::Database']]],
+  ['site_5fdocumenation_19',['site_documenation',['../namespacemysite_1_1pages_1_1site__documenation.html',1,'mysite::pages']]],
+  ['site_5finfo_20',['site_info',['../namespacemysite_1_1pages_1_1site__info.html',1,'mysite::pages']]],
+  ['users_21',['Users',['../namespacemysite_1_1_database_1_1_users.html',1,'mysite::Database']]]
 ];

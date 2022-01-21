@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['site_5fdata_0',['Site_data',['../classmysite_1_1_database_1_1_site__data_1_1_site__data.html',1,'mysite::Database::Site_data']]]
+  ['smtp_5femailaccess_0',['SMTP_EmailAccess',['../class_s_m_t_p___email__access_1_1_s_m_t_p___email_access.html',1,'SMTP_Email_access']]]
 ];
