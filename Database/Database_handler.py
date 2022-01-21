@@ -114,7 +114,7 @@ class Database_handler():
             log_error(error)
             return False
 
-    def get_all_Announcement(self) -> list:
+    def get_all_Announcements(self) -> list:
         try:
             announcements = self.db.session.query(
                 Announcements.event_time, 

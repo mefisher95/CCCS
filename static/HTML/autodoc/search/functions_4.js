@@ -1,7 +1,7 @@
 var searchData=
 [
   ['generate_5fregister_5furl_0',['generate_register_url',['../namespacemysite_1_1pages_1_1register.html#aa934ca984dab437f50215eec7a4e9e8c',1,'mysite::pages::register']]],
-  ['get_5fall_5fannouncement_1',['get_all_Announcement',['../classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a5aec8da4b9c9871d52d83e21b9c73277',1,'mysite::Database::Database_handler::Database_handler']]],
+  ['get_5fall_5fannouncements_1',['get_all_Announcements',['../classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a1827306a12e203e02c474d6b7fd43963',1,'mysite::Database::Database_handler::Database_handler']]],
   ['get_5fall_5fusers_2',['get_all_Users',['../classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a09dd6ca6d7c291eb05bd1411c228e21a',1,'mysite::Database::Database_handler::Database_handler']]],
   ['get_5fauthors_3',['get_authors',['../namespacemysite_1_1pages_1_1site__info.html#af92841d08a359e77ea164ee66ca9e343',1,'mysite::pages::site_info']]],
   ['get_5fmenu_5flinks_4',['get_menu_links',['../namespacemysite_1_1pages_1_1site__info.html#a5187b14d06cc5ee343bc001155608fc5',1,'mysite::pages::site_info']]],

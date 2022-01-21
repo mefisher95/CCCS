@@ -18,7 +18,7 @@ def home():
     central page for the site. default route in 
     """
 
-    announcement_list = database_conn.get_all_Announcement()
+    announcement_list = database_conn.get_all_Announcements()
 
 
     return render_template('home.html', 

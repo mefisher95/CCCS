@@ -17,7 +17,7 @@ def manage_site_data() -> None:
         print("event_date", type(event_date))
         print("event_message", event_message)
 
-        if event_message is not "": database_conn.set_Announcement(event_message, event_date)
+        if event_message is not "": database_conn.add_Announcement(event_message, event_date)
         if len(delete_list): database_conn.delete_Announcement_list(delete_list)
 
         print(request.form)
@@ -26,7 +26,7 @@ def manage_site_data() -> None:
         print(x)
 
 
-    all_announcements = database_conn.get_all_Announcement()
+    all_announcements = database_conn.get_all_Announcements()
 
 
     return render_template('manage_site_data.html',
