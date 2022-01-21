@@ -21,7 +21,6 @@ ul.jobs:hover li {
 }
 ul.jobs  li:hover {
     opacity: 1;
-    background-color: #002855;
     color: white;
 }
 @media(min-width: 480px){

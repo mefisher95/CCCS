@@ -1,27 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<!-- <body  >
-
-    <div class="d-flex align-items-start">
-        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
-        </div>
-        <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-        </div>
-    </div>
-
-</body> -->
-
-
 <body>
     <div class="col-md-8" style="margin:auto">
         <ul class="nav nav-tabs" id="new_student_info_tabs">
@@ -54,18 +33,42 @@
                             We also have students who have gone on to graduate school to pursue a Ph.D./MS in computer science. 
                             Here is a non-exhaustive list of multi-billion dollar revenue companies who are hiring some of our graduates:
                             <ul class = "jobs" style='padding-top: 5%;'>
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/Google'>Google</a></li>
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/Amazon_(company)'>Amazon</a></li>
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/Microsoft'>Microsoft</a></li>
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/IBM'>IBM</a></li>
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/HP_Inc.'>HP</a></li>                               
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/AT%26T'>AT&T</a></li>                                
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/Bayer'>Bayer</a></li>                                
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/Dell'>Dell</a></li>                                
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/Emerson_Electric'>Emerson Electric</a></li>                                
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/Lockheed_Martin'>Lockheed Martin</a></li>                               
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/Raytheon'>Raytheon</a></li> 
-                                <li class='list-group-item jobs'><a href='https://en.wikipedia.org/wiki/Garmin'>Garmin</a></li>                              
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/Google' style="width: 100%;" role="button">Google</a>
+                                </li>
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/Amazon_(company)' style="width: 100%;" role="button">Amazon</a>
+                                </li>
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/Microsoft' style="width: 100%;" role="button">Microsoft</a>
+                                </li>
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/IBM' style="width: 100%;" role="button">IBM</a>
+                                </li>
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/HP_Inc.' style="width: 100%;" role="button">HP Inc.</a>
+                                </li>                               
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/AT%26T' style="width: 100%;" role="button">AT&T</a>
+                                </li>                                
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/Bayer' style="width: 100%;" role="button">Bayer</a>
+                                </li>
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/Dell' style="width: 100%;" role="button">Dell</a>
+                                </li>                                
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/Emerson_Electric' style="width: 100%;" role="button">Emerson Electric</a>
+                                </li>
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/Lockheed_Martin' style="width: 100%;" role="button">Lockheed Martin</a>
+                                </li>
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/Raytheon' style="width: 100%;" role="button">Raytheon</a>
+                                </li>
+                                <li style="padding: 1%;">
+                                    <a class="btn btn-primary" href='https://en.wikipedia.org/wiki/Garmin' style="width: 100%;" role="button">Garmin</a>
+                                </li>
                             </ul>
                         </div>
         
@@ -484,12 +487,9 @@
                             </div>
                         </div>
                     </div>
-                    </div>
                 </div>
             </div>
-        </div>
 
-            
             <div class="tab-pane fade" id="PICS">
                 <div class = "card">
                     <div class = "card-header">
@@ -498,25 +498,75 @@
                         </h1>
                     </div>
                     <div class = "card-body">
+                        <div>
+                            <img class="rounded mx-auto d-block"  src="{{ url_for('static', filename = 'images/logos/PiCS_logo.png') }}">
+                        </div>
+                        <div>
+                            <p>
+                                <h2> What is PiCS?</h2>
+                                <ul>PiCS (or Portal into Computer Science) is the Computer Science outreach program of Columbia College.</ul>
+                            </p>
+                            <p>
+                                <h2>Goal of PiCS</h2>
+                                <ul>
+                                    <p>
+                                        The goal of PiCS is to introduce K-12 students to the exciting area of Computer Science.
+                                        We have visited Benton Elementary School and Alpha Hart Lewis Elementary School to talk about computer science and to teach basic programming.
+                                    </p>
+                                    <p>
+                                        In spring 2017 we organized an “Hour of Code” event for Jeff Middle School.
+                                        We have organized several high school events including an annual High School 
+                                        Programming Contest since spring 2015. 
+                                        We are also organizing several summer camps for middle school and high school students.
+                                    </p>
+                                    <p>
+                                        More programs for elementary school students are forthcoming.
+                                    </p>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="carousel slide" data-ride="carousel" id = "PiCS_carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+
+                                {% for index in range((pictures_urls | length) - 1) %}
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="{{index + 1}}"></li>
+                                {% endfor %}
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="{{ url_for('static', filename = 'images/PiCS_gallery/' + pictures_urls[0] ) }} "></li>
+                                </div>
+
+                                {% for index in range((pictures_urls | length) - 1) %}
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{ url_for('static', filename = 'images/PiCS_gallery/' + pictures_urls[index + 1] ) }}"></li>
+                                </div>
+                                {% endfor %}
+
+                            </div>
+
+                        </div>
 
                     </div>
                 </div>
             </div>
 
             <div class="tab-pane fade" id="HSInternship">
-                    <div class = "card">
-                        <div class = "card-header">
-                            <h1>
-                                Internship for High School Students
-                            </h1>
-                        </div>
-                        <div class = "card-body">
-
-                        </div>
+                <div class = "card">
+                    <div class = "card-header">
+                        <h1>
+                            Internship for High School Students
+                        </h1>
                     </div>
+                    <div class = "card-body">
+
+                    </div>
+                </div>
             </div>
         </div>
-        
+    </div>
 </body>
 
 

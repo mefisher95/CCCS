@@ -1,4 +1,4 @@
 var new__student__info_8py =
 [
-    [ "why_cs", "new__student__info_8py.html#ae48418a3280766b8b604174f33518190", null ]
+    [ "new_student_info", "new__student__info_8py.html#a7151bd3fee99e44e3cb901257e133277", null ]
 ];

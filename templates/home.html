@@ -11,9 +11,39 @@
                 </h1>
             </div>
             <div class = "card-body">
-                TBD
+                <p>
+                    We are a tight knit and active community in Columbia, MO dedicated to the study of Computer Science. 
+                </p>
+                <p>
+                    Whether you are a well-versed expert or a total novice, there is a place for everyone in our group.
+                    We pride ourselves on our dedication to helping everyone become fantastic Computer Scientists.
+                </p>
+                <div class="row">
+                    <div class="card col-sm-6">
+                        <div class="card-body">
+                            <h5 class="card-title">New to CS?</h5>
+                            <p class="card-text">
+                                Are you completely new to CS or looking for a program to try? <br>
+                                Click here for more resources and information
+                            </p>
+                            <a href="{{ url_for('new_student_info')}}" class="btn btn-primary">New Student Information</a>
+                        </div>
+                    </div>
+
+                    <div class="card col-sm-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Resources</h5>
+                            <p class="card-text">
+                                Software, Courses, Notes, and Tools for students and Computer Scientists of CCCS
+                            </p>
+                            <a href="{{ url_for('home')}}" class="btn btn-primary">Student Resources</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Announcements -->
         <div class = "card text-center">
             <div class = "card-header">
                 <h1>Announcements</h1>
@@ -60,7 +90,7 @@
 
         </div>
 
-        <div class = "card text-center">
+        <!-- <div class = "card text-center">
             <div class = "card-header">
                 <h1> 
                     Upcomming Events
@@ -81,7 +111,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
     </div>
 
     
