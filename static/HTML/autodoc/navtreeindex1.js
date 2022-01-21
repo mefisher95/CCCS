@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"new__student__info_8py.html":[2,0,2,4],
+"new__student__info_8py.html#a7151bd3fee99e44e3cb901257e133277":[2,0,2,4,0],
 "pages.html":[],
 "pages_2____init_____8py.html":[2,0,2,0],
 "pymake_8py.html":[2,0,5],
@@ -10,6 +12,8 @@ var NAVTREEINDEX1 =
 "register_8py.html#aa934ca984dab437f50215eec7a4e9e8c":[2,0,2,5,1],
 "register_8py.html#ace7989e064994fc3959e8ab41a8e9787":[2,0,2,5,0],
 "register_8py.html#aec969f40db99362e3b4efd6b7126206d":[2,0,2,5,2],
+"run_8py.html":[2,0,6],
+"run_8py.html#a24785e11198aac41f0051e51857331aa":[2,0,6,0],
 "security__utils_8py.html":[2,0,3,1],
 "security__utils_8py.html#a4aed6d19dc06e65482b982cab641edad":[2,0,3,1,1],
 "security__utils_8py.html#af213aa99fdea93a4f37691a5052f1b9c":[2,0,3,1,0],
