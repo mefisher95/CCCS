@@ -1,0 +1,50 @@
+<form action = "{{ url_for('manage_site_data')}}" method="post">
+    <div class="card" >
+        <div class = "card-header">
+            <h2>Manage Users</h2>
+        </div>
+        <div class="card-body">
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th scope = "col">Given Name</th>
+                        <th scope = "col">Family Name</th>
+                        <th scope = "col">Username</th>
+                        <th scope = "col">Email</th>
+                        <th scope = "col">Admin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if all_users | length > 0 %}
+
+                    {% for user in all_users %}
+                        <tr>
+                            <td> {{ user['given_name'] }} </td>
+                            <td> {{ user['family_name'] }} </td>
+                            <td> {{ user['username'] }} </td>
+                            <td> {{ user['email'] }} </td>
+                            
+                            <td>
+                                <button type ="submit" class="btn btn-primary CCCS-button-inverse" name="toggle_admin_submit" value="{{ {'id' :user['id'], 'admin' : user['admin'] } }}">{{ user['admin'] }}</button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    {% else %}
+                        <tr>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

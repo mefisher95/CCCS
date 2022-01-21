@@ -9,27 +9,32 @@ def manage_site_data() -> None:
 
 
     if request.method == "POST":
-        event_date = request.form['event_date']
-        event_message = request.form['event_message']
-        
-        delete_list = request.form.getlist('delete_list')
-        print("delete_list", delete_list)
-        print("event_date", type(event_date))
-        print("event_message", event_message)
+        if 'toggle_admin_submit' in request.form:
+            print(request.form)
+            modify_admin_data = eval(request.form['toggle_admin_submit'])
+            print(type(modify_admin_data))
+            print(modify_admin_data)
 
-        if event_message is not "": database_conn.add_Announcement(event_message, event_date)
-        if len(delete_list): database_conn.delete_Announcement_list(delete_list)
+            database_conn.set_User_admin(modify_admin_data['id'], not modify_admin_data['admin'])
+        if 'announcement_submit' in request.form:
 
-        print(request.form)
-        # print('test', request.form(['announcement']))
-        x = request.form.get('announcement_submit')
-        print(x)
+            event_date = request.form['event_date']
+            event_message = request.form['event_message']
+            
+            delete_list = request.form.getlist('delete_list')
 
+            if event_message != "": database_conn.add_Announcement(event_message, event_date)
+            if len(delete_list): database_conn.delete_Announcement_list(delete_list)
+
+            # print('test', request.form(['announcement']))
+            x = request.form.get('announcement_submit')
 
     all_announcements = database_conn.get_all_Announcements()
+    all_users = database_conn.get_all_Users()
 
 
     return render_template('manage_site_data.html',
                             menu_data = MENU_LINKS,
                             site_data = SITE_DATA,
-                            all_announcements = all_announcements)
+                            all_announcements = all_announcements,
+                            all_users = all_users)

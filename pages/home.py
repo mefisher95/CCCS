@@ -19,6 +19,7 @@ def home():
     """
 
     announcement_list = database_conn.get_all_Announcements()
+    print(database_conn.get_all_Users())
 
 
     return render_template('home.html', 

@@ -307,3 +307,9 @@ Python type module cannot be converted
 TIMESTAMP >>> 2022-01-21 02:49:36.737063
 Python type module cannot be converted
 
+TIMESTAMP >>> 2022-01-21 15:50:45.341009
+list index out of range
+
+TIMESTAMP >>> 2022-01-21 15:51:23.159152
+list index out of range
+

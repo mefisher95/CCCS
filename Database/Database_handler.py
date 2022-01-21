@@ -1,4 +1,5 @@
 
+from re import U
 from sqlalchemy_utils import database_exists, create_database
 from datetime import datetime
 
@@ -165,6 +166,21 @@ class Database_handler():
         #     log_error(error)
         #     return False
 
+    def set_User_admin(self, id : int, value : bool) -> bool:
+        # try:
+            self.db.session.query(Users).filter_by(
+                id = id
+            ).update(
+                {"admin" : value}
+            )
+
+            self.db.session.commit()
+
+            return False
+
+        # except Exception as error:
+        #     log_error(error)
+        #     return True
     def delete_User(self, id : int) -> bool:
         try:
             Users.query.filter_by(id=id).delete()
@@ -178,10 +194,12 @@ class Database_handler():
     def get_User(self, id : int) -> dict:
         try:
             user = self.db.session.query(
-                Announcements.event_time, 
-                Announcements.create_time,
-                Announcements.id,
-                Announcements.message
+                Users.id,
+                Users.given_name,
+                Users.family_name,
+                Users.email,
+                Users.username,
+                Users.admin
             )
 
             return [x._asdict() for x in user][0]
@@ -198,6 +216,7 @@ class Database_handler():
                 Users.family_name,
                 Users.email,
                 Users.username,
+                Users.admin
             )
 
             return sorted([x._asdict() for x in users], key=lambda d: (d['family_name'] is not None, d['family_name']))

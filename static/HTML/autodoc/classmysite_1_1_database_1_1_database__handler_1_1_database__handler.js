@@ -11,5 +11,6 @@ var classmysite_1_1_database_1_1_database__handler_1_1_database__handler =
     [ "get_all_Users", "classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a09dd6ca6d7c291eb05bd1411c228e21a", null ],
     [ "get_registrations", "classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a4f80eb96b4e1e8a2bc783725986d46f4", null ],
     [ "get_User", "classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#af447ef58f1d765ca2fa14d38ab685ae5", null ],
+    [ "set_User_admin", "classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a3d7b775340c226ed1a93eab795d9269c", null ],
     [ "db", "classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a72923dfe511b31272a11c4ad19424c0f", null ]
 ];

@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"namespacesecurity__utils.html#a4aed6d19dc06e65482b982cab641edad":[0,0,4,1],
+"namespacesecurity__utils.html#af213aa99fdea93a4f37691a5052f1b9c":[0,0,4,0],
 "new__student__info_8py.html":[2,0,2,4],
 "new__student__info_8py.html#a7151bd3fee99e44e3cb901257e133277":[2,0,2,4,0],
 "pages.html":[],
