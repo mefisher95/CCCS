@@ -9,6 +9,32 @@
     background: transparent;
 } */
 
+.CCCS {
+    background-color: #002855 !important;
+    color: white !important;
+}
+
+.CCCS-button {
+    background-color: #002855 !important;
+    color: white !important;
+}
+.CCCS-button:active {
+    background-color: white !important;
+    color: #002855 !important;
+}
+
+.CCCS-button-invert {
+    background-color: white !important;
+    color: #002855 !important;
+    outline-color: silver;
+
+}
+.CCCS-button-invert:active {
+    background-color: #002855 !important;
+    color: white !important;
+    outline-color: silver !important;
+}
+
 ul.jobs {
     height: auto;
     width:100%;
@@ -25,8 +51,8 @@ ul.jobs  li:hover {
 }
 @media(min-width: 480px){
   ul.jobs{
-      /* -webkit-column-count: 1;
-      -moz-column-count: 1; */
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
       column-count: 1;
     }
 }
