@@ -6,8 +6,8 @@ var namespacemysite_1_1pages =
     [ "index", "namespacemysite_1_1pages_1_1index.html", [
       [ "index", "namespacemysite_1_1pages_1_1index.html#a119d842a22c1452670d783ef484a83aa", null ]
     ] ],
-    [ "manage_announcements", "namespacemysite_1_1pages_1_1manage__announcements.html", [
-      [ "create_announcements", "namespacemysite_1_1pages_1_1manage__announcements.html#a817b2a7892f01f279357cb9f2f7d45ab", null ]
+    [ "manage_site_data", "namespacemysite_1_1pages_1_1manage__site__data.html", [
+      [ "create_announcements", "namespacemysite_1_1pages_1_1manage__site__data.html#a6ae816b3f82f7bfd3ea9f459f4fbcf67", null ]
     ] ],
     [ "new_student_info", "namespacemysite_1_1pages_1_1new__student__info.html", [
       [ "new_student_info", "namespacemysite_1_1pages_1_1new__student__info.html#a7151bd3fee99e44e3cb901257e133277", null ]

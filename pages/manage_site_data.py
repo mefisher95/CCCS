@@ -4,7 +4,7 @@ import datetime
 # from mysite.config import *
 from mysite.config.config_all import *
 
-@app.route(ROUTES['manage_announcements'].link, methods = ['GET', 'POST'])
+@app.route(ROUTES['manage_site_data'].link, methods = ['GET', 'POST'])
 def create_announcements() -> None:
 
 
@@ -24,7 +24,7 @@ def create_announcements() -> None:
     all_announcements = database_conn.get_all_Announcement()
 
 
-    return render_template('announcement.html',
+    return render_template('manage_site_data.html',
                             menu_data = MENU_LINKS,
                             site_data = SITE_DATA,
                             all_announcements = all_announcements)

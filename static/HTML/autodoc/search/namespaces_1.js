@@ -10,7 +10,7 @@ var searchData=
   ['flask_5fconfig_7',['flask_config',['../namespacemysite_1_1config_1_1flask__config.html',1,'mysite::config']]],
   ['home_8',['home',['../namespacemysite_1_1pages_1_1home.html',1,'mysite::pages']]],
   ['index_9',['index',['../namespacemysite_1_1pages_1_1index.html',1,'mysite::pages']]],
-  ['manage_5fannouncements_10',['manage_announcements',['../namespacemysite_1_1pages_1_1manage__announcements.html',1,'mysite::pages']]],
+  ['manage_5fsite_5fdata_10',['manage_site_data',['../namespacemysite_1_1pages_1_1manage__site__data.html',1,'mysite::pages']]],
   ['mysite_11',['mysite',['../namespacemysite.html',1,'']]],
   ['new_5fstudent_5finfo_12',['new_student_info',['../namespacemysite_1_1pages_1_1new__student__info.html',1,'mysite::pages']]],
   ['pages_13',['pages',['../namespacemysite_1_1pages.html',1,'mysite']]],

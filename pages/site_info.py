@@ -16,7 +16,7 @@ ROUTES = {
         "home" : Route("/home", "Home"),
         "about" : Route("/about", "About"),
         "document" : Route("/site-documentation", "Documentation"),
-        "manage_announcements" : Route("/manage_announcements", "Manage Announcements"),
+        "manage_site_data" : Route("/manage_site", "Manage Site"),
         "new_student_info" : Route("/new_student_info", "New Student Information")
     }
 
@@ -24,7 +24,7 @@ MENU_LINKS = [
     ROUTES['home'],
     ROUTES['about'],
     ROUTES['document'],
-    ROUTES['manage_announcements']
+    ROUTES['manage_site_data']
 ]
 
 SITE_TITLE = "CCCS - Development"

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['manage_5fannouncements_2epy_0',['manage_announcements.py',['../manage__announcements_8py.html',1,'']]]
+  ['manage_5fsite_5fdata_2epy_0',['manage_site_data.py',['../manage__site__data_8py.html',1,'']]]
 ];
