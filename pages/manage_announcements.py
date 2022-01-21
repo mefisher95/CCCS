@@ -4,7 +4,7 @@ import datetime
 # from mysite.config import *
 from mysite.config.config_all import *
 
-@app.route(ROUTES['manage_announcements']['link'], methods = ['GET', 'POST'])
+@app.route(ROUTES['manage_announcements'].link, methods = ['GET', 'POST'])
 def create_announcements() -> None:
 
 

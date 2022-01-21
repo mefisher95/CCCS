@@ -8,6 +8,11 @@ var annotated_dup =
         [ "Database_handler", "namespacemysite_1_1_database_1_1_database__handler.html", [
           [ "Database_handler", "classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html", "classmysite_1_1_database_1_1_database__handler_1_1_database__handler" ]
         ] ]
+      ] ],
+      [ "pages", "namespacemysite_1_1pages.html", [
+        [ "site_info", "namespacemysite_1_1pages_1_1site__info.html", [
+          [ "Route", "classmysite_1_1pages_1_1site__info_1_1_route.html", "classmysite_1_1pages_1_1site__info_1_1_route" ]
+        ] ]
       ] ]
     ] ]
 ];

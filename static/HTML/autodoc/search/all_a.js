@@ -12,10 +12,11 @@ var searchData=
   ['index_9',['index',['../namespacemysite_1_1pages_1_1index.html',1,'mysite::pages']]],
   ['manage_5fannouncements_10',['manage_announcements',['../namespacemysite_1_1pages_1_1manage__announcements.html',1,'mysite::pages']]],
   ['manage_5fannouncements_2epy_11',['manage_announcements.py',['../manage__announcements_8py.html',1,'']]],
-  ['menu_5flinks_12',['MENU_LINKS',['../namespacemysite_1_1config_1_1site__info.html#a9ba07218d10414073b85dbe778b82f4c',1,'mysite::config::site_info']]],
+  ['menu_5flinks_12',['MENU_LINKS',['../namespacemysite_1_1pages_1_1site__info.html#aaf6d194d6787f9f61574f93edf93804f',1,'mysite::pages::site_info']]],
   ['message_13',['message',['../classmysite_1_1_database_1_1_announcement_1_1_announcement.html#a28fd5c64645cc2bef3c4ceed2692e8b1',1,'mysite::Database::Announcement::Announcement']]],
   ['mysite_14',['mysite',['../namespacemysite.html',1,'']]],
-  ['pages_15',['pages',['../namespacemysite_1_1pages.html',1,'mysite']]],
-  ['site_5fdocumenation_16',['site_documenation',['../namespacemysite_1_1pages_1_1site__documenation.html',1,'mysite::pages']]],
-  ['site_5finfo_17',['site_info',['../namespacemysite_1_1config_1_1site__info.html',1,'mysite::config']]]
+  ['new_5fstudent_5finfo_15',['new_student_info',['../namespacemysite_1_1pages_1_1new__student__info.html',1,'mysite::pages']]],
+  ['pages_16',['pages',['../namespacemysite_1_1pages.html',1,'mysite']]],
+  ['site_5fdocumenation_17',['site_documenation',['../namespacemysite_1_1pages_1_1site__documenation.html',1,'mysite::pages']]],
+  ['site_5finfo_18',['site_info',['../namespacemysite_1_1pages_1_1site__info.html',1,'mysite::pages']]]
 ];

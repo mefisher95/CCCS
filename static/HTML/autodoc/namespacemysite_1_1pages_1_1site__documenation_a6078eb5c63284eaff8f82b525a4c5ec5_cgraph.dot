@@ -6,7 +6,7 @@ digraph "mysite.pages.site_documenation.documentation"
   rankdir="LR";
   Node1 [label="mysite.pages.site_documenation.documentation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mysite.config.site\l_info.get_menu_links",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemysite_1_1config_1_1site__info.html#a7f152e7085c3529fb172dae4a0be2260",tooltip=" "];
+  Node2 [label="mysite.pages.site_info.get\l_menu_links",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemysite_1_1pages_1_1site__info.html#a5187b14d06cc5ee343bc001155608fc5",tooltip=" "];
   Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="mysite.config.site\l_info.get_site_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemysite_1_1config_1_1site__info.html#a9291b1d06369294689986bdd872d63d8",tooltip=" "];
+  Node3 [label="mysite.pages.site_info.get\l_site_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemysite_1_1pages_1_1site__info.html#acfaef45d391129232c39a4cbc20d22cd",tooltip=" "];
 }

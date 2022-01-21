@@ -4,7 +4,7 @@ from mysite.config.config_all import *
 
 from flask import render_template
 
-@app.route(ROUTES['document']['link'])
+@app.route(ROUTES['document'].link)
 def documentation() -> None:
     """
     Page for displaying site documentation, as provided by doxygen https://www.doxygen.nl/index.html

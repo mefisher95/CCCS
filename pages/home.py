@@ -4,12 +4,15 @@ from mysite import *
 from mysite.Database.Database_handler import Database_handler
 # from mysite.config.site_info import *
 from mysite.config import *
+from mysite.pages.site_info import *
+
+
 
 # from mysite.pages import site_documenation
 # from mysite import
 
 
-@app.route(ROUTES['home']['link'])
+@app.route(ROUTES['home'].link)
 def home():
     """
     central page for the site. default route in 

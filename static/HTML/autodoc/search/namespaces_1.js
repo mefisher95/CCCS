@@ -12,7 +12,8 @@ var searchData=
   ['index_9',['index',['../namespacemysite_1_1pages_1_1index.html',1,'mysite::pages']]],
   ['manage_5fannouncements_10',['manage_announcements',['../namespacemysite_1_1pages_1_1manage__announcements.html',1,'mysite::pages']]],
   ['mysite_11',['mysite',['../namespacemysite.html',1,'']]],
-  ['pages_12',['pages',['../namespacemysite_1_1pages.html',1,'mysite']]],
-  ['site_5fdocumenation_13',['site_documenation',['../namespacemysite_1_1pages_1_1site__documenation.html',1,'mysite::pages']]],
-  ['site_5finfo_14',['site_info',['../namespacemysite_1_1config_1_1site__info.html',1,'mysite::config']]]
+  ['new_5fstudent_5finfo_12',['new_student_info',['../namespacemysite_1_1pages_1_1new__student__info.html',1,'mysite::pages']]],
+  ['pages_13',['pages',['../namespacemysite_1_1pages.html',1,'mysite']]],
+  ['site_5fdocumenation_14',['site_documenation',['../namespacemysite_1_1pages_1_1site__documenation.html',1,'mysite::pages']]],
+  ['site_5finfo_15',['site_info',['../namespacemysite_1_1pages_1_1site__info.html',1,'mysite::pages']]]
 ];

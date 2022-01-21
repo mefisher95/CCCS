@@ -25,18 +25,5 @@ var namespacemysite_1_1config =
     ] ],
     [ "flask_config", "namespacemysite_1_1config_1_1flask__config.html", [
       [ "SECRET_KEY", "namespacemysite_1_1config_1_1flask__config.html#a31ccda83b4ce5577376ed7e26966d23d", null ]
-    ] ],
-    [ "site_info", "namespacemysite_1_1config_1_1site__info.html", [
-      [ "get_authors", "namespacemysite_1_1config_1_1site__info.html#af910e7f6d9ceca72e8751389c39aecd7", null ],
-      [ "get_menu_links", "namespacemysite_1_1config_1_1site__info.html#a7f152e7085c3529fb172dae4a0be2260", null ],
-      [ "get_routes", "namespacemysite_1_1config_1_1site__info.html#a74b960b220accd6e43d89fe1e2f60772", null ],
-      [ "get_site_data", "namespacemysite_1_1config_1_1site__info.html#a9291b1d06369294689986bdd872d63d8", null ],
-      [ "AUTHORS", "namespacemysite_1_1config_1_1site__info.html#a6fce82ffd5aa58e52d7709a13eef7205", null ],
-      [ "MENU_LINKS", "namespacemysite_1_1config_1_1site__info.html#a9ba07218d10414073b85dbe778b82f4c", null ],
-      [ "ROUTES", "namespacemysite_1_1config_1_1site__info.html#ae5fb4841bb3b9be847da80d1a20abae3", null ],
-      [ "SITE_DATA", "namespacemysite_1_1config_1_1site__info.html#acc7f5dd74682f9c9664bd8b71c8e36ee", null ],
-      [ "SITE_FAVICON", "namespacemysite_1_1config_1_1site__info.html#a74713c972840b969257e705ad0ed7af0", null ],
-      [ "SITE_LOGO", "namespacemysite_1_1config_1_1site__info.html#a17750af9a992dccc7ace8b85e15b903f", null ],
-      [ "SITE_TITLE", "namespacemysite_1_1config_1_1site__info.html#a3fb77a110996c19797fef31975d516b0", null ]
     ] ]
 ];
