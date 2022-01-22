@@ -1,6 +1,7 @@
 var classmysite_1_1_database_1_1_registration_1_1_registrations =
 [
     [ "__repr__", "classmysite_1_1_database_1_1_registration_1_1_registrations.html#a918434fcf850ac423dba9690485c41a1", null ],
+    [ "as_dict", "classmysite_1_1_database_1_1_registration_1_1_registrations.html#abff69ec57d176026fdba081f82d59a5a", null ],
     [ "__tableargs__", "classmysite_1_1_database_1_1_registration_1_1_registrations.html#aa37a308d302ce7edee3e6b0b5d38031f", null ],
     [ "__tablename__", "classmysite_1_1_database_1_1_registration_1_1_registrations.html#a2d7d70bb3a9788edce2b95c345e129a0", null ],
     [ "code", "classmysite_1_1_database_1_1_registration_1_1_registrations.html#aa487fdb91491817706696ff5da521438", null ],

@@ -19,13 +19,13 @@ ROUTES = {
         "new_student_info" : Route("/new_student_info", "New Student Information"),
         "register" : Route("/SellUsYourSoul", "Register"),
         "finalize_register" : Route("/SoulSold", "Finalize Registration"),
-        "login" : Route("/login", "Login")
+        "login" : Route("/login", "Login"), 
+        "logout" : Route("/logout", "Logout")
     }
 
 MENU_LINKS = [
     ROUTES['home'],
-    ROUTES['document'],
-    ROUTES['manage_site_data']
+    ROUTES['new_student_info']
 ]
 
 SITE_TITLE = "CCCS - Development"

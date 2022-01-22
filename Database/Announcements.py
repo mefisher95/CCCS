@@ -11,3 +11,6 @@ class Announcements(db.Model):
     message = db.Column(db.Text, nullable = False)
     event_time = db.Column(db.DateTime)
     create_time = db.Column(db.DateTime, nullable = False)
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}

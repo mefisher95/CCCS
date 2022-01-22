@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('classmysite_1_1_database_1_1_users_1_1
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmysite_1_1_database_1_1_users_1_1_users-members.html">List of all members</a>  </div>
@@ -100,6 +101,11 @@ Collaboration diagram for mysite.Database.Users.Users:</div>
 <div class="center"><img src="classmysite_1_1_database_1_1_users_1_1_users__coll__graph.png" border="0" usemap="#amysite_8_database_8_users_8_users_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3859676a6d471b124920bbe7d2988e1b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_users_1_1_users.html#a3859676a6d471b124920bbe7d2988e1b">as_dict</a> (self)</td></tr>
+<tr class="separator:a3859676a6d471b124920bbe7d2988e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:abd2e97055a0357ce8f86d3d1f4fc73a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_users_1_1_users.html#abd2e97055a0357ce8f86d3d1f4fc73a5">id</a> = db.Column(db.Integer, primary_key = True)</td></tr>
@@ -116,6 +122,8 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a281ce75fda8c4d2d7b8918d6affdfac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c710f581c68314888d2a110781e8e65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_users_1_1_users.html#a6c710f581c68314888d2a110781e8e65">salt</a> = db.Column(db.String(app.config['SALT_LENGTH']), nullable=False)</td></tr>
 <tr class="separator:a6c710f581c68314888d2a110781e8e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8d620f3da80c2b80f6a66fc2a7a8ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_users_1_1_users.html#a5b8d620f3da80c2b80f6a66fc2a7a8ea">admin</a> = db.Column(db.Boolean, default=False)</td></tr>
+<tr class="separator:a5b8d620f3da80c2b80f6a66fc2a7a8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -125,7 +133,26 @@ Static Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">creates Users for display on the home page. 
 interface model for connecting to MySQL table 
-</pre> </div><h2 class="groupheader">Member Data Documentation</h2>
+</pre> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3859676a6d471b124920bbe7d2988e1b" name="a3859676a6d471b124920bbe7d2988e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3859676a6d471b124920bbe7d2988e1b">&#9670;&nbsp;</a></span>as_dict()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def mysite.Database.Users.Users.as_dict </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a95b46c45abdb14275727b35811348b1f" name="a95b46c45abdb14275727b35811348b1f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95b46c45abdb14275727b35811348b1f">&#9670;&nbsp;</a></span>__tablename__</h2>
 
@@ -142,6 +169,28 @@ interface model for connecting to MySQL table
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b8d620f3da80c2b80f6a66fc2a7a8ea" name="a5b8d620f3da80c2b80f6a66fc2a7a8ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b8d620f3da80c2b80f6a66fc2a7a8ea">&#9670;&nbsp;</a></span>admin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mysite.Database.Users.Users.admin = db.Column(db.Boolean, default=False)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

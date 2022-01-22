@@ -110,10 +110,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa66b0902b99241440344ca42c1346a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d7b775340c226ed1a93eab795d9269c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a3d7b775340c226ed1a93eab795d9269c">set_User_admin</a> (self, int id, bool value)</td></tr>
 <tr class="separator:a3d7b775340c226ed1a93eab795d9269c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5e8681d05f4a086996d00f56091574"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a4b5e8681d05f4a086996d00f56091574">is_User</a> (self, str username, str password)</td></tr>
+<tr class="separator:a4b5e8681d05f4a086996d00f56091574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb49f82eb4f71a8444f5cda7ff4667ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#adb49f82eb4f71a8444f5cda7ff4667ae">delete_User</a> (self, int id)</td></tr>
 <tr class="separator:adb49f82eb4f71a8444f5cda7ff4667ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af447ef58f1d765ca2fa14d38ab685ae5"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#af447ef58f1d765ca2fa14d38ab685ae5">get_User</a> (self, int id)</td></tr>
-<tr class="separator:af447ef58f1d765ca2fa14d38ab685ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5996686fa28cf4bbbfcfc3262bfb52e2"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a5996686fa28cf4bbbfcfc3262bfb52e2">get_User_by_Username</a> (self, str username)</td></tr>
+<tr class="separator:a5996686fa28cf4bbbfcfc3262bfb52e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6179d9e7fb3d40f44ea34993d25e7b6f"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a6179d9e7fb3d40f44ea34993d25e7b6f">get_User_by_ID</a> (self, int id)</td></tr>
+<tr class="separator:a6179d9e7fb3d40f44ea34993d25e7b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09dd6ca6d7c291eb05bd1411c228e21a"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a09dd6ca6d7c291eb05bd1411c228e21a">get_all_Users</a> (self)</td></tr>
 <tr class="separator:a09dd6ca6d7c291eb05bd1411c228e21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -481,14 +485,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="af447ef58f1d765ca2fa14d38ab685ae5" name="af447ef58f1d765ca2fa14d38ab685ae5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af447ef58f1d765ca2fa14d38ab685ae5">&#9670;&nbsp;</a></span>get_User()</h2>
+<a id="a6179d9e7fb3d40f44ea34993d25e7b6f" name="a6179d9e7fb3d40f44ea34993d25e7b6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6179d9e7fb3d40f44ea34993d25e7b6f">&#9670;&nbsp;</a></span>get_User_by_ID()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> dict mysite.Database.Database_handler.Database_handler.get_User </td>
+          <td class="memname"> dict mysite.Database.Database_handler.Database_handler.get_User_by_ID </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -509,7 +513,79 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_af447ef58f1d765ca2fa14d38ab685ae5_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_af447ef58f1d765ca2fa14d38ab685ae5_cgraph" alt=""/></div>
+<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_a6179d9e7fb3d40f44ea34993d25e7b6f_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_a6179d9e7fb3d40f44ea34993d25e7b6f_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a5996686fa28cf4bbbfcfc3262bfb52e2" name="a5996686fa28cf4bbbfcfc3262bfb52e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5996686fa28cf4bbbfcfc3262bfb52e2">&#9670;&nbsp;</a></span>get_User_by_Username()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> dict mysite.Database.Database_handler.Database_handler.get_User_by_Username </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_a5996686fa28cf4bbbfcfc3262bfb52e2_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_a5996686fa28cf4bbbfcfc3262bfb52e2_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a4b5e8681d05f4a086996d00f56091574" name="a4b5e8681d05f4a086996d00f56091574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5e8681d05f4a086996d00f56091574">&#9670;&nbsp;</a></span>is_User()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool mysite.Database.Database_handler.Database_handler.is_User </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_a4b5e8681d05f4a086996d00f56091574_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_a4b5e8681d05f4a086996d00f56091574_cgraph" alt=""/></div>
 </div>
 
 </div>
@@ -545,6 +621,11 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmysite_1_1_database_1_1_database__handler_1_1_database__handler_a3d7b775340c226ed1a93eab795d9269c_cgraph.png" border="0" usemap="#aclassmysite_1_1_database_1_1_database__handler_1_1_database__handler_a3d7b775340c226ed1a93eab795d9269c_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>

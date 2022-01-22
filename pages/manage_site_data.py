@@ -10,12 +10,15 @@ def manage_site_data() -> None:
 
     if request.method == "POST":
         if 'toggle_admin_submit' in request.form:
-            print(request.form)
             modify_admin_data = eval(request.form['toggle_admin_submit'])
-            print(type(modify_admin_data))
-            print(modify_admin_data)
 
             database_conn.set_User_admin(modify_admin_data['id'], not modify_admin_data['admin'])
+
+        if 'delete_user_submit' in request.form:
+            print(request.form['delete_user_submit'])
+            user_id = request.form['delete_user_submit']
+            database_conn.delete_User(user_id)
+            
         if 'announcement_submit' in request.form:
 
             event_date = request.form['event_date']

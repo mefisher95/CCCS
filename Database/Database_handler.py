@@ -1,5 +1,6 @@
 
 from re import U
+from sqlalchemy import false
 from sqlalchemy_utils import database_exists, create_database
 from datetime import datetime
 
@@ -167,7 +168,7 @@ class Database_handler():
         #     return False
 
     def set_User_admin(self, id : int, value : bool) -> bool:
-        # try:
+        try:
             self.db.session.query(Users).filter_by(
                 id = id
             ).update(
@@ -178,9 +179,22 @@ class Database_handler():
 
             return False
 
-        # except Exception as error:
-        #     log_error(error)
-        #     return True
+        except Exception as error:
+            log_error(error)
+            return True
+
+    def is_User(self, username : str, password: str) -> bool:
+        try:
+            user = Users.query.filter_by(username=username).first()
+            
+            if user is None: return False
+            else: user = user.as_dict()
+
+            return hashfun(password, user['salt']) == user['hashedpassword']
+
+        except Exception as error:
+            log_error(error)
+            return None
     def delete_User(self, id : int) -> bool:
         try:
             Users.query.filter_by(id=id).delete()
@@ -191,19 +205,33 @@ class Database_handler():
             log_error(error)
             return False
 
-    def get_User(self, id : int) -> dict:
+    def get_User_by_Username(self, username : str) -> dict:
         try:
-            user = self.db.session.query(
-                Users.id,
-                Users.given_name,
-                Users.family_name,
-                Users.email,
-                Users.username,
-                Users.admin
-            )
+            user = Users.query.filter_by(username = username).first()
+            
+            if user is None: return False
+            user = user.as_dict()
 
-            return [x._asdict() for x in user][0]
+            user.pop('salt')
+            user.pop('hashedpassword')
 
+            return user
+        except Exception as error:
+            log_error(error)
+            return {}
+
+
+    def get_User_by_ID(self, id : int) -> dict:
+        try:
+            user = Users.query.filter_by(id=id).first()
+            
+            if user is None: return False
+            user = user.as_dict()
+
+            user.pop('salt')
+            user.pop('hashedpassword')
+
+            return user
         except Exception as error:
             log_error(error)
             return {}

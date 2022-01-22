@@ -33,12 +33,6 @@ def registration():
         email = request.form['email']
         password = request.form['password']
 
-        print(given_name)
-        print(family_name)
-        print(username)
-        print(email)
-        print(password)
-
         code = randstring()
 
         database_conn.add_registration(

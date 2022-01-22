@@ -7,4 +7,6 @@ digraph "security_utils.hashfun"
   Node1 [label="security_utils.hashfun",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="mysite.Database.Database\l_handler.Database_handler.add\l_registration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#ad16678b500f1ffab47892823a2efb20e",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mysite.Database.Database\l_handler.Database_handler.is_User",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a4b5e8681d05f4a086996d00f56091574",tooltip=" "];
 }

@@ -1,3 +1,7 @@
+
+
+
+
 <form action = "{{ url_for('manage_site_data')}}" method="post">
     <div class="card" >
         <div class = "card-header">
@@ -25,7 +29,10 @@
                             <td> {{ user['email'] }} </td>
                             
                             <td>
-                                <button type ="submit" class="btn btn-primary CCCS-button-inverse" name="toggle_admin_submit" value="{{ {'id' :user['id'], 'admin' : user['admin'] } }}">{{ user['admin'] }}</button>
+                                <button type ="submit" class="btn btn-primary CCCS-button" name="toggle_admin_submit" value="{{ {'id' :user['id'], 'admin' : user['admin'] } }}">{{ user['admin'] }}</button>
+                            </td>
+                            <td>
+                                <button type ="submit" class="btn btn-primary CCCS-button" name="delete_user_submit" value="{{ user['id'] }}">Delete User</button>
                             </td>
                         </tr>
                     {% endfor %}
@@ -33,7 +40,13 @@
                     {% else %}
                         <tr>
                             <td>
-                                
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
                             </td>
                             <td>
                                 None

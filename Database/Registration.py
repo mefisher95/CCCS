@@ -19,6 +19,9 @@ class Registrations(db.Model):
     code = db.Column(db.String(app.config['RANDOM_LENGTH']), nullable=False)
     expiration = db.Column(db.DateTime, nullable=False)
 
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
     def __repr__(self):
         return '<Registration %s %s %s %s %s %s %s %s %s>' % \
             (self.id, self.given_name, self.family_name, self.username, self.email, self.hashedpassword,

@@ -36,13 +36,55 @@
             </button>
 
             <!-- Create menu links. collapses down on small screen view -->
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                {% for item in menu_data %}
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <ul class="navbar-nav mr-auto">
+                    {% for item in menu_data %}
                     <a class="nav-item nav-link" href= "{{item.link}}"> {{ item.name }}</a>
-                {% endfor %}
+                    {% endfor %}
 
-              </div>
+                </ul>
+                <ul class="navbar-nav">
+                    {% if session['username'] %}
+                        <li class="nav-item">
+                            <a class="nav-link dropdown" href="#"></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                              </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Welcome, {{ session['given_name'] }}
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              
+                              <a class="dropdown-item" href="{{ url_for('logout') }}">Logout</a>
+                              {% if session['admin'] %}
+
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item" href="{{ url_for('manage_site_data') }}">Manage site</a>
+                              <a class="dropdown-item" href="{{ url_for('documentation') }}">Documentation</a>
+                        {% endif %}
+
+                            </div>
+                          </li>
+
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('registration') }}">Register</a>
+                    </li>
+
+                    {% endif %}
+
+                </ul>
             </div>
         </nav>
 

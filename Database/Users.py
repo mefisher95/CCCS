@@ -15,3 +15,6 @@ class Users(db.Model):
     hashedpassword = db.Column(db.String(app.config['HASHED_PASSWORD_LENGTH']), nullable=False)
     salt = db.Column(db.String(app.config['SALT_LENGTH']), nullable=False)
     admin = db.Column(db.Boolean, default=False)
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}

@@ -20,5 +20,11 @@ digraph "error_logger.log_error"
   Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 [label="mysite.Database.Database\l_handler.Database_handler.get\l_all_Users",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a09dd6ca6d7c291eb05bd1411c228e21a",tooltip=" "];
   Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="mysite.Database.Database\l_handler.Database_handler.get_User",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#af447ef58f1d765ca2fa14d38ab685ae5",tooltip=" "];
+  Node9 [label="mysite.Database.Database\l_handler.Database_handler.get\l_User_by_ID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a6179d9e7fb3d40f44ea34993d25e7b6f",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mysite.Database.Database\l_handler.Database_handler.get\l_User_by_Username",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a5996686fa28cf4bbbfcfc3262bfb52e2",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="mysite.Database.Database\l_handler.Database_handler.is_User",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a4b5e8681d05f4a086996d00f56091574",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mysite.Database.Database\l_handler.Database_handler.set\l_User_admin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a3d7b775340c226ed1a93eab795d9269c",tooltip=" "];
 }

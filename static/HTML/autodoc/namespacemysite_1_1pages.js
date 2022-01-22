@@ -6,6 +6,12 @@ var namespacemysite_1_1pages =
     [ "index", "namespacemysite_1_1pages_1_1index.html", [
       [ "index", "namespacemysite_1_1pages_1_1index.html#a119d842a22c1452670d783ef484a83aa", null ]
     ] ],
+    [ "login", "namespacemysite_1_1pages_1_1login.html", [
+      [ "login", "namespacemysite_1_1pages_1_1login.html#a435ca57f4b9c52542fdc21ef8ff6b41f", null ]
+    ] ],
+    [ "logout", "namespacemysite_1_1pages_1_1logout.html", [
+      [ "logout", "namespacemysite_1_1pages_1_1logout.html#a8923d26c3fb98223b50781af31fa1a30", null ]
+    ] ],
     [ "manage_site_data", "namespacemysite_1_1pages_1_1manage__site__data.html", [
       [ "manage_site_data", "namespacemysite_1_1pages_1_1manage__site__data.html#aa67be7b10c177db89decbdf724496af8", null ]
     ] ],

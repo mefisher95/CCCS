@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['new_5fstudent_5finfo_2epy_0',['new_student_info.py',['../new__student__info_8py.html',1,'']]]
+  ['manage_5fsite_5fdata_2epy_0',['manage_site_data.py',['../manage__site__data_8py.html',1,'']]]
 ];
