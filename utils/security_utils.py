@@ -1,5 +1,6 @@
 import hashlib, string, random
 from mysite import app
+from flask import session
 
 random.seed()
 
@@ -14,3 +15,9 @@ def hashfun(password, salt):
         h += salt + str(i * i)
         h = hashlib.sha256(h.encode('utf-8')).hexdigest()
     return h
+
+def is_admin() -> bool:
+
+    if 'admin' not in session: return False
+    if not session['admin']: return False
+    return True

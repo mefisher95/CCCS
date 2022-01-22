@@ -8,7 +8,5 @@ var searchData=
   ['registrations_5',['Registrations',['../classmysite_1_1_database_1_1_registration_1_1_registrations.html',1,'mysite::Database::Registration']]],
   ['render_5femail_6',['render_email',['../namespacemysite_1_1pages_1_1register.html#a997c73c2baa2f9b8eaa100915f465d1b',1,'mysite::pages::register']]],
   ['route_7',['Route',['../classmysite_1_1pages_1_1site__info_1_1_route.html',1,'mysite::pages::site_info']]],
-  ['routes_8',['ROUTES',['../namespacemysite_1_1pages_1_1site__info.html#ae8d643e860103852165939fa0439011c',1,'mysite::pages::site_info']]],
-  ['run_9',['run',['../namespacerun.html',1,'']]],
-  ['run_2epy_10',['run.py',['../run_8py.html',1,'']]]
+  ['routes_8',['ROUTES',['../namespacemysite_1_1pages_1_1site__info.html#ae8d643e860103852165939fa0439011c',1,'mysite::pages::site_info']]]
 ];

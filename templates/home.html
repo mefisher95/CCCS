@@ -51,41 +51,43 @@
                 <h1>Announcements</h1>
             </div>
             <div class="card-body">
-                <table class = "table">
-                    <thead>
-                        <tr>
-                            <th scope = "col">Event Date</th>
-                            <th scope = "col">Announcement</th>
-                        </tr>
-    
-                    </thead>
-                    <tbody>
-                        {% if all_announcements | length > 0 %}
-    
-                        {% for announcement in all_announcements %}
-                        <tr>
-                            <td> 
-                                {% if announcement['event_time'] %}
-                                {{ announcement['event_time'].strftime("%B %d, %Y") }} 
-                                {% endif %}
-                            </td>
-                            <td> {{ announcement['message'] }} </td>
-                        </tr>
-                        {% endfor %}
-    
-                        {% else %}
-                        <tr>
-                            <td>
-                                None
-                            </td>
-                            <td>
-                                None
-                            </td>
-                        </tr>
+                <div class="table-responsive">
+                    <table class = "table">
+                        <thead>
+                            <tr>
+                                <th scope = "col">Event Date</th>
+                                <th scope = "col">Announcement</th>
+                            </tr>
+        
+                        </thead>
+                        <tbody>
+                            {% if all_announcements | length > 0 %}
+        
+                            {% for announcement in all_announcements %}
+                            <tr>
+                                <td> 
+                                    {% if announcement['event_time'] %}
+                                    {{ announcement['event_time'].strftime("%B %d, %Y") }} 
+                                    {% endif %}
+                                </td>
+                                <td> {{ announcement['message'] }} </td>
+                            </tr>
+                            {% endfor %}
+        
+                            {% else %}
+                            <tr>
+                                <td>
+                                    None
+                                </td>
+                                <td>
+                                    None
+                                </td>
+                            </tr>
 
-                        {% endif %}
-                    </tbody>
-                </table>
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
 

@@ -1,11 +1,14 @@
-from flask import render_template, request
+from flask import redirect, render_template, request, url_for
 from mysite import app, database_conn
 import datetime
 # from mysite.config import *
 from mysite.config.config_all import *
+from mysite.utils.security_utils import is_admin
 
 @app.route(ROUTES['manage_site_data'].link, methods = ['GET', 'POST'])
 def manage_site_data() -> None:
+
+    if not is_admin(): return redirect(url_for('home'))
 
 
     if request.method == "POST":
@@ -18,7 +21,7 @@ def manage_site_data() -> None:
             print(request.form['delete_user_submit'])
             user_id = request.form['delete_user_submit']
             database_conn.delete_User(user_id)
-            
+
         if 'announcement_submit' in request.form:
 
             event_date = request.form['event_date']

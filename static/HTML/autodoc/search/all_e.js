@@ -2,8 +2,8 @@ var searchData=
 [
   ['salt_0',['salt',['../classmysite_1_1_database_1_1_registration_1_1_registrations.html#a308496a196e6f843ff740c0f3ad9c821',1,'mysite.Database.Registration.Registrations.salt()'],['../classmysite_1_1_database_1_1_users_1_1_users.html#a6c710f581c68314888d2a110781e8e65',1,'mysite.Database.Users.Users.salt()']]],
   ['salt_5flength_1',['SALT_LENGTH',['../namespacemysite_1_1config_1_1database__config.html#aff933341ad34e585e8ca63039a8d0d79',1,'mysite::config::database_config']]],
-  ['secret_5fkey_2',['secret_key',['../namespacemysite.html#aa555220dad0503b8b2bc347c33b5c8b1',1,'mysite']]],
-  ['secret_5fkey_3',['SECRET_KEY',['../namespacemysite_1_1config_1_1flask__config.html#a31ccda83b4ce5577376ed7e26966d23d',1,'mysite::config::flask_config']]],
+  ['secret_5fkey_2',['SECRET_KEY',['../namespacemysite_1_1config_1_1flask__config.html#a31ccda83b4ce5577376ed7e26966d23d',1,'mysite::config::flask_config']]],
+  ['secret_5fkey_3',['secret_key',['../namespacemysite.html#aa555220dad0503b8b2bc347c33b5c8b1',1,'mysite']]],
   ['security_5futils_4',['security_utils',['../namespacesecurity__utils.html',1,'']]],
   ['security_5futils_2epy_5',['security_utils.py',['../security__utils_8py.html',1,'']]],
   ['send_5femail_6',['send_email',['../namespace_s_m_t_p___email__access.html#a79887d024a6dc15b421b69f25605b56a',1,'SMTP_Email_access']]],

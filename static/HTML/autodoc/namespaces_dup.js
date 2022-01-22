@@ -8,11 +8,9 @@ var namespaces_dup =
       [ "deploy", "namespacepymake.html#a18312db296b135444fd61b5a9f5ab305", null ],
       [ "ship", "namespacepymake.html#a0ff1796ca10a612147b497ed5b8d0ba3", null ]
     ] ],
-    [ "run", "namespacerun.html", [
-      [ "debug", "namespacerun.html#a24785e11198aac41f0051e51857331aa", null ]
-    ] ],
     [ "security_utils", "namespacesecurity__utils.html", [
       [ "hashfun", "namespacesecurity__utils.html#af213aa99fdea93a4f37691a5052f1b9c", null ],
+      [ "is_admin", "namespacesecurity__utils.html#a7dcb3e56759968f39834757ab59f9d9a", null ],
       [ "randstring", "namespacesecurity__utils.html#a4aed6d19dc06e65482b982cab641edad", null ]
     ] ],
     [ "SMTP_Email_access", "namespace_s_m_t_p___email__access.html", "namespace_s_m_t_p___email__access" ]
