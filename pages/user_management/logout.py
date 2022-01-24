@@ -12,9 +12,8 @@ from mysite.utils.SMTP_Email_access import send_email
 @app.route(ROUTES['logout'].link, methods=['GET', 'POST'])
 def logout():
 
-
     session.clear()
-
+    session.modified = True
 
     return redirect(url_for('home'))
 

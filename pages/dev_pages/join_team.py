@@ -23,6 +23,16 @@ def join_team():
             email=email
             )
 
+        for user in database_conn.get_all_admins():
+            send_email(
+                user['email'], 
+                "Join Team Request", 
+                "{0} {1} would like to join the team. Contact them at: {2}".format(
+                    given_name, 
+                    family_name,
+                    email
+                ))
+
         return render_template(
             'dev_pages/successful_join_team.html',
             menu_data = MENU_LINKS,

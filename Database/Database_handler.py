@@ -54,21 +54,23 @@ class Database_handler():
     ###########################################################################
     # Bug Report Methods
     ###########################################################################
-    def add_bug_report(self, message : str) -> bool:
+    def add_bug_report(self, message : str) -> int:
         try:
-            self.db.session.add(
-                Bug_Report(
-                    create_time = datetime.now(),
-                    message=message
-                )
+            new_bug_report = Bug_Report(
+                create_time = datetime.now(),
+                message=message
             )
-
+            self.db.session.add(
+                new_bug_report
+            )
             self.db.session.commit()
-            return True
+            print(new_bug_report.as_dict())
+
+            return new_bug_report.as_dict()['id']
 
         except Exception as error:
             log_error(error)
-            return False
+            return -1
 
     def delete_bug_report(self, id : int) -> bool:
         try:
@@ -93,6 +95,19 @@ class Database_handler():
             log_error(error)
             return []
 
+    def get_most_recent_bug_report(self) -> dict:
+        try:
+            bug_report = self.db.session.query(
+                Bug_Report
+            )
+
+            return bug_report.as_dict()
+
+
+        except Exception as error:
+            log_error(error)
+            return []
+            
     ###########################################################################
     # Join Team Requests Methods
     ###########################################################################
@@ -391,3 +406,20 @@ class Database_handler():
         except Exception as error:
             log_error(error)
             return []
+
+    def get_all_admins(self) -> list:
+        try:
+            users = self.db.session.query(
+                Users.id,
+                Users.given_name,
+                Users.family_name,
+                Users.email,
+                Users.username,
+                Users.admin
+            ).filter_by(admin = True)
+            return sorted([x._asdict() for x in users], key=lambda d: (d['family_name'] is not None, d['family_name']))
+
+        except Exception as error:
+            log_error(error)
+            return []
+

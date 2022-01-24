@@ -21,6 +21,7 @@ def login():
             session['username'] = user['username']
             session['given_name'] = user['given_name']
             session['admin'] = user['admin']
+            session.modified = True
 
             return redirect(url_for('home'))
 

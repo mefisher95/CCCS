@@ -1,4 +1,5 @@
-from mysite import db, app
+from mysite import db
+from mysite.utils.SMTP_Email_access import send_email
 
 class Bug_Report(db.Model):
     """
@@ -12,7 +13,7 @@ class Bug_Report(db.Model):
     create_time = db.Column(db.DateTime, nullable = False)
     message = db.Column(db.Text, nullable = False)
 
-
+    
 
     def as_dict(self) -> dict:
         """

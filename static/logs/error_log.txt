@@ -385,3 +385,12 @@ TIMESTAMP >>> 2022-01-24 03:45:38.816205
 TIMESTAMP >>> 2022-01-24 03:46:43.984227
 'message' is an invalid keyword argument for Join_team_Request
 
+TIMESTAMP >>> 2022-01-24 17:31:49.330372
+'Bug_Report' object is not iterable
+
+TIMESTAMP >>> 2022-01-24 17:42:06.063727
+'BaseQuery' object has no attribute 'as_dict'
+
+TIMESTAMP >>> 2022-01-24 17:43:22.239348
+'BaseQuery' object has no attribute 'as_dict'
+

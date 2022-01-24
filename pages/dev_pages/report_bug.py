@@ -15,13 +15,13 @@ def report_bug():
     if request.method == 'POST':
         bug_desc = request.form['bug_desc']
 
-        database_conn.add_bug_report(bug_desc)
+        report_id = database_conn.add_bug_report(bug_desc)
 
-        # database_conn.add_join_team_request(
-        #     given_name=given_name,
-        #     family_name=family_name,
-        #     email=email
-        #     )
+        for user in database_conn.get_all_admins():
+            send_email(
+                user['email'], 
+                "Bug Report #{0}:".format(report_id), 
+                "Bug Reoprt Generated:\n\n" + bug_desc)
 
         return render_template(
             'dev_pages/successful_report_bug.html',
