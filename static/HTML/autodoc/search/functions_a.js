@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['new_5fstudent_5finfo_0',['new_student_info',['../namespacenew__student__info.html#aa8324a116a9dcce520ab1f8e7257b8b5',1,'new_student_info']]]
+  ['manage_5fsite_5fdata_0',['manage_site_data',['../namespacemanage__site__data.html#af713f09171d84039f9eab756d81c4a45',1,'manage_site_data']]]
 ];

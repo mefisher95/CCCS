@@ -52,5 +52,8 @@ var namespaces_dup =
     [ "SMTP_Email_access", "namespace_s_m_t_p___email__access.html", "namespace_s_m_t_p___email__access" ],
     [ "student_resources", "namespacestudent__resources.html", [
       [ "student_resources", "namespacestudent__resources.html#a080a5785172ae8256ea1599905909617", null ]
+    ] ],
+    [ "test", "namespacetest.html", [
+      [ "ciss240", "namespacetest.html#ad027bb34a566eee2157c5971dbfeb857", null ]
     ] ]
 ];

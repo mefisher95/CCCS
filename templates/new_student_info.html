@@ -72,7 +72,7 @@
                             </ul>
                         </div>
         
-                        <div class ="embed-responsive embed-responsive-16by9 text-center">
+                        <div class ="embed-responsive embed-responsive-16by9 text-center rounded">
                             <iframe src="https://www.youtube.com/embed/Q3O7Xc3gVHU" allowfullscreen> </iframe>
                         </div>
                     </div>
@@ -182,7 +182,7 @@
                                                         <h4>
                                                             How to Apply as an International Student
                                                         </h4>
-                                                        <div class ="embed-responsive embed-responsive-16by9 text-center">
+                                                        <div class ="embed-responsive embed-responsive-16by9 text-center rounded">
                                                             <iframe width="560" height="315" src="https://www.youtube.com/embed/xYLloV1jPQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                         </div>
                                                     </p>
@@ -499,7 +499,7 @@
                     </div>
                     <div class = "card-body">
                         <div style="text-align: center;">
-                            <img class="img-fluid" alt="Responsive image"  src="{{ url_for('static', filename = 'images/logos/PiCS_logo.png') }}">
+                            <img class="img-fluid rounded" alt="Responsive image"  src="{{ url_for('static', filename = 'images/logos/PiCS_logo.png') }}">
                         </div>
                         <div>
                             <p>
@@ -536,12 +536,12 @@
 
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100 img-fluid" src="{{ url_for('static', filename = 'images/PiCS_gallery/' + pictures_urls[0] ) }} "></li>
+                                    <img class="d-block w-100 img-fluid rounded" src="{{ url_for('static', filename = 'images/PiCS_gallery/' + pictures_urls[0] ) }} "></li>
                                 </div>
 
                                 {% for index in range((pictures_urls | length) - 1) %}
                                 <div class="carousel-item">
-                                    <img class="d-block w-100 img-fluid" src="{{ url_for('static', filename = 'images/PiCS_gallery/' + pictures_urls[index + 1] ) }}"></li>
+                                    <img class="d-block w-100 img-fluid rounded" src="{{ url_for('static', filename = 'images/PiCS_gallery/' + pictures_urls[index + 1] ) }}"></li>
                                 </div>
                                 {% endfor %}
 
