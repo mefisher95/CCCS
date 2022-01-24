@@ -7,8 +7,8 @@ class Announcements(db.Model):
     """
 
     __tablename__ = 'Announcements'
-    """index id for record in table"""
     id = db.Column(db.Integer, primary_key = True) 
+    """index id for record in table"""
 
     message = db.Column(db.Text, nullable = False) #announcement message to be displayed 
     event_time = db.Column(db.DateTime) # the date of the event that the announcement takes place
