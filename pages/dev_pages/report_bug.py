@@ -21,7 +21,7 @@ def report_bug():
             send_email(
                 user['email'], 
                 "Bug Report #{0}:".format(report_id), 
-                "Bug Reoprt Generated:\n\n" + bug_desc)
+                "Bug Report Generated:\n\n" + bug_desc)
 
         return render_template(
             'dev_pages/successful_report_bug.html',
