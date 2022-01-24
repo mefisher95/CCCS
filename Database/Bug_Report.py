@@ -2,8 +2,8 @@ from mysite import db, app
 
 class Bug_Report(db.Model):
     """
-    creates announcements for display on the home page. 
-    interface model for connecting to MySQL table 
+    MySql table for Bug Reports that are submitted by users and managed on
+    the site management page
     """
 
     __tablename__ = 'Bug_Report'
@@ -14,5 +14,9 @@ class Bug_Report(db.Model):
 
 
 
-    def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+    def as_dict(self) -> dict:
+        """
+        generates a dicitionary for a record by assigning the key:values based on the 
+        table column names and corresponding records
+        """
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

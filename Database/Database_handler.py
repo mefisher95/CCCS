@@ -26,7 +26,18 @@ from mysite.Database.Bug_Report import Bug_Report
 
 
 class Database_handler():
+    """
+    Interface with connecting with the mysql server for the site. All interactions 
+    with the database should be handled through method calls and Extensions on the 
+    SQLAlchemy model objects. 
+    """
     def __init__(self) -> None:
+        """
+        Initializes database\n
+        If the database does not exist, it will be geneated for you\n
+        It will generate/update all table models that are not implemented
+        at start
+        """
 
         self.db = db
 
@@ -39,16 +50,10 @@ class Database_handler():
 
         self.db.create_all()
 
-    def delete_bug_report(self, id : int) -> bool:
-        try:
-            Bug_Report.query.filter_by(id = str(id)).delete()
-            self.db.session.commit()
-            return True
 
-        except Exception as error:
-            log_error(error)
-            return False
-
+    ###########################################################################
+    # Bug Report Methods
+    ###########################################################################
     def add_bug_report(self, message : str) -> bool:
         try:
             self.db.session.add(
@@ -58,6 +63,16 @@ class Database_handler():
                 )
             )
 
+            self.db.session.commit()
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+
+    def delete_bug_report(self, id : int) -> bool:
+        try:
+            Bug_Report.query.filter_by(id = str(id)).delete()
             self.db.session.commit()
             return True
 
@@ -78,17 +93,9 @@ class Database_handler():
             log_error(error)
             return []
 
-
-    def delete_join_team_request(self, id : int) -> bool:
-        try:
-            Join_team_Request.query.filter_by(id = str(id)).delete()
-            self.db.session.commit()
-            return True
-
-        except Exception as error:
-            log_error(error)
-            return False
-
+    ###########################################################################
+    # Join Team Requests Methods
+    ###########################################################################
     def add_join_team_request(self, given_name : str, family_name : str, email : str) -> bool:
         try:
             self.db.session.add(
@@ -100,6 +107,16 @@ class Database_handler():
                 )
             )
 
+            self.db.session.commit()
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+
+    def delete_join_team_request(self, id : int) -> bool:
+        try:
+            Join_team_Request.query.filter_by(id = str(id)).delete()
             self.db.session.commit()
             return True
 
@@ -120,18 +137,10 @@ class Database_handler():
             log_error(error)
             return []
 
-    def is_registration(self, email : str) -> bool:
-        try:
-            print(email)
-            registration = Registrations.query.filter_by(email = email).first()
-            print(registration)
-            
-            if registration is None: return False
-            else: return True
+    ###########################################################################
+    # Registration Methods
+    ###########################################################################
 
-        except Exception as error:
-            log_error(error)
-            return None
 
     def add_registration(self, given_name: str, family_name : str, email : str, 
                          username : str, password : str, code : str ) -> bool:
@@ -159,6 +168,31 @@ class Database_handler():
         except Exception as error:
             log_error(error)
             return False
+
+    def delete_registration(self, id : int) -> bool:
+        try:
+            print('id:', id, type(id))
+            Registrations.query.filter_by(id = str(id)).delete()
+            print('are we here')
+            self.db.session.commit()
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+
+    def is_registration(self, email : str) -> bool:
+        try:
+            print(email)
+            registration = Registrations.query.filter_by(email = email).first()
+            print(registration)
+            
+            if registration is None: return False
+            else: return True
+
+        except Exception as error:
+            log_error(error)
+            return None
 
     def get_registrations(self, username : str, code : str) -> dict:
         try:
@@ -198,17 +232,10 @@ class Database_handler():
             return ""
 
 
-    def delete_registration(self, id : int) -> bool:
-        try:
-            print('id:', id, type(id))
-            Registrations.query.filter_by(id = str(id)).delete()
-            print('are we here')
-            self.db.session.commit()
-            return True
 
-        except Exception as error:
-            log_error(error)
-            return False
+    ###########################################################################
+    # Announcement Methods
+    ###########################################################################
 
     def add_Announcement(self, message : str, event_time : datetime = None) -> bool:
         try:
@@ -223,6 +250,17 @@ class Database_handler():
 
             return True
 
+        except Exception as error:
+            log_error(error)
+            return False
+
+    def delete_Announcement_list(self, announcement_list : list) -> bool:
+        try:
+            for id in announcement_list:
+                Announcements.query.filter_by(id = id).delete()
+
+            self.db.session.commit()
+            return True
         except Exception as error:
             log_error(error)
             return False
@@ -242,16 +280,11 @@ class Database_handler():
             log_error(error)
             return []
 
-    def delete_Announcement_list(self, announcement_list : list) -> bool:
-        try:
-            for id in announcement_list:
-                Announcements.query.filter_by(id = id).delete()
 
-            self.db.session.commit()
-            return True
-        except Exception as error:
-            log_error(error)
-            return False
+
+    ###########################################################################
+    # Users Methods
+    ###########################################################################
 
 
     def add_User(self, given_name : str, family_name: str, email:str, username : str,  hashed_password : str, salt : str) -> bool:
@@ -273,6 +306,16 @@ class Database_handler():
             log_error(error)
             return False
 
+    def delete_User(self, id : int) -> bool:
+        try:
+            Users.query.filter_by(id=id).delete()
+            self.db.session.commit()
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+    
     def set_User_admin(self, id : int, value : bool) -> bool:
         try:
             self.db.session.query(Users).filter_by(
@@ -301,15 +344,6 @@ class Database_handler():
         except Exception as error:
             log_error(error)
             return None
-    def delete_User(self, id : int) -> bool:
-        try:
-            Users.query.filter_by(id=id).delete()
-            self.db.session.commit()
-            return True
-
-        except Exception as error:
-            log_error(error)
-            return False
 
     def get_User_by_Username(self, username : str) -> dict:
         try:
@@ -325,7 +359,6 @@ class Database_handler():
         except Exception as error:
             log_error(error)
             return {}
-
 
     def get_User_by_ID(self, id : int) -> dict:
         try:

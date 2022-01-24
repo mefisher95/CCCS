@@ -8,11 +8,13 @@ class Announcements(db.Model):
 
     __tablename__ = 'Announcements'
     id = db.Column(db.Integer, primary_key = True) 
-    """index id for record in table"""
+    message = db.Column(db.Text, nullable = False)
+    event_time = db.Column(db.DateTime)
+    create_time = db.Column(db.DateTime, nullable = False)
 
-    message = db.Column(db.Text, nullable = False) #announcement message to be displayed 
-    event_time = db.Column(db.DateTime) # the date of the event that the announcement takes place
-    create_time = db.Column(db.DateTime, nullable = False) # timestamp for the creation of the announcement 
-
-    def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+    def as_dict(self) -> dict:
+        """
+        generates a dicitionary for a record by assigning the key:values based on the 
+        table column names and corresponding records
+        """
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

@@ -2,8 +2,8 @@ from mysite import db, app
 
 class Users(db.Model):
     """
-    creates Users for display on the home page. 
-    interface model for connecting to MySQL table 
+    MySql table for Usesrs that represents all user management on the site. 
+    Can be managed through the site management page
     """
     __tablename__ = 'Users'
     id = db.Column(db.Integer, primary_key = True)
@@ -15,5 +15,9 @@ class Users(db.Model):
     salt = db.Column(db.String(app.config['SALT_LENGTH']), nullable=False)
     admin = db.Column(db.Boolean, default=False)
 
-    def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+    def as_dict(self) -> dict:
+        """
+        generates a dicitionary for a record by assigning the key:values based on the 
+        table column names and corresponding records
+        """
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

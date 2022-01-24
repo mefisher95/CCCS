@@ -103,8 +103,8 @@ Collaboration diagram for mysite.Database.Users.Users:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3859676a6d471b124920bbe7d2988e1b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_users_1_1_users.html#a3859676a6d471b124920bbe7d2988e1b">as_dict</a> (self)</td></tr>
-<tr class="separator:a3859676a6d471b124920bbe7d2988e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee0c767d489b00f89de3d63244252dd8"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmysite_1_1_database_1_1_users_1_1_users.html#aee0c767d489b00f89de3d63244252dd8">as_dict</a> (self)</td></tr>
+<tr class="separator:aee0c767d489b00f89de3d63244252dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -131,17 +131,17 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a95b46c45abdb14275727b35811348b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">creates Users for display on the home page. 
-interface model for connecting to MySQL table 
+<div class="textblock"><pre class="fragment">MySql table for Usesrs that represents all user management on the site. 
+Can be managed through the site management page
 </pre> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3859676a6d471b124920bbe7d2988e1b" name="a3859676a6d471b124920bbe7d2988e1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3859676a6d471b124920bbe7d2988e1b">&#9670;&nbsp;</a></span>as_dict()</h2>
+<a id="aee0c767d489b00f89de3d63244252dd8" name="aee0c767d489b00f89de3d63244252dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee0c767d489b00f89de3d63244252dd8">&#9670;&nbsp;</a></span>as_dict()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def mysite.Database.Users.Users.as_dict </td>
+          <td class="memname"> dict mysite.Database.Users.Users.as_dict </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em></td><td>)</td>
@@ -149,7 +149,9 @@ interface model for connecting to MySQL table
         </tr>
       </table>
 </div><div class="memdoc">
-
+<pre class="fragment">generates a dicitionary for a record by assigning the key:values based on the 
+table column names and corresponding records
+</pre> 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
