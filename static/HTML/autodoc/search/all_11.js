@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['why_5fcs_0',['why_cs',['../namespacemysite_1_1pages_1_1new__student__info.html#ae48418a3280766b8b604174f33518190',1,'mysite::pages::new_student_info']]]
+  ['table_5fargs_0',['TABLE_ARGS',['../namespacemysite_1_1_database_1_1_registration.html#ac458129c1c2affa3d5a1dbe4e2a8ce9b',1,'mysite::Database::Registration']]]
 ];

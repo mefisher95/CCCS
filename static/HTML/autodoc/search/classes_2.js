@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['registrations_0',['Registrations',['../classmysite_1_1_database_1_1_registration_1_1_registrations.html',1,'mysite::Database::Registration']]],
-  ['route_1',['Route',['../classmysite_1_1pages_1_1site__info_1_1_route.html',1,'mysite::pages::site_info']]]
+  ['database_5fhandler_0',['Database_handler',['../classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html',1,'mysite::Database::Database_handler']]]
 ];

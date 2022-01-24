@@ -5,8 +5,14 @@ var annotated_dup =
         [ "Announcements", "namespacemysite_1_1_database_1_1_announcements.html", [
           [ "Announcements", "classmysite_1_1_database_1_1_announcements_1_1_announcements.html", "classmysite_1_1_database_1_1_announcements_1_1_announcements" ]
         ] ],
+        [ "Bug_Report", "namespacemysite_1_1_database_1_1_bug___report.html", [
+          [ "Bug_Report", "classmysite_1_1_database_1_1_bug___report_1_1_bug___report.html", "classmysite_1_1_database_1_1_bug___report_1_1_bug___report" ]
+        ] ],
         [ "Database_handler", "namespacemysite_1_1_database_1_1_database__handler.html", [
           [ "Database_handler", "classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html", "classmysite_1_1_database_1_1_database__handler_1_1_database__handler" ]
+        ] ],
+        [ "Join_team_Request", "namespacemysite_1_1_database_1_1_join__team___request.html", [
+          [ "Join_team_Request", "classmysite_1_1_database_1_1_join__team___request_1_1_join__team___request.html", "classmysite_1_1_database_1_1_join__team___request_1_1_join__team___request" ]
         ] ],
         [ "Registration", "namespacemysite_1_1_database_1_1_registration.html", [
           [ "Registrations", "classmysite_1_1_database_1_1_registration_1_1_registrations.html", "classmysite_1_1_database_1_1_registration_1_1_registrations" ]

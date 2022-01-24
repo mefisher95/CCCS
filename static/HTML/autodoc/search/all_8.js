@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['id_0',['id',['../classmysite_1_1_database_1_1_announcements_1_1_announcements.html#aa65652f0416917e6844eceebf395f0ed',1,'mysite.Database.Announcements.Announcements.id()'],['../classmysite_1_1_database_1_1_registration_1_1_registrations.html#ad097405d0f6c5ee302461d885c3695a4',1,'mysite.Database.Registration.Registrations.id()'],['../classmysite_1_1_database_1_1_users_1_1_users.html#abd2e97055a0357ce8f86d3d1f4fc73a5',1,'mysite.Database.Users.Users.id()']]],
-  ['index_1',['index',['../namespacemysite_1_1pages_1_1index.html#a119d842a22c1452670d783ef484a83aa',1,'mysite::pages::index']]],
-  ['index_2epy_2',['index.py',['../index_8py.html',1,'']]],
-  ['is_5fadmin_3',['is_admin',['../namespacesecurity__utils.html#a7dcb3e56759968f39834757ab59f9d9a',1,'security_utils']]],
-  ['is_5fuser_4',['is_User',['../classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a4b5e8681d05f4a086996d00f56091574',1,'mysite::Database::Database_handler::Database_handler']]]
+  ['hash_5frounds_0',['HASH_ROUNDS',['../namespacemysite_1_1config_1_1database__config.html#a03642b9bf5179a63497f2de39c95b83c',1,'mysite::config::database_config']]],
+  ['hashed_5fpassword_5flength_1',['HASHED_PASSWORD_LENGTH',['../namespacemysite_1_1config_1_1database__config.html#a77c777c19c0bd47f541d8effc4239f3b',1,'mysite::config::database_config']]],
+  ['hashedpassword_2',['hashedpassword',['../classmysite_1_1_database_1_1_registration_1_1_registrations.html#a28c251404e814696cb1c3b184f75be35',1,'mysite.Database.Registration.Registrations.hashedpassword()'],['../classmysite_1_1_database_1_1_users_1_1_users.html#a281ce75fda8c4d2d7b8918d6affdfac6',1,'mysite.Database.Users.Users.hashedpassword()']]],
+  ['hashfun_3',['hashfun',['../namespacesecurity__utils.html#af213aa99fdea93a4f37691a5052f1b9c',1,'security_utils']]],
+  ['home_4',['home',['../namespacehome.html',1,'home'],['../namespacehome.html#a134ae4325ecadc75cd7673669946c40e',1,'home.home()']]],
+  ['home_2epy_5',['home.py',['../home_8py.html',1,'']]]
 ];

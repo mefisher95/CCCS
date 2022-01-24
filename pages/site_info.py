@@ -26,12 +26,14 @@ ROUTES = {
         "logout" : Route("/logout", "Logout"),
         "resend_registration" : Route('/resend_registration', "Resend Registration"),
         "join_team" : Route('/join_team', "Join the Team"),
-        "report_bug" : Route('/report_bug', "Report Bug")
+        "report_bug" : Route('/report_bug', "Report Bug"),
+        "student_resources" : Route('/student_resources', "Student Resources")
     }
 
 MENU_LINKS = [
     ROUTES['home'],
-    ROUTES['new_student_info']
+    ROUTES['new_student_info'],
+    ROUTES['student_resources']
 ]
 
 SITE_TITLE = "CCCS - Development"

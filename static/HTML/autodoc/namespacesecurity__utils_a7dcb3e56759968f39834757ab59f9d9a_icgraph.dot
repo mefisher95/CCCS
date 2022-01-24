@@ -6,7 +6,7 @@ digraph "security_utils.is_admin"
   rankdir="RL";
   Node1 [label="security_utils.is_admin",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="mysite.pages.site_documenation.documentation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemysite_1_1pages_1_1site__documenation.html#a6078eb5c63284eaff8f82b525a4c5ec5",tooltip=" "];
+  Node2 [label="site_documenation.documentation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacesite__documenation.html#a739cc86a86484aaf2110fbcbe8a87b80",tooltip=" "];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="mysite.pages.manage\l_site_data.manage_site_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemysite_1_1pages_1_1manage__site__data.html#aa67be7b10c177db89decbdf724496af8",tooltip=" "];
+  Node3 [label="manage_site_data.manage\l_site_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacemanage__site__data.html#af713f09171d84039f9eab756d81c4a45",tooltip=" "];
 }

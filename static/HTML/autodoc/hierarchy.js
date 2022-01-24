@@ -3,6 +3,8 @@ var hierarchy =
     [ "mysite.Database.Database_handler.Database_handler", "classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html", null ],
     [ "db.Model", null, [
       [ "mysite.Database.Announcements.Announcements", "classmysite_1_1_database_1_1_announcements_1_1_announcements.html", null ],
+      [ "mysite.Database.Bug_Report.Bug_Report", "classmysite_1_1_database_1_1_bug___report_1_1_bug___report.html", null ],
+      [ "mysite.Database.Join_team_Request.Join_team_Request", "classmysite_1_1_database_1_1_join__team___request_1_1_join__team___request.html", null ],
       [ "mysite.Database.Registration.Registrations", "classmysite_1_1_database_1_1_registration_1_1_registrations.html", null ],
       [ "mysite.Database.Users.Users", "classmysite_1_1_database_1_1_users_1_1_users.html", null ]
     ] ],

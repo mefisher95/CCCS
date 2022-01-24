@@ -1,0 +1,11 @@
+digraph "C:/Users/mfish/Desktop/michael_project/cccs/mysite/pages/admin"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_208d2690607c4e3d3fabfa1d18673d36 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,dashed,", label="pages", fontname="Helvetica", fontsize="10", URL="dir_208d2690607c4e3d3fabfa1d18673d36.html"]
+  dir_4c62f3f53cdb1dff44960314ca764d73 [shape=box, label="admin", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_4c62f3f53cdb1dff44960314ca764d73.html"];
+  }
+}

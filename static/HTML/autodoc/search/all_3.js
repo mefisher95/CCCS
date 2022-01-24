@@ -1,16 +1,6 @@
 var searchData=
 [
-  ['database_5fconfig_2epy_0',['database_config.py',['../database__config_8py.html',1,'']]],
-  ['database_5fconn_1',['database_conn',['../namespacemysite.html#ad35c0d1f1723d9d61e13eecb6d2024d9',1,'mysite']]],
-  ['database_5fhandler_2',['Database_handler',['../classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html',1,'mysite::Database::Database_handler']]],
-  ['database_5fhandler_2epy_3',['Database_handler.py',['../_database__handler_8py.html',1,'']]],
-  ['db_4',['db',['../classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#a72923dfe511b31272a11c4ad19424c0f',1,'mysite.Database.Database_handler.Database_handler.db()'],['../namespacemysite.html#a37bb2919909a77b640e47836800accf3',1,'mysite.db()']]],
-  ['debug_5',['debug',['../namespacerun.html#a24785e11198aac41f0051e51857331aa',1,'run']]],
-  ['delete_5fannouncement_5flist_6',['delete_Announcement_list',['../classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#af0335521966d9179f4c76d8d1c986d08',1,'mysite::Database::Database_handler::Database_handler']]],
-  ['delete_5fregistration_7',['delete_registration',['../classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#aea10c9813c0dd23412231e096b0f887f',1,'mysite::Database::Database_handler::Database_handler']]],
-  ['delete_5fuser_8',['delete_User',['../classmysite_1_1_database_1_1_database__handler_1_1_database__handler.html#adb49f82eb4f71a8444f5cda7ff4667ae',1,'mysite::Database::Database_handler::Database_handler']]],
-  ['deploy_9',['deploy',['../namespacepymake.html#a18312db296b135444fd61b5a9f5ab305',1,'pymake']]],
-  ['dnr_5femail_10',['DNR_EMAIL',['../namespacemysite_1_1config_1_1email__config.html#a12fafc73512800ed9d53cc330ad0e231',1,'mysite::config::email_config']]],
-  ['documentation_11',['documentation',['../namespacemysite_1_1pages_1_1site__documenation.html#a6078eb5c63284eaff8f82b525a4c5ec5',1,'mysite::pages::site_documenation']]],
-  ['dtime_5ffor_5fregistration_12',['DTIME_FOR_REGISTRATION',['../namespacemysite_1_1config_1_1database__config.html#ad6d16b013dd0e50b3d7208225a9ca938',1,'mysite::config::database_config']]]
+  ['code_0',['code',['../classmysite_1_1_database_1_1_registration_1_1_registrations.html#aa487fdb91491817706696ff5da521438',1,'mysite::Database::Registration::Registrations']]],
+  ['config_5fall_2epy_1',['config_all.py',['../config__all_8py.html',1,'']]],
+  ['create_5ftime_2',['create_time',['../classmysite_1_1_database_1_1_announcements_1_1_announcements.html#ac1b8eee049574fe8270b2d92facc9e09',1,'mysite.Database.Announcements.Announcements.create_time()'],['../classmysite_1_1_database_1_1_bug___report_1_1_bug___report.html#a471592eae8c37807caba471318ae4e9b',1,'mysite.Database.Bug_Report.Bug_Report.create_time()'],['../classmysite_1_1_database_1_1_join__team___request_1_1_join__team___request.html#a1ac8f1ffb64e5d3f9052d71ffd2bfed7',1,'mysite.Database.Join_team_Request.Join_team_Request.create_time()']]]
 ];

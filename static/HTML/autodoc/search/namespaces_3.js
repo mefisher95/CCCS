@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['run_0',['run',['../namespacerun.html',1,'']]]
+  ['login_0',['login',['../namespacelogin.html',1,'']]],
+  ['logout_1',['logout',['../namespacelogout.html',1,'']]]
 ];

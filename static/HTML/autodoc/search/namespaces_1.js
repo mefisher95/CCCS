@@ -1,24 +1,4 @@
 var searchData=
 [
-  ['announcements_0',['Announcements',['../namespacemysite_1_1_database_1_1_announcements.html',1,'mysite::Database']]],
-  ['config_1',['config',['../namespacemysite_1_1config.html',1,'mysite']]],
-  ['config_5fall_2',['config_all',['../namespacemysite_1_1config_1_1config__all.html',1,'mysite::config']]],
-  ['database_3',['Database',['../namespacemysite_1_1_database.html',1,'mysite']]],
-  ['database_5fconfig_4',['database_config',['../namespacemysite_1_1config_1_1database__config.html',1,'mysite::config']]],
-  ['database_5fhandler_5',['Database_handler',['../namespacemysite_1_1_database_1_1_database__handler.html',1,'mysite::Database']]],
-  ['email_5fconfig_6',['email_config',['../namespacemysite_1_1config_1_1email__config.html',1,'mysite::config']]],
-  ['flask_5fconfig_7',['flask_config',['../namespacemysite_1_1config_1_1flask__config.html',1,'mysite::config']]],
-  ['home_8',['home',['../namespacemysite_1_1pages_1_1home.html',1,'mysite::pages']]],
-  ['index_9',['index',['../namespacemysite_1_1pages_1_1index.html',1,'mysite::pages']]],
-  ['login_10',['login',['../namespacemysite_1_1pages_1_1login.html',1,'mysite::pages']]],
-  ['logout_11',['logout',['../namespacemysite_1_1pages_1_1logout.html',1,'mysite::pages']]],
-  ['manage_5fsite_5fdata_12',['manage_site_data',['../namespacemysite_1_1pages_1_1manage__site__data.html',1,'mysite::pages']]],
-  ['mysite_13',['mysite',['../namespacemysite.html',1,'']]],
-  ['new_5fstudent_5finfo_14',['new_student_info',['../namespacemysite_1_1pages_1_1new__student__info.html',1,'mysite::pages']]],
-  ['pages_15',['pages',['../namespacemysite_1_1pages.html',1,'mysite']]],
-  ['register_16',['register',['../namespacemysite_1_1pages_1_1register.html',1,'mysite::pages']]],
-  ['registration_17',['Registration',['../namespacemysite_1_1_database_1_1_registration.html',1,'mysite::Database']]],
-  ['site_5fdocumenation_18',['site_documenation',['../namespacemysite_1_1pages_1_1site__documenation.html',1,'mysite::pages']]],
-  ['site_5finfo_19',['site_info',['../namespacemysite_1_1pages_1_1site__info.html',1,'mysite::pages']]],
-  ['users_20',['Users',['../namespacemysite_1_1_database_1_1_users.html',1,'mysite::Database']]]
+  ['home_0',['home',['../namespacehome.html',1,'']]]
 ];

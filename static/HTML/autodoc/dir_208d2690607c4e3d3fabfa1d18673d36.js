@@ -1,13 +1,10 @@
 var dir_208d2690607c4e3d3fabfa1d18673d36 =
 [
+    [ "admin", "dir_4c62f3f53cdb1dff44960314ca764d73.html", "dir_4c62f3f53cdb1dff44960314ca764d73" ],
+    [ "dev_pages", "dir_13b3a50dded13a1a02ad824460e7b991.html", "dir_13b3a50dded13a1a02ad824460e7b991" ],
+    [ "main_pages", "dir_293a23ac997392d42f611fb4e91f8899.html", "dir_293a23ac997392d42f611fb4e91f8899" ],
+    [ "user_management", "dir_83b24bdfeffe42553b782c0c93ca6c2f.html", "dir_83b24bdfeffe42553b782c0c93ca6c2f" ],
     [ "__init__.py", "pages_2____init_____8py.html", null ],
-    [ "home.py", "home_8py.html", "home_8py" ],
     [ "index.py", "index_8py.html", "index_8py" ],
-    [ "login.py", "login_8py.html", "login_8py" ],
-    [ "logout.py", "logout_8py.html", "logout_8py" ],
-    [ "manage_site_data.py", "manage__site__data_8py.html", "manage__site__data_8py" ],
-    [ "new_student_info.py", "new__student__info_8py.html", "new__student__info_8py" ],
-    [ "register.py", "register_8py.html", "register_8py" ],
-    [ "site_documenation.py", "site__documenation_8py.html", "site__documenation_8py" ],
     [ "site_info.py", "site__info_8py.html", "site__info_8py" ]
 ];

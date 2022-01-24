@@ -1,27 +1,7 @@
 var searchData=
 [
-  ['announcements_0',['Announcements',['../namespacemysite_1_1_database_1_1_announcements.html',1,'mysite::Database']]],
-  ['config_1',['config',['../namespacemysite_1_1config.html',1,'mysite']]],
-  ['config_5fall_2',['config_all',['../namespacemysite_1_1config_1_1config__all.html',1,'mysite::config']]],
-  ['database_3',['Database',['../namespacemysite_1_1_database.html',1,'mysite']]],
-  ['database_5fconfig_4',['database_config',['../namespacemysite_1_1config_1_1database__config.html',1,'mysite::config']]],
-  ['database_5fhandler_5',['Database_handler',['../namespacemysite_1_1_database_1_1_database__handler.html',1,'mysite::Database']]],
-  ['email_5fconfig_6',['email_config',['../namespacemysite_1_1config_1_1email__config.html',1,'mysite::config']]],
-  ['flask_5fconfig_7',['flask_config',['../namespacemysite_1_1config_1_1flask__config.html',1,'mysite::config']]],
-  ['home_8',['home',['../namespacemysite_1_1pages_1_1home.html',1,'mysite::pages']]],
-  ['index_9',['index',['../namespacemysite_1_1pages_1_1index.html',1,'mysite::pages']]],
-  ['login_10',['login',['../namespacemysite_1_1pages_1_1login.html',1,'mysite::pages']]],
-  ['logout_11',['logout',['../namespacemysite_1_1pages_1_1logout.html',1,'mysite::pages']]],
-  ['manage_5fsite_5fdata_12',['manage_site_data',['../namespacemysite_1_1pages_1_1manage__site__data.html#aa67be7b10c177db89decbdf724496af8',1,'mysite.pages.manage_site_data.manage_site_data()'],['../namespacemysite_1_1pages_1_1manage__site__data.html',1,'mysite.pages.manage_site_data']]],
-  ['manage_5fsite_5fdata_2epy_13',['manage_site_data.py',['../manage__site__data_8py.html',1,'']]],
-  ['menu_5flinks_14',['MENU_LINKS',['../namespacemysite_1_1pages_1_1site__info.html#aaf6d194d6787f9f61574f93edf93804f',1,'mysite::pages::site_info']]],
-  ['message_15',['message',['../classmysite_1_1_database_1_1_announcements_1_1_announcements.html#a90b33b280de40608166c390cb3cc454c',1,'mysite::Database::Announcements::Announcements']]],
-  ['mysite_16',['mysite',['../namespacemysite.html',1,'']]],
-  ['new_5fstudent_5finfo_17',['new_student_info',['../namespacemysite_1_1pages_1_1new__student__info.html',1,'mysite::pages']]],
-  ['pages_18',['pages',['../namespacemysite_1_1pages.html',1,'mysite']]],
-  ['register_19',['register',['../namespacemysite_1_1pages_1_1register.html',1,'mysite::pages']]],
-  ['registration_20',['Registration',['../namespacemysite_1_1_database_1_1_registration.html',1,'mysite::Database']]],
-  ['site_5fdocumenation_21',['site_documenation',['../namespacemysite_1_1pages_1_1site__documenation.html',1,'mysite::pages']]],
-  ['site_5finfo_22',['site_info',['../namespacemysite_1_1pages_1_1site__info.html',1,'mysite::pages']]],
-  ['users_23',['Users',['../namespacemysite_1_1_database_1_1_users.html',1,'mysite::Database']]]
+  ['join_5fteam_0',['join_team',['../namespacejoin__team.html',1,'join_team'],['../namespacejoin__team.html#a4f9b5b91b9e84d4b902177a8e4360546',1,'join_team.join_team()']]],
+  ['join_5fteam_2epy_1',['join_team.py',['../join__team_8py.html',1,'']]],
+  ['join_5fteam_5frequest_2',['Join_team_Request',['../classmysite_1_1_database_1_1_join__team___request_1_1_join__team___request.html',1,'mysite::Database::Join_team_Request']]],
+  ['join_5fteam_5frequest_2epy_3',['Join_team_Request.py',['../_join__team___request_8py.html',1,'']]]
 ];

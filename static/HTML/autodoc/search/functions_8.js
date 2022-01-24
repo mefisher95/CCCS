@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['manage_5fsite_5fdata_0',['manage_site_data',['../namespacemysite_1_1pages_1_1manage__site__data.html#aa67be7b10c177db89decbdf724496af8',1,'mysite::pages::manage_site_data']]]
+  ['log_5ferror_0',['log_error',['../namespaceerror__logger.html#af09319fc4e67533f62f9e92a63a351d6',1,'error_logger']]],
+  ['login_1',['login',['../namespacelogin.html#a7b030b7db2f67477a93b333e836fc264',1,'login']]],
+  ['logout_2',['logout',['../namespacelogout.html#a04418aa7bfc12c72ef61d924c45057dd',1,'logout']]]
 ];
