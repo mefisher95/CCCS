@@ -18,10 +18,18 @@ def manage_site_data() -> None:
             database_conn.set_User_admin(modify_admin_data['id'], not modify_admin_data['admin'])
 
         if 'delete_user_submit' in request.form:
-            print(request.form['delete_user_submit'])
             user_id = request.form['delete_user_submit']
             database_conn.delete_User(user_id)
 
+        if 'delete_join_team_submit' in request.form:
+            request_id = request.form['delete_join_team_submit']
+            print(request_id)
+            database_conn.delete_join_team_request(request_id)
+
+        if 'delete_bug_report_submit' in request.form:
+            bug_id = request.form['delete_bug_report_submit']
+            database_conn.delete_bug_report(bug_id)
+        
         if 'announcement_submit' in request.form:
 
             event_date = request.form['event_date']
@@ -32,15 +40,20 @@ def manage_site_data() -> None:
             if event_message != "": database_conn.add_Announcement(event_message, event_date)
             if len(delete_list): database_conn.delete_Announcement_list(delete_list)
 
-            # print('test', request.form(['announcement']))
-            x = request.form.get('announcement_submit')
 
     all_announcements = database_conn.get_all_Announcements()
     all_users = database_conn.get_all_Users()
+    all_join_requests = database_conn.get_all_join_team_requests()
+    all_bug_reports = database_conn.get_all_bug_reports()
 
 
-    return render_template('manage_site_data.html',
-                            menu_data = MENU_LINKS,
-                            site_data = SITE_DATA,
-                            all_announcements = all_announcements,
-                            all_users = all_users)
+
+    return render_template(
+        'site_management_templates/manage_site_data.html',
+        menu_data = MENU_LINKS,
+        site_data = SITE_DATA,
+        all_announcements = all_announcements,
+        all_users = all_users,
+        all_join_requests = all_join_requests,
+        all_bug_reports = all_bug_reports 
+        )

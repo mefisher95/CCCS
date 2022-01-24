@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{ super() }}
+
+<body>
+    <div class="card col-md-8" style="margin: auto;">
+        <div class = "card text-center">
+            <div class="card-header">
+                <h1>Complete Registration</h1>
+            </div>
+            <div class="card-body text-center">
+                <form action = "{{ url_for('login')}}" method="post">
+                    An email has been sent with a confirmation link. Please click the link to complete your registration
+                </form>
+
+            </div>
+        </div>
+        <div class="card text-center">
+            <h5>Has your email not arrived or link expired? Click here to resend</h5>
+            <a href="{{ url_for('resend_registration') }}">Resend Registration Code</a>
+            <h5>Made a mistake during Registration? No sweat! just reregister here!</h5>
+            <a href="{{ url_for('registration') }}"> Redo Registration</a>
+
+        </div>
+    </div>
+</body>
+
+{% endblock %}

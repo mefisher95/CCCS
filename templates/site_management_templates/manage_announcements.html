@@ -26,7 +26,7 @@
                             </td>
                             <td> {{ announcement['message'] }} </td>
                             <td style="text-align: center; vertical-align: middle;"> 
-                                <input  type="checkbox" class = "form-check-input" name = "delete_list" value= "{{announcement['id']}}"" >
+                                <input  type="checkbox" class = "form-check-input" name = "delete_list" value= "{{announcement['id']}}" >
                             </td>
                         </tr>
                     {% endfor %}
@@ -52,7 +52,7 @@
                         <input type="date" class="datepicker" name="event_date">
                     </td>
                     <td>
-                        <input type="text" class="form-control" name="event_message">
+                        <input type="text" class="form-control" name="event_message" required>
                     </td>
                     <td>
                         <input type="submit" class="btn btn-primary CCCS-button" name="announcement_submit">

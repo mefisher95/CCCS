@@ -1,3 +1,6 @@
+from mysite.Database.Registration import Registrations
+
+
 AUTHORS = ['Michael Fisher']
 
 class Route: 
@@ -20,7 +23,10 @@ ROUTES = {
         "register" : Route("/SellUsYourSoul", "Register"),
         "finalize_register" : Route("/SoulSold", "Finalize Registration"),
         "login" : Route("/login", "Login"), 
-        "logout" : Route("/logout", "Logout")
+        "logout" : Route("/logout", "Logout"),
+        "resend_registration" : Route('/resend_registration', "Resend Registration"),
+        "join_team" : Route('/join_team', "Join the Team"),
+        "report_bug" : Route('/report_bug', "Report Bug")
     }
 
 MENU_LINKS = [

@@ -1,4 +1,3 @@
-from email.policy import default
 from mysite import db, app
 
 class Users(db.Model):

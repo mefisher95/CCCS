@@ -1,0 +1,44 @@
+<form action = "{{ url_for('manage_site_data')}}" method="post">
+    <div class="card" >
+        <div class = "card-header">
+            <h2>Manage Bug Reports</h2>
+        </div>
+        <div class="card-body">
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th scope = "col">Creation Time</th>
+                        <th scope = "col">Report</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if all_bug_reports | length > 0 %}
+
+                    {% for report in all_bug_reports %}
+                        <tr>
+                            <td> {{ report['create_time'] }} </td>
+                            <td> {{ report['message'] }} </td>
+
+                            
+                            <td>
+                                <button type ="submit" class="btn btn-primary CCCS-button" name="delete_bug_report_submit" value="{{ report['id'] }}">Delete Bug Report</button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    {% else %}
+                        <tr>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

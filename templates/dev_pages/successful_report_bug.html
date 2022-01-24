@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{ super() }}
+
+<body>
+    <div class="card col-md-8" style="margin: auto;">
+        <div class = "card text-center">
+            <div class="card-header">
+                <h1>Submission Successful</h1>
+            </div>
+            <div class="card-body text-center">
+                <p>
+                    Thank you for you report!  
+                        
+                </p>
+                <p>
+                    An email has been sent on to our team, and we will try and take care of it within the next couple of days.
+                </p>
+                <p>
+                    If you have any questions, feel free to reach out to us on discord at <a href="https://discord.gg/yrssjGb">https://discord.gg/yrssjGb</a>.
+                </p>
+                <p>
+                    <a class = "btn btn-primary CCCS-button" role = "button" href="{{ url_for('home') }}">Return to home page</a>
+                </p>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

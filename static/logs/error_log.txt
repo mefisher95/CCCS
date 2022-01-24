@@ -328,3 +328,60 @@ TIMESTAMP >>> 2022-01-21 18:05:26.862738
 TIMESTAMP >>> 2022-01-21 18:07:31.647279
 'str' object has no attribute 'pop'
 
+TIMESTAMP >>> 2022-01-24 01:45:50.075073
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Registrations` (given_name, family_name, email, username, hashedpassword, salt, code, expiration) VALUES (%(given_name)s, %(family_name)s, %(email)s, %(username)s, %(hashedpassword)s, %(salt)s, %(code)s, %(expiration)s)]
+[parameters: {'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu', 'username': 'mefisher2', 'hashedpassword': 'c5871cc364dbbb43066253b29b81c960091424005c675893e39dffeb702c4b20', 'salt': 'oBmgLthpqUEQJCuG', 'code': '4acDnHeQXJyKu1Cp', 'expiration': datetime.datetime(2022, 1, 24, 2, 0, 50, 68093)}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-24 01:49:58.119186
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Registrations` (given_name, family_name, email, username, hashedpassword, salt, code, expiration) VALUES (%(given_name)s, %(family_name)s, %(email)s, %(username)s, %(hashedpassword)s, %(salt)s, %(code)s, %(expiration)s)]
+[parameters: {'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu', 'username': 'mefisher2', 'hashedpassword': 'ca26f20ab5477f9f646d53f6bfd103a9389071d9c11a20aa5d7915835e453dea', 'salt': 'PxhJrSVe9goOflM3', 'code': 'EPHvrgbFuAkQW4l6', 'expiration': datetime.datetime(2022, 1, 24, 2, 4, 58, 113202)}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-24 01:50:44.510660
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Registrations` (given_name, family_name, email, username, hashedpassword, salt, code, expiration) VALUES (%(given_name)s, %(family_name)s, %(email)s, %(username)s, %(hashedpassword)s, %(salt)s, %(code)s, %(expiration)s)]
+[parameters: {'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu', 'username': 'mefisher2', 'hashedpassword': '03e1f1fa0174ebbcbf47581773e1d02a068464cce2c55d2c9e6e41c8dee5f92f', 'salt': '7SThlX3QMoEGRvUK', 'code': 'Dia5tYuxIs2gJ89M', 'expiration': datetime.datetime(2022, 1, 24, 2, 5, 44, 504676)}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-24 01:52:59.207510
+__init__() got an unexpected keyword argument 'registration'
+
+TIMESTAMP >>> 2022-01-24 01:53:07.813696
+__init__() got an unexpected keyword argument 'registration'
+
+TIMESTAMP >>> 2022-01-24 01:53:32.115277
+__init__() got an unexpected keyword argument 'registration'
+
+TIMESTAMP >>> 2022-01-24 01:55:28.376268
+__init__() got an unexpected keyword argument 'registration'
+
+TIMESTAMP >>> 2022-01-24 01:56:05.330813
+__init__() got an unexpected keyword argument 'registration'
+
+TIMESTAMP >>> 2022-01-24 02:03:21.695430
+list index out of range
+
+TIMESTAMP >>> 2022-01-24 02:03:47.401429
+list index out of range
+
+TIMESTAMP >>> 2022-01-24 03:00:14.217499
+'Join_team_Request' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-24 03:06:04.713331
+'Join_team_Request' object has no attribute '_asdict'
+
+TIMESTAMP >>> 2022-01-24 03:07:37.857314
+'event_time'
+
+TIMESTAMP >>> 2022-01-24 03:07:45.666967
+'event_time'
+
+TIMESTAMP >>> 2022-01-24 03:45:38.816205
+'message' is an invalid keyword argument for Join_team_Request
+
+TIMESTAMP >>> 2022-01-24 03:46:43.984227
+'message' is an invalid keyword argument for Join_team_Request
+

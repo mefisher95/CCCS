@@ -1,0 +1,53 @@
+<form action = "{{ url_for('manage_site_data')}}" method="post">
+    <div class="card" >
+        <div class = "card-header">
+            <h2>Manage Join Request</h2>
+        </div>
+        <div class="card-body">
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th scope = "col">Creation Time</th>
+                        <th scope = "col">Given Name</th>
+                        <th scope = "col">Family Name</th>
+                        <th scope = "col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if all_join_requests | length > 0 %}
+
+                    {% for request in all_join_requests %}
+                        <tr>
+                            <td> {{ request['create_time'] }} </td>
+                            <td> {{ request['given_name'] }} </td>
+
+                            <td> {{ request['family_name'] }} </td>
+                            <td> {{ request['email'] }} </td>
+                            
+                            <td>
+                                <button type ="submit" class="btn btn-primary CCCS-button" name="delete_join_team_submit" value="{{ request['id'] }}">Delete User</button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    {% else %}
+                        <tr>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

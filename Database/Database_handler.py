@@ -1,16 +1,16 @@
-
-from re import U
-from sqlalchemy import false
 from sqlalchemy_utils import database_exists, create_database
 from datetime import datetime
 
 from mysite import db, app, database_config
+from mysite.Database.Bug_Report import Bug_Report
 from mysite.utils.error_logger import log_error
 from mysite.utils.security_utils import hashfun, randstring
 
 from mysite.Database.Announcements import Announcements
 from mysite.Database.Users import Users
 from mysite.Database.Registration import Registrations
+from mysite.Database.Join_team_Request import Join_team_Request
+from mysite.Database.Bug_Report import Bug_Report
 
 
 # USER_LENGTH = app.config['USER_LENGTH']
@@ -38,6 +38,100 @@ class Database_handler():
                 log_error(error)
 
         self.db.create_all()
+
+    def delete_bug_report(self, id : int) -> bool:
+        try:
+            Bug_Report.query.filter_by(id = str(id)).delete()
+            self.db.session.commit()
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+
+    def add_bug_report(self, message : str) -> bool:
+        try:
+            self.db.session.add(
+                Bug_Report(
+                    create_time = datetime.now(),
+                    message=message
+                )
+            )
+
+            self.db.session.commit()
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+
+    def get_all_bug_reports(self) -> list:
+        try:
+            join_requests = self.db.session.query(
+                Bug_Report
+            )
+
+            return sorted([x.as_dict() for x in join_requests], key=lambda d: (d['create_time'] is not None, d['create_time']))
+
+
+        except Exception as error:
+            log_error(error)
+            return []
+
+
+    def delete_join_team_request(self, id : int) -> bool:
+        try:
+            Join_team_Request.query.filter_by(id = str(id)).delete()
+            self.db.session.commit()
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+
+    def add_join_team_request(self, given_name : str, family_name : str, email : str) -> bool:
+        try:
+            self.db.session.add(
+                Join_team_Request(
+                    given_name = given_name,
+                    family_name = family_name,
+                    email = email,
+                    create_time = datetime.now()
+                )
+            )
+
+            self.db.session.commit()
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+
+    def get_all_join_team_requests(self) -> list:
+        try:
+            join_requests = self.db.session.query(
+                Join_team_Request
+            )
+
+            return sorted([x.as_dict() for x in join_requests], key=lambda d: (d['create_time'] is not None, d['create_time']))
+
+
+        except Exception as error:
+            log_error(error)
+            return []
+
+    def is_registration(self, email : str) -> bool:
+        try:
+            print(email)
+            registration = Registrations.query.filter_by(email = email).first()
+            print(registration)
+            
+            if registration is None: return False
+            else: return True
+
+        except Exception as error:
+            log_error(error)
+            return None
 
     def add_registration(self, given_name: str, family_name : str, email : str, 
                          username : str, password : str, code : str ) -> bool:
@@ -67,25 +161,42 @@ class Database_handler():
             return False
 
     def get_registrations(self, username : str, code : str) -> dict:
-        # try:
-        print('username', username)
-        print('code', code)
-        # registration:flask_sqlalchemy.BaseQuery = Registrations.query.filter_by(username=username, code=code).first()
-        print('in reg')
-        registration = self.db.session.query(
-            Registrations.id,
-            Registrations.given_name,
-            Registrations.family_name,
-            Registrations.email,
-            Registrations.username,
-            Registrations.hashedpassword,
-            Registrations.salt,
-            Registrations.expiration
-        ).filter_by(username=username, code=code)
-        return [x._asdict() for x in registration][0]
-        # except Exception as error:
-        #     log_error(error)
-        #     return {}
+        try:
+
+            registration = self.db.session.query(
+                Registrations.id,
+                Registrations.given_name,
+                Registrations.family_name,
+                Registrations.email,
+                Registrations.username,
+                Registrations.hashedpassword,
+                Registrations.salt,
+                Registrations.expiration
+            ).filter_by(username=username, code=code)
+            return [x._asdict() for x in registration][0]
+
+        except Exception as error:
+            log_error(error)
+            return {}
+
+    def get_registration_by_email(self, email : str) -> dict:
+        try:
+            registration = self.db.session.query(
+                Registrations.id,
+                Registrations.given_name,
+                Registrations.family_name,
+                Registrations.email,
+                Registrations.username,
+                Registrations.hashedpassword,
+                Registrations.salt,
+                Registrations.expiration
+            ).filter_by(email = email)
+            return [x._asdict() for x in registration][0]
+
+        except Exception as error:
+            log_error(error)
+            return ""
+
 
     def delete_registration(self, id : int) -> bool:
         try:
@@ -144,28 +255,23 @@ class Database_handler():
 
 
     def add_User(self, given_name : str, family_name: str, email:str, username : str,  hashed_password : str, salt : str) -> bool:
-        # try:
-        print(given_name)
-        print(family_name)
-        print(username)
-        print(hashed_password),
-        print(salt)
-        self.db.session.add(Users(
-            given_name = given_name,
-            family_name = family_name,
-            email = email,
-            username = username,
-            hashedpassword = hashed_password,
-            salt = salt
-        ))
+        try:
+            self.db.session.add(Users(
+                given_name = given_name,
+                family_name = family_name,
+                email = email,
+                username = username,
+                hashedpassword = hashed_password,
+                salt = salt
+            ))
 
-        self.db.session.commit()
+            self.db.session.commit()
 
-        return True
+            return True
 
-        # except Exception as error:
-        #     log_error(error)
-        #     return False
+        except Exception as error:
+            log_error(error)
+            return False
 
     def set_User_admin(self, id : int, value : bool) -> bool:
         try:

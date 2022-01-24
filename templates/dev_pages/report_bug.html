@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{ super() }}
+
+<body>
+    <div class="card col-md-8" style="margin: auto;">
+        <div class = "card text-center">
+            <div class="card-header">
+                <h1> Report Bug </h1>
+            </div>
+            <div class="card-body text-left">
+                <div class="text-center">
+                    <p>
+                        The CCCS website is developed by students for students, and is done entirely by a team of voluneeters.
+                    </p>
+                    <p>
+                        Part of what that means is that (occasionally) bugs and errors creep into the code before we can catch them. 
+                    </p>
+                    <p>
+                        Please help us out by reporting all these missed opportunities by filling out the form below. Please be as 
+                        descriptive of what you were doing when the error occured as possible and describe the bug to the best of your
+                        ability.
+                    </p>
+                    <p class="tex-center justify-content-center">
+                        We specifically want to know about:
+                        <ul class="list-inline mx-auto text-left card col-md-4 " style="margin: auto;">
+                            <li>- Broken Links</li>
+                            <li>- 404: Page Not Found</li>
+                            <li>- Any Error Page</li>
+                            <li>- Spelling and Grammer Mistakes</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Thank you for your help and understanding!
+                    </p>
+
+
+                </div>
+                <form action = "{{ url_for('report_bug')}}" method="post">
+                    <div class="row justify-content-center">
+                        <div class="form-group col-6">
+                            <label for="bug_desc">Bug Description</label>
+                            <textarea rows="10" id = "bug_desc" type="text" class="form-control" placeholder="Describe the bug you encountered" name="bug_desc" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="text-center"> 
+                      <button type="submit" class="btn btn-primary CCCS-button">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}
