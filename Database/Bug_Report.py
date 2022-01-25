@@ -21,5 +21,3 @@ class Bug_Report(db.Model):
         table column names and corresponding records
         """
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
-
-    x = 1
