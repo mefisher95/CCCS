@@ -1,0 +1,69 @@
+<form action = "{{ url_for(course_name)}}" method="post">
+    <div class="card" >
+        <div class = "card-header">
+            <h2>Manage Quizzes</h2>
+        </div>
+        <div class="card-body">
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th scope = "col">Title</th>
+                        <th scope = "col">Link</th>
+                        <th scope = "col">Due Date</th>
+                        <th scope = "col">Delete</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="form-control" name="quiz_name" placeholder="Quiz 1">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" name="quiz_pdf_link" placeholder="https://drive.google.com/file/d/file-code-here/preview">
+                        </td>
+
+                        <td>
+                        <input type="date" class="datepicker" name="quiz_due_date">
+
+                        </td>
+
+                        <td>
+                            <input type="submit" class="btn btn-primary CCCS-button" name="create_quiz_submit">
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if all_quizzes | length > 0 %}
+
+                    {% for quiz in all_quizzes %}
+                        <tr>
+                            <td> {{ quiz['quiz_name'] }} </td>
+                            <td> <a href="{{ quiz['pdf_link'] }}">{{ quiz['pdf_link'] }}</a> </td>
+
+                            <td> 
+                                {% if quiz['due_date'] %}
+                                {{ quiz['due_date'].strftime("%B %d, %Y") }} 
+                                {% endif %}
+                            </td>
+
+                            <td>
+                                <button type ="submit" class="btn btn-primary CCCS-button" name="delete_quiz_submit" value="{{ quiz['id'] }}">Delete</button>
+                            </td>    
+
+                        </tr>
+                    {% endfor %}
+
+                    {% else %}
+                        <tr>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

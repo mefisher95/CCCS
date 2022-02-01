@@ -3,6 +3,7 @@ from datetime import datetime
 
 from mysite import db, app, database_config
 from mysite.Database.Bug_Report import Bug_Report
+from mysite.Database.Course_Homework import Course_Homework
 from mysite.utils.error_logger import log_error
 from mysite.utils.security_utils import hashfun, randstring
 
@@ -11,6 +12,17 @@ from mysite.Database.Users import Users
 from mysite.Database.Registration import Registrations
 from mysite.Database.Join_team_Request import Join_team_Request
 from mysite.Database.Bug_Report import Bug_Report
+
+from mysite.Database.Department import Department
+from mysite.Database.Courses import Courses
+from mysite.Database.Professor import Professor
+
+from mysite.Database.Course_Assignments import Course_Assignments
+from mysite.Database.Course_Notes import Course_Notes
+from mysite.Database.Course_Homework import Course_Homework
+from mysite.Database.Course_Quizzes import Course_Quizzes
+from mysite.Database.Course_Projects import Course_Projects
+
 
 
 # USER_LENGTH = app.config['USER_LENGTH']
@@ -50,7 +62,580 @@ class Database_handler():
 
         self.db.create_all()
 
+        ###########################################################################
+    #   Course Project Methods
+    ###########################################################################
+    def add_Course_Project(self, course_id : int, project_name : str, pdf_link : str, due_date : datetime) -> int:
+        try:
+            new_homework = Course_Projects(
+                Course_id = course_id,
+                project_name = project_name,
+                pdf_link = pdf_link,
+                due_date = due_date
+            )
 
+            self.db.session.add(new_homework)
+            self.db.session.commit()
+
+            return new_homework.as_dict()['id']
+
+        except Exception as error:
+            log_error(error)
+            return -1
+
+    def get_all_Course_Projects(self):
+        try:
+            projects = self.db.session.query(
+                Course_Projects
+            )
+            projects = sorted([x.as_dict() for x in projects], key=lambda d: (d['Course_id'] is not None, d['Course_id']))
+            for i in projects:
+                i['Course'] = self.get_Course_by_id(
+                    i['Course_id']
+                )
+
+            return projects
+
+        except Exception as error:
+            log_error(error)
+            return -1
+
+    def get_all_Course_Projects_in_Course(self, course_id : int) -> list:
+        try:
+            projects = Course_Projects.query.filter_by(Course_id = course_id)
+            projects = sorted([x.as_dict() for x in projects], key=lambda d: (d['Course_id'] is not None, d['Course_id']))
+            for i in projects:
+                i['Course'] = self.get_Course_by_id(
+                    i['Course_id']
+                )
+
+            return projects
+
+        except Exception as error:
+            log_error(error)
+            return []
+
+    def get_Course_Project_by_ID(self, project_id : int) -> dict:
+        try:
+            project = Course_Projects.query.filter_by(
+                id = project_id
+            ).first()
+
+
+            return project.as_dict()
+        except Exception as error:
+            log_error(error)
+            return {}
+
+    def remove_Course_Project_from_Course(self, project_id : int) -> bool:
+        try:
+            Course_Projects.query.filter_by(
+                id = project_id
+            ).delete()
+
+            self.db.session.commit()
+
+            return True
+        except Exception as error:
+            log_error(error)
+            return False
+
+    ###########################################################################
+    #   Course Quiz Methods
+    ###########################################################################
+    def add_Course_Quiz(self, course_id : int, quiz_name : str, pdf_link : str, due_date : datetime) -> int:
+        try:
+            new_homework = Course_Quizzes(
+                Course_id = course_id,
+                quiz_name = quiz_name,
+                pdf_link = pdf_link,
+                due_date = due_date
+            )
+
+            self.db.session.add(new_homework)
+            self.db.session.commit()
+
+            return new_homework.as_dict()['id']
+
+        except Exception as error:
+            log_error(error)
+            return -1
+
+    def get_all_Course_Quizzes(self):
+        try:
+            quizzes = self.db.session.query(
+                Course_Quizzes
+            )
+            quizzes = sorted([x.as_dict() for x in quizzes], key=lambda d: (d['Course_id'] is not None, d['Course_id']))
+            for i in quizzes:
+                i['Course'] = self.get_Course_by_id(
+                    i['Course_id']
+                )
+
+            return quizzes
+
+        except Exception as error:
+            log_error(error)
+            return -1
+
+    def get_all_Course_Quizzes_in_Course(self, course_id : int) -> list:
+        try:
+            quizzes = Course_Quizzes.query.filter_by(Course_id = course_id)
+            quizzes = sorted([x.as_dict() for x in quizzes], key=lambda d: (d['Course_id'] is not None, d['Course_id']))
+            for i in quizzes:
+                i['Course'] = self.get_Course_by_id(
+                    i['Course_id']
+                )
+
+            return quizzes
+
+        except Exception as error:
+            log_error(error)
+            return []
+
+    def get_Course_Quiz_by_ID(self, quiz_id : int) -> dict:
+        try:
+            quiz = Course_Quizzes.query.filter_by(
+                id = quiz_id
+            ).first()
+
+
+            return quiz.as_dict()
+        except Exception as error:
+            log_error(error)
+            return {}
+
+    def remove_Course_Quiz_from_Course(self, quiz_id : int) -> bool:
+        try:
+            Course_Quizzes.query.filter_by(
+                id = quiz_id
+            ).delete()
+
+            self.db.session.commit()
+
+            return True
+        except Exception as error:
+            log_error(error)
+            return False
+
+    ###########################################################################
+    #   Course Homework Methods
+    ###########################################################################
+    def add_Course_Homework(self, course_id : int, homework_name : str, pdf_link : str, due_date : datetime) -> int:
+        try:
+            new_homework = Course_Homework(
+                Course_id = course_id,
+                homework_name = homework_name,
+                pdf_link = pdf_link,
+                due_date = due_date
+            )
+
+            self.db.session.add(new_homework)
+            self.db.session.commit()
+
+            return new_homework.as_dict()['id']
+
+        except Exception as error:
+            log_error(error)
+            return -1
+
+    def get_all_Course_Homework(self):
+        try:
+            homework_assignments = self.db.session.query(
+                Course_Homework
+            )
+            homework_assignments = sorted([x.as_dict() for x in homework_assignments], key=lambda d: (d['Course_id'] is not None, d['Course_id']))
+            for i in homework_assignments:
+                i['Course'] = self.get_Course_by_id(
+                    i['Course_id']
+                )
+
+            return homework_assignments
+
+        except Exception as error:
+            log_error(error)
+            return -1
+
+    def get_all_Course_Homework_in_Course(self, course_id : int) -> list:
+        try:
+            homework_assignments = Course_Homework.query.filter_by(Course_id = course_id)
+            homework_assignments = sorted([x.as_dict() for x in homework_assignments], key=lambda d: (d['Course_id'] is not None, d['Course_id']))
+            for i in homework_assignments:
+                i['Course'] = self.get_Course_by_id(
+                    i['Course_id']
+                )
+
+            return homework_assignments
+
+        except Exception as error:
+            log_error(error)
+            return []
+
+    def get_Course_Homework_by_ID(self, homework_id : int) -> dict:
+        try:
+            homework = Course_Homework.query.filter_by(
+                id = homework_id
+            ).first()
+
+
+            return homework.as_dict()
+        except Exception as error:
+            log_error(error)
+            return {}
+
+    def remove_Course_Homework_from_Course(self, homework_id : int) -> bool:
+        try:
+            Course_Homework.query.filter_by(
+                id = homework_id
+            ).delete()
+
+            self.db.session.commit()
+
+            return True
+        except Exception as error:
+            log_error(error)
+            return False
+    ###########################################################################
+    # Course Notes Methods
+    ###########################################################################
+    def add_Course_Notes(self, course_id : int, notes_name : str, pdf_link : str) -> int:
+        try:
+            new_course_note = Course_Notes(
+                Course_id = course_id,
+                notes_name = notes_name,
+                pdf_link = pdf_link
+            )
+
+            self.db.session.add(new_course_note)
+            self.db.session.commit()
+            return new_course_note.as_dict()['id']
+
+        except Exception as error:
+            log_error(error)
+            return -1
+
+    def get_all_Course_Notes(self):
+        try:
+            courses = self.db.session.query(
+                Course_Notes
+            )
+            courses = sorted([x.as_dict() for x in courses], key=lambda d: (d['Course_id'] is not None, d['Course_id']))
+            for i in courses:
+                i['Course'] = self.get_Course_by_id(
+                    i['Course_id']
+                )
+
+            return courses
+
+        except Exception as error:
+            log_error(error)
+            return -1
+
+    def get_all_Course_Notes_in_Course(self, course_id : int) -> list:
+        try:
+            notes = Course_Notes.query.filter_by(Course_id = course_id)
+            notes = sorted([x.as_dict() for x in notes], key=lambda d: (d['Course_id'] is not None, d['Course_id']))
+            for i in notes:
+                i['Course'] = self.get_Course_by_id(
+                    i['Course_id']
+                )
+
+            return notes
+
+        except Exception as error:
+            log_error(error)
+            return []
+
+    def get_Course_Notes_by_ID(self, notes_id : int) -> dict:
+        try:
+            note = Course_Notes.query.filter_by(
+                id = notes_id
+            ).first()
+
+
+            return note.as_dict()
+        except Exception as error:
+            log_error(error)
+            return {}
+
+    def remove_Course_Notes_from_Course(self, notes_id : int) -> bool:
+        print('notes_id', notes_id)
+        try:
+            Course_Notes.query.filter_by(
+                id = notes_id
+            ).delete()
+
+            self.db.session.commit()
+
+            return True
+        except Exception as error:
+            log_error(error)
+            return False
+    ###########################################################################
+    # Course Assignment Methods
+    ###########################################################################
+    def add_Course_Assignment(
+        self,
+        user_id : int,
+        course_id : int
+        ) -> int:
+
+        try:
+            new_course_assignment = Course_Assignments(
+                User_id = user_id,
+                Course_id = course_id
+            )
+
+            self.db.session.add(new_course_assignment)
+            self.db.session.commit()
+
+            return new_course_assignment.as_dict()['id']
+
+        except Exception as error:
+            log_error(error)
+            return -1
+    
+    def get_all_Users_in_Course(
+        self,
+        course_id : int
+        ) -> list:
+
+        try:
+            assignments = Course_Assignments.query.filter_by(Course_id = course_id)
+            return [x.as_dict() for x in assignments]
+
+        except Exception as error:
+            log_error(error)
+            return []
+
+
+    def remove_User_from_Course_Assignment(
+        self, 
+        user_id : int,
+        course_id : int
+        ) -> bool:
+        try:
+            Course_Assignments.query.filter_by(
+                User_id = user_id,
+                Course_id = course_id
+            ).delete()
+            
+            self.db.session.commit()
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+
+    ###########################################################################
+    # Courses Methods
+    ###########################################################################
+    def add_Course(
+        self, 
+        department_id : int,
+        # professor_id : int,
+        course_num : int, course_name : str,
+        credit_hour : int, 
+        course_link : str = None
+        ) -> int:
+        try:
+            new_course = Courses(
+                department_id = department_id,
+                course_num = course_num,
+                course_name = course_name,
+                credit_hour = credit_hour,
+                link = course_link
+            )
+
+            self.db.session.add(new_course)
+            self.db.session.commit()
+            return new_course.as_dict()['id']
+
+        except Exception as error:
+            log_error(error)
+            return -1
+
+    def get_Course_by_course_code(
+        self,
+        dept_id : int,
+        course_num : int
+        ) -> dict:
+
+        try:
+            course = Courses.query.filter_by(
+                department_id = dept_id,
+                course_num = course_num
+                ).first()
+
+            course = course.as_dict()
+
+            course['department'] = self.get_Department_by_id(
+                course['department_id']
+            ) 
+            return course
+
+        except Exception as error:
+            log_error(error)
+            return {}
+
+    def get_Course_by_id(self, id : int) -> dict:
+        try:
+            course = Courses.query.filter_by(id = id).first()
+            
+            if course is None: return False
+            course = course.as_dict()
+
+            course['department'] = self.get_Department_by_id(
+                course['department_id']
+            ) 
+            return course
+
+        except Exception as error:
+            log_error(error)
+            return {}
+
+    def get_all_Courses(self) -> list:
+        try:
+            courses = self.db.session.query(
+                Courses
+            )
+            courses = sorted([x.as_dict() for x in courses], key=lambda d: (d['course_num'] is not None, d['course_num']))
+            for i in courses:
+                i['department'] = self.get_Department_by_id(
+                    i['department_id']
+                )
+
+            return courses
+
+
+        except Exception as error:
+            log_error(error)
+            return []
+
+    def delete_Course(self, id : int) -> bool:
+        try:
+            Courses.query.filter_by(id = id).delete()
+            self.db.session.commit()
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+
+    ###########################################################################
+    # Department Methods
+    ###########################################################################
+    def add_Department(self, name : str, code : str) -> int:
+        try:
+            new_department = Department(
+                name = name,
+                code = code
+            )
+            self.db.session.add(new_department)
+            self.db.session.commit()
+            return new_department.as_dict()['id']
+        except Exception as error:
+            log_error(error)
+            return -1
+
+    def get_Department_by_code(self, code : str) -> dict:
+        try:
+            return Department.query.filter_by(code = code).first().as_dict()
+
+        except Exception as error:
+            log_error(error)
+            return {}
+
+    def get_Department_by_id(self, id : int) -> dict:
+        try:
+            department = Department.query.filter_by(id = id).first()
+            
+            if department is None: return False
+            return department.as_dict()
+
+        except Exception as error:
+            log_error(error)
+            return {}
+
+    def get_all_Departments(self) -> list:
+        try:
+            departments = self.db.session.query(
+                Department
+            )
+            print(departments)
+
+            return sorted([x.as_dict() for x in departments], key=lambda d: (d['code'] is not None, d['code']))
+
+
+        except Exception as error:
+            log_error(error)
+            return []
+
+    def delete_Department(self, id : int) -> bool:
+        try:
+            Department.query.filter_by(id = id).delete()
+            self.db.session.commit()
+            return True
+        except Exception as error:
+            log_error(error)
+            return False
+
+
+    ###########################################################################
+    # Professor Methods
+    ###########################################################################
+    def add_Professor(self, title : str, given_name : str, family_name : str, 
+                    email : str) -> int:
+        try:
+            new_professor = Professor(
+                title = title,
+                given_name = given_name,
+                family_name = family_name,
+                email = email
+            )
+
+            self.db.session.add(new_professor)
+            self.db.session.commit()
+
+            return new_professor.as_dict()['id']
+
+        except Exception as error:
+            log_error(error)
+            return -1
+    
+    def get_Professor_by_id(self, id : int) -> dict:
+        try:
+            professor = Professor.query.filter_by(id = id).first()
+            
+            if professor is None: return False
+            return professor.as_dict()
+
+        except Exception as error:
+            log_error(error)
+            return {}
+
+    def get_all_Professors(self) -> list:
+        try:
+            professors = self.db.session.query(
+                Professor
+            )
+
+            return sorted([x.as_dict() for x in professors], key=lambda d: (d['family_name'] is not None, d['family_name']))
+
+
+        except Exception as error:
+            log_error(error)
+            return []
+
+    def delete_Professor(self, id : int) -> bool:
+        try:
+            Professor.query.filter_by(id = id).delete()
+            self.db.session.commit()
+            return True
+        except Exception as error:
+            log_error(error)
+            return False
+    
     ###########################################################################
     # Bug Report Methods
     ###########################################################################
@@ -295,12 +880,9 @@ class Database_handler():
             log_error(error)
             return []
 
-
-
     ###########################################################################
     # Users Methods
     ###########################################################################
-
 
     def add_User(self, given_name : str, family_name: str, email:str, username : str,  hashed_password : str, salt : str) -> bool:
         try:

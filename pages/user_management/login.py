@@ -18,6 +18,7 @@ def login():
 
         if database_conn.is_User(username, password):
             user = database_conn.get_User_by_Username(username)
+            session['id'] = user['id']
             session['username'] = user['username']
             session['given_name'] = user['given_name']
             session['admin'] = user['admin']

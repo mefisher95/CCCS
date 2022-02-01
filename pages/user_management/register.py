@@ -57,7 +57,8 @@ def finish_registration():
     code = info.get('code')
 
     registration = database_conn.get_registrations(username, code)
-
+    print('getting registration')
+    print(registration)
     if registration is not None:
         if datetime.datetime.now() <  registration['expiration']:
 

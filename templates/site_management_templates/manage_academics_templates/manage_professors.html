@@ -1,0 +1,75 @@
+
+
+
+
+<form action = "{{ url_for('manage_site_data')}}" method="post">
+    <div class="card" >
+        <div class = "card-header">
+            <h2>Manage Professors</h2>
+        </div>
+        <div class="card-body">
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th scope = "col">Title</th>
+                        <th scope = "col">Given Name</th>
+                        <th scope = "col">Family Name</th>
+                        <th scope = "col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if all_professors | length > 0 %}
+
+                    {% for professor in all_professors %}
+                        <tr>
+                            <td> {{ professor['title'] }} </td>
+                            <td> {{ professor['given_name'] }} </td>
+                            <td> {{ professor['family_name'] }} </td>
+                            <td> {{ professor['email'] }} </td>
+                            
+                            <td>
+                                <button type ="submit" class="btn btn-primary CCCS-button" name="delete_professor_submit" value="{{ professor['id'] }}">Delete</button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    {% else %}
+                        <tr>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <input type="text" class="form-control" name="professor_title" placeholder="Prof.">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" name="professor_given_name" placeholder="John">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" name="professor_family_name" placeholder="Doe">
+                        </td>
+                        <td>
+                            <input type="email" class="form-control" name="professor_email" placeholder="professor@ccis.edu">
+                        </td>
+                        <td>
+                            <input type="submit" class="btn btn-primary CCCS-button" name="create_professor_submit">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</form>

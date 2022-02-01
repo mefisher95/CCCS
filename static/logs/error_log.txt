@@ -394,3 +394,624 @@ TIMESTAMP >>> 2022-01-24 17:42:06.063727
 TIMESTAMP >>> 2022-01-24 17:43:22.239348
 'BaseQuery' object has no attribute 'as_dict'
 
+TIMESTAMP >>> 2022-01-30 07:50:14.329245
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-30 07:50:14.330297
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 07:50:14.331242
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 07:50:14.332250
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 07:50:14.333238
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 07:50:14.333238
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 07:50:20.698986
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-30 07:50:20.699922
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 07:50:20.699922
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 07:50:20.700953
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 07:50:20.700953
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 07:50:20.701917
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2@cougars.ccis.edu' for key 'email'
+[SQL: INSERT INTO `Professor` (title, given_name, family_name, email) VALUES (%(title)s, %(given_name)s, %(family_name)s, %(email)s)]
+[parameters: {'title': 'Prof.', 'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mefisher2@cougars.ccis.edu'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:03:08.948814
+(mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'Department.code' in 'field list'
+[SQL: SELECT `Department`.id AS `Department_id`, `Department`.code AS `Department_code`, `Department`.name AS `Department_name` 
+FROM `Department`]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+TIMESTAMP >>> 2022-01-30 09:03:24.127606
+(mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'Department.code' in 'field list'
+[SQL: SELECT `Department`.id AS `Department_id`, `Department`.code AS `Department_code`, `Department`.name AS `Department_name` 
+FROM `Department`]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+TIMESTAMP >>> 2022-01-30 09:09:42.065319
+(mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+
+TIMESTAMP >>> 2022-01-30 09:09:42.066316
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:09:42.067288
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:09:42.067288
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:09:42.068287
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:09:42.068287
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:09:42.070304
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:09:47.848334
+(mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+
+TIMESTAMP >>> 2022-01-30 09:09:47.849331
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:09:47.850331
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:09:47.850331
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:09:47.851326
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:09:47.851326
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:09:47.855015
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:10:35.554834
+(mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+
+TIMESTAMP >>> 2022-01-30 09:10:35.554834
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:10:35.555806
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:10:35.555806
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:10:35.556803
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:10:35.556803
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:10:35.558837
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1406 (22001): Data too long for column 'name' at row 1
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:12:25.954620
+'Department' object is not subscriptable
+
+TIMESTAMP >>> 2022-01-30 09:12:43.104280
+'Department' object is not subscriptable
+
+TIMESTAMP >>> 2022-01-30 09:12:49.541332
+'Department' object is not subscriptable
+
+TIMESTAMP >>> 2022-01-30 09:14:31.731094
+'Department' object is not subscriptable
+
+TIMESTAMP >>> 2022-01-30 09:14:37.510957
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-30 09:14:37.511954
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:14:37.512952
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:14:37.513949
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:14:37.514982
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:14:37.514982
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:14:37.518936
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:14:46.150701
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-30 09:14:46.151701
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:14:46.152695
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:14:46.153659
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:14:46.154689
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:14:46.154689
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:14:46.156649
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'CISS' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'CISS', 'name': 'Computer Science'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:15:11.570840
+'Department' object is not subscriptable
+
+TIMESTAMP >>> 2022-01-30 09:16:20.473106
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-30 09:16:20.474140
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:16:20.474140
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:16:20.475139
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:16:20.475139
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:16:20.475139
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:16:20.477110
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:17:33.934746
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-30 09:17:33.935791
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:17:33.935791
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:17:33.936776
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:17:33.936776
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:17:33.937741
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:17:33.939736
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:18:01.899311
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-30 09:18:01.900311
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:18:01.900311
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:18:01.901308
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:18:01.901308
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:18:01.902334
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:18:01.904301
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'MATH' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'MATH', 'name': 'Mathematics'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-01-30 09:30:11.570729
+'Department' object is not subscriptable
+
+TIMESTAMP >>> 2022-01-30 09:54:08.256473
+'dict' object has no attribute 'as_dict'
+
+TIMESTAMP >>> 2022-01-30 09:54:53.523624
+'dict' object has no attribute 'as_dict'
+
+TIMESTAMP >>> 2022-01-30 09:55:46.245166
+'dict' object has no attribute 'as_dict'
+
+TIMESTAMP >>> 2022-01-30 09:55:54.426039
+'dict' object has no attribute 'as_dict'
+
+TIMESTAMP >>> 2022-01-30 09:56:07.655129
+'dict' object has no attribute 'as_dict'
+
+TIMESTAMP >>> 2022-01-30 12:47:53.685936
+Python type dict cannot be converted
+
+TIMESTAMP >>> 2022-01-30 12:48:07.393062
+Python type dict cannot be converted
+
+TIMESTAMP >>> 2022-01-30 12:49:30.367469
+Python type dict cannot be converted
+
+TIMESTAMP >>> 2022-01-31 11:45:47.337870
+Entity namespace for "Course_Assignments" has no property "user_id"
+
+TIMESTAMP >>> 2022-01-31 11:45:49.956350
+Entity namespace for "Course_Assignments" has no property "user_id"
+
+TIMESTAMP >>> 2022-01-31 11:46:40.781097
+Entity namespace for "Course_Assignments" has no property "user_id"
+
+TIMESTAMP >>> 2022-01-31 11:47:23.982440
+Entity namespace for "Course_Assignments" has no property "user_id"
+
+TIMESTAMP >>> 2022-01-31 11:47:50.668490
+Entity namespace for "Course_Assignments" has no property "user_id"
+
+TIMESTAMP >>> 2022-01-31 11:48:35.405156
+Entity namespace for "Course_Assignments" has no property "user_id"
+
+TIMESTAMP >>> 2022-01-31 12:28:21.379274
+(mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'Course_Notes.notes_name' in 'field list'
+[SQL: SELECT `Course_Notes`.id AS `Course_Notes_id`, `Course_Notes`.`Course_id` AS `Course_Notes_Course_id`, `Course_Notes`.notes_name AS `Course_Notes_notes_name`, `Course_Notes`.pdf_link AS `Course_Notes_pdf_link` 
+FROM `Course_Notes` 
+WHERE `Course_Notes`.`Course_id` = %(Course_id_1)s]
+[parameters: {'Course_id_1': 6}]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+TIMESTAMP >>> 2022-01-31 12:31:32.181412
+(mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'Course_Notes.notes_name' in 'field list'
+[SQL: SELECT `Course_Notes`.id AS `Course_Notes_id`, `Course_Notes`.`Course_id` AS `Course_Notes_Course_id`, `Course_Notes`.notes_name AS `Course_Notes_notes_name`, `Course_Notes`.pdf_link AS `Course_Notes_pdf_link` 
+FROM `Course_Notes` 
+WHERE `Course_Notes`.`Course_id` = %(Course_id_1)s]
+[parameters: {'Course_id_1': 6}]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+TIMESTAMP >>> 2022-01-31 12:32:58.503097
+(mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'Course_Notes.notes_name' in 'field list'
+[SQL: SELECT `Course_Notes`.id AS `Course_Notes_id`, `Course_Notes`.`Course_id` AS `Course_Notes_Course_id`, `Course_Notes`.notes_name AS `Course_Notes_notes_name`, `Course_Notes`.pdf_link AS `Course_Notes_pdf_link` 
+FROM `Course_Notes` 
+WHERE `Course_Notes`.`Course_id` = %(Course_id_1)s]
+[parameters: {'Course_id_1': 6}]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+TIMESTAMP >>> 2022-01-31 12:34:50.318405
+(mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'Course_Notes.notes_name' in 'field list'
+[SQL: SELECT `Course_Notes`.id AS `Course_Notes_id`, `Course_Notes`.`Course_id` AS `Course_Notes_Course_id`, `Course_Notes`.notes_name AS `Course_Notes_notes_name`, `Course_Notes`.pdf_link AS `Course_Notes_pdf_link` 
+FROM `Course_Notes` 
+WHERE `Course_Notes`.`Course_id` = %(Course_id_1)s]
+[parameters: {'Course_id_1': 6}]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+TIMESTAMP >>> 2022-01-31 12:35:39.854320
+'course_id' is an invalid keyword argument for Course_Notes
+
+TIMESTAMP >>> 2022-01-31 12:35:39.868159
+(mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'Course_Notes.notes_name' in 'field list'
+[SQL: SELECT `Course_Notes`.id AS `Course_Notes_id`, `Course_Notes`.`Course_id` AS `Course_Notes_Course_id`, `Course_Notes`.notes_name AS `Course_Notes_notes_name`, `Course_Notes`.pdf_link AS `Course_Notes_pdf_link` 
+FROM `Course_Notes` 
+WHERE `Course_Notes`.`Course_id` = %(Course_id_1)s]
+[parameters: {'Course_id_1': 6}]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+TIMESTAMP >>> 2022-01-31 12:37:31.080102
+'course_id' is an invalid keyword argument for Course_Notes
+
+TIMESTAMP >>> 2022-01-31 13:21:55.274695
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '6'}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-01-31 13:23:08.172180
+(mysql.connector.errors.ProgrammingError) 1146 (42S02): Table 'cccs.courses' doesn't exist
+[SQL: SELECT `Courses`.id AS `Courses_id`, `Courses`.department_id AS `Courses_department_id`, `Courses`.course_num AS `Courses_course_num`, `Courses`.course_name AS `Courses_course_name`, `Courses`.credit_hour AS `Courses_credit_hour`, `Courses`.link AS `Courses_link` 
+FROM `Courses`]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+TIMESTAMP >>> 2022-02-01 11:32:13.495611
+'homework_name' is an invalid keyword argument for Course_Homework
+
+TIMESTAMP >>> 2022-02-01 11:32:41.272117
+'homework_name' is an invalid keyword argument for Course_Homework
+
+TIMESTAMP >>> 2022-02-01 11:50:10.721918
+'pdf_link' is an invalid keyword argument for Course_Homework
+
+TIMESTAMP >>> 2022-02-01 11:50:10.731864
+(mysql.connector.errors.ProgrammingError) 1054 (42S22): Unknown column 'Course_Homework.homework_name' in 'field list'
+[SQL: SELECT `Course_Homework`.id AS `Course_Homework_id`, `Course_Homework`.`Course_id` AS `Course_Homework_Course_id`, `Course_Homework`.homework_name AS `Course_Homework_homework_name`, `Course_Homework`.due_date AS `Course_Homework_due_date` 
+FROM `Course_Homework` 
+WHERE `Course_Homework`.`Course_id` = %(Course_id_1)s]
+[parameters: {'Course_id_1': 8}]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+
+TIMESTAMP >>> 2022-02-01 11:52:26.179395
+'pdf_link' is an invalid keyword argument for Course_Homework
+
+TIMESTAMP >>> 2022-02-01 12:38:48.622189
+'homework_name' is an invalid keyword argument for Course_Quizzes
+
+TIMESTAMP >>> 2022-02-01 12:49:24.195706
+(mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`course_quizzes`.`due_date` at row 1
+[SQL: INSERT INTO `Course_Quizzes` (`Course_id`, quiz_name, due_date, pdf_link) VALUES (%(Course_id)s, %(quiz_name)s, %(due_date)s, %(pdf_link)s)]
+[parameters: {'Course_id': 8, 'quiz_name': 'Quiz 0101', 'due_date': '', 'pdf_link': 'https://drive.google.com/file/d/1EizopziWpgpKKNEq5ALaMUpi81oh4nXH/preview'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+
+TIMESTAMP >>> 2022-02-01 12:49:24.196746
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`course_quizzes`.`due_date` at row 1
+[SQL: INSERT INTO `Course_Quizzes` (`Course_id`, quiz_name, due_date, pdf_link) VALUES (%(Course_id)s, %(quiz_name)s, %(due_date)s, %(pdf_link)s)]
+[parameters: {'Course_id': 8, 'quiz_name': 'Quiz 0101', 'due_date': '', 'pdf_link': 'https://drive.google.com/file/d/1EizopziWpgpKKNEq5ALaMUpi81oh4nXH/preview'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-02-01 12:49:24.197704
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`course_quizzes`.`due_date` at row 1
+[SQL: INSERT INTO `Course_Quizzes` (`Course_id`, quiz_name, due_date, pdf_link) VALUES (%(Course_id)s, %(quiz_name)s, %(due_date)s, %(pdf_link)s)]
+[parameters: {'Course_id': 8, 'quiz_name': 'Quiz 0101', 'due_date': '', 'pdf_link': 'https://drive.google.com/file/d/1EizopziWpgpKKNEq5ALaMUpi81oh4nXH/preview'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-02-01 12:49:24.197704
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`course_quizzes`.`due_date` at row 1
+[SQL: INSERT INTO `Course_Quizzes` (`Course_id`, quiz_name, due_date, pdf_link) VALUES (%(Course_id)s, %(quiz_name)s, %(due_date)s, %(pdf_link)s)]
+[parameters: {'Course_id': 8, 'quiz_name': 'Quiz 0101', 'due_date': '', 'pdf_link': 'https://drive.google.com/file/d/1EizopziWpgpKKNEq5ALaMUpi81oh4nXH/preview'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-02-01 12:49:24.198701
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`course_quizzes`.`due_date` at row 1
+[SQL: INSERT INTO `Course_Quizzes` (`Course_id`, quiz_name, due_date, pdf_link) VALUES (%(Course_id)s, %(quiz_name)s, %(due_date)s, %(pdf_link)s)]
+[parameters: {'Course_id': 8, 'quiz_name': 'Quiz 0101', 'due_date': '', 'pdf_link': 'https://drive.google.com/file/d/1EizopziWpgpKKNEq5ALaMUpi81oh4nXH/preview'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-02-01 12:49:24.198701
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`course_quizzes`.`due_date` at row 1
+[SQL: INSERT INTO `Course_Quizzes` (`Course_id`, quiz_name, due_date, pdf_link) VALUES (%(Course_id)s, %(quiz_name)s, %(due_date)s, %(pdf_link)s)]
+[parameters: {'Course_id': 8, 'quiz_name': 'Quiz 0101', 'due_date': '', 'pdf_link': 'https://drive.google.com/file/d/1EizopziWpgpKKNEq5ALaMUpi81oh4nXH/preview'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-02-01 12:49:24.199698
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.DataError) 1292 (22007): Incorrect datetime value: '' for column `cccs`.`course_quizzes`.`due_date` at row 1
+[SQL: INSERT INTO `Course_Quizzes` (`Course_id`, quiz_name, due_date, pdf_link) VALUES (%(Course_id)s, %(quiz_name)s, %(due_date)s, %(pdf_link)s)]
+[parameters: {'Course_id': 8, 'quiz_name': 'Quiz 0101', 'due_date': '', 'pdf_link': 'https://drive.google.com/file/d/1EizopziWpgpKKNEq5ALaMUpi81oh4nXH/preview'}]
+(Background on this error at: http://sqlalche.me/e/14/9h9h) (Background on this error at: http://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-02-01 12:55:01.268207
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'mefisher2' for key 'username'
+[SQL: INSERT INTO `Registrations` (given_name, family_name, email, username, hashedpassword, salt, code, expiration) VALUES (%(given_name)s, %(family_name)s, %(email)s, %(username)s, %(hashedpassword)s, %(salt)s, %(code)s, %(expiration)s)]
+[parameters: {'given_name': 'Michael', 'family_name': 'Fisher', 'email': 'mfisher9542@hotmail.com', 'username': 'mefisher2', 'hashedpassword': '32d582dfd32d87fe404b00fb0d8848dad158dd5d9067bed8f18c0a47057c7187', 'salt': 'iKfNcgtnZAs2loOY', 'code': '9kgOaYPAvpKNrSmt', 'expiration': datetime.datetime(2022, 2, 1, 13, 10, 1, 264247)}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-02-01 12:55:22.063927
+list index out of range
+
+TIMESTAMP >>> 2022-02-01 12:56:59.830526
+list index out of range
+
+TIMESTAMP >>> 2022-02-01 12:57:44.809770
+list index out of range
+
+TIMESTAMP >>> 2022-02-01 13:19:31.471332
+'project_name' is an invalid keyword argument for Course_Quizzes
+

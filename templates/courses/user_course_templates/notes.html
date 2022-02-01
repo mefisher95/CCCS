@@ -1,0 +1,41 @@
+<form action = "{{ url_for(course_name)}}" method="post">
+    <div class="card" >
+        <div class = "card-header">
+            <h2>Notes</h2>
+        </div>
+        <div class="card-body">
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th scope = "col">Title</th>
+                        <th scope = "col">View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if all_notes | length > 0 %}
+
+                    {% for note in all_notes %}
+                        <tr>
+                            <td> {{ note['notes_name'] }} </td>
+                            <td>
+                                <button type ="submit" class="btn btn-primary CCCS-button" name="view_notes_submit" value="{{ note['id'] }}">View</button>
+                            </td>  
+                        </tr>
+                    {% endfor %}
+
+                    {% else %}
+                        <tr>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

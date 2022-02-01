@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body >
+    <div class="card col-md-8" style="margin: auto;">
+        <div class = "card text-center">
+            <div class="card-header">
+                <h1>Internal Course Page Not Found</h1>
+            </div>
+            <div class="card-body text-center">
+
+                <p>
+                    The Internal Course Page that you tried to build a link for does not currently exist!
+                </p>
+                <p>
+                    Please build the correct page with correct Department number and number (all caps), or check the formating of your request.
+                </p>
+                <p>
+                    <a class = "btn btn-primary CCCS-button" role = "button" href="{{ url_for('home') }}">Return to home page</a>
+                </p>
+                <!-- <p>
+                    <iframe src="https://drive.google.com/file/d/0BzGM4ZxqYbk5S3FieFFRYWJlVmRxNDIyTjhZdFFZeGRRQ3ZV/preview?resourcekey=0-erVFXlakfdxgu0XdbYfIIw" width="640" height="480"></iframe>
+                </p> -->
+            </div>
+        </div>
+
+    </div>
+</body>
+{% endblock %} 

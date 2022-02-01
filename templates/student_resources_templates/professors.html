@@ -1,0 +1,48 @@
+
+<div class="card" >
+    <div class = "card-header">
+        <h2>Professors</h2>
+    </div>
+    <div class="card-body">
+        <table class = "table">
+            <thead>
+                <tr>
+                    <th scope = "col">Title</th>
+                    <th scope = "col">Given Name</th>
+                    <th scope = "col">Family Name</th>
+                    <th scope = "col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if all_professors | length > 0 %}
+
+                {% for professor in all_professors %}
+                    <tr>
+                        <td> {{ professor['title'] }} </td>
+                        <td> {{ professor['given_name'] }} </td>
+                        <td> {{ professor['family_name'] }} </td>
+                        <td> {{ professor['email'] }} </td>
+                        
+                    </tr>
+                {% endfor %}
+
+                {% else %}
+                    <tr>
+                        <td>
+                            None
+                        </td>
+                        <td>
+                            None
+                        </td>
+                        <td>
+                            None
+                        </td>
+                        <td>
+                            None
+                        </td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>

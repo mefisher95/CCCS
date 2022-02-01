@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+
+
+
+{% block content %}
+
+<body>
+    <div class="card col-md-8" style="margin:auto;">
+
+        <div class="card-header"><h1>{{ course_data['department']['code'] ~ course_data['course_num'] }}: {{ course_data['course_name'] }}</h1></div>
+
+        <ul class="nav nav-tabs" id="Manage_site_tabs">
+            <li class="nav-item">
+                <a href="#Overview" class="nav-link active" data-bs-toggle="tab">Overview</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#Notes" class="nav-link" data-bs-toggle="tab">Notes</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#Assignments" class="nav-link" data-bs-toggle="tab">Assignments</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#Quizzes" class="nav-link" data-bs-toggle="tab">Quizzes</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#Projects" class="nav-link" data-bs-toggle="tab">Projects</a>
+            </li>
+            {% if session['admin'] %}
+                <li class="nav-item">
+                    <a href="#ManageCourse" class="nav-link" data-bs-toggle="tab">Manage Course</a>
+                </li>
+
+            {% endif %}
+<!-- 
+            <li class="nav-item">
+                <a href="#ManageBugReports" class="nav-link" data-bs-toggle="tab">Bug Reports</a>
+            </li> -->
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane show active" id="Overview">
+                {% include "courses/courses_overview_pages/" + course_name + ".html" %}
+            </div>
+
+            <div class="tab-pane fade" id="Notes">
+                {% include "courses/user_course_templates/notes.html" %}
+            </div>
+
+            <div class="tab-pane fade" id="Assignments">
+                {% include "courses/user_course_templates/assignments.html" %}
+            </div>
+
+            <div class="tab-pane fade" id="Quizzes">
+                {% include "courses/user_course_templates/quizzes.html" %}
+            </div>
+
+            <div class="tab-pane fade" id="Projects">
+                {% include "courses/user_course_templates/projects.html" %}
+            </div>
+            {% if session['admin'] %}
+
+            <div class="tab-pane fade" id="ManageCourse">
+                {% include "courses/manage_course_templates/manage_course_tabs.html" %}
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="ManageUsers">
+                        {% include "courses/manage_course_templates/manage_users.html" %}
+                    </div>
+
+                    <div class="tab-pane fade" id="ManageNotes">
+                        {% include "courses/manage_course_templates/manage_notes.html" %}
+                    </div>
+        
+                    <div class="tab-pane fade" id="ManageAssignments">
+                        {% include "courses/manage_course_templates/manage_assignments.html" %}
+                    </div>
+        
+                    <div class="tab-pane fade" id="ManageQuizzes">
+                        {% include "courses/manage_course_templates/manage_quizzes.html" %}
+                    </div>
+        
+                    <div class="tab-pane fade" id="ManageProjects">
+                        {% include "courses/manage_course_templates/manage_projects.html" %}
+                    </div>
+                </div>
+            
+            </div>
+
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+
+
+
+{% endblock %} 
+

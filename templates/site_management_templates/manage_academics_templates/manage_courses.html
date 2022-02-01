@@ -1,0 +1,89 @@
+
+
+
+
+<form action = "{{ url_for('manage_site_data')}}" method="post">
+    <div class="card" >
+        <div class = "card-header">
+            <h2>Manage Courses</h2>
+        </div>
+        <div class="card-body">
+            <table class = "table">
+                <thead>
+                    <div class="form-group">
+                    <tr>
+                        <th scope = "col">Department</th>
+                        <th scope = "col">Course Number</th>
+                        <th scope = "col">Course Name</th>
+                        <th scope = "col">Course Credits</th>
+                        <th scope = "col">Course Site Link</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if all_courses | length > 0 %}
+
+                    {% for course in all_courses %}
+                        <tr>
+  
+                            <td> {{ course['department']['code'] }} </td>
+                            <td> {{ course['course_num'] }} </td>
+                            <td> {{ course['course_name'] }} </td>
+                            <td> {{ course['credit_hour'] }} </td>
+                            <td> <a href="{{ course['link'] }}">{{ course['link'] }}</a> </td>
+
+                            
+                            <td>
+                                <button type ="submit" class="btn btn-primary CCCS-button" name="delete_course_submit" value="{{ course['id'] }}">Delete</button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    {% else %}
+                        <tr>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <select class="form-control" name = "department_id">
+                                {% for department in all_departments %}
+                                    <option value = "{{department['id']}}">{{department['code']}}</option>
+                                {% endfor %}
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" class="form-control" name="course_number" placeholder="123">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" name="course_name" placeholder="Introduction to Programming">
+                        </td>
+                        <td>
+                            <input type="number" class="form-control" name="course_credit" placeholder="3" value="3">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" name="course_link" placeholder="external-course-link-here">
+                        </td>
+
+                        <td>
+                            <input type="submit" class="btn btn-primary CCCS-button" name="create_course_submit">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</form>

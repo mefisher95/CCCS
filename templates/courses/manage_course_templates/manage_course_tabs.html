@@ -1,0 +1,24 @@
+<ul class="nav nav-tabs" id="Manage_course_tabs">
+    {% if session['admin'] %}
+        <li class="nav-item">
+            <a href="#ManageUsers" class="nav-link active" data-bs-toggle="tab">Manage Users</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#ManageNotes" class="nav-link" data-bs-toggle="tab">Manage Notes</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#ManageAssignments" class="nav-link" data-bs-toggle="tab">Manage Assignments</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#ManageQuizzes" class="nav-link" data-bs-toggle="tab">Manage Quizzes</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#ManageProjects" class="nav-link" data-bs-toggle="tab">Manage Projects</a>
+        </li>
+        
+    {% endif %}
+</ul>

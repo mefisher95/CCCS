@@ -27,7 +27,8 @@ ROUTES = {
         "resend_registration" : Route('/resend_registration', "Resend Registration"),
         "join_team" : Route('/join_team', "Join the Team"),
         "report_bug" : Route('/report_bug', "Report Bug"),
-        "student_resources" : Route('/student_resources', "Student Resources")
+        "student_resources" : Route('/student_resources', "Student Resources"),
+        "course_not_found" : Route('/course_not_found', "Course Not Found")
     }
 
 MENU_LINKS = [

@@ -1,0 +1,56 @@
+
+
+
+
+<form action = "{{ url_for('manage_site_data')}}" method="post">
+    <div class="card" >
+        <div class = "card-header">
+            <h2>Courses</h2>
+        </div>
+        <div class="card-body">
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th scope = "col">Course ID</th>
+                        <th scope = "col">Course Name</th>
+                        <th scope = "col">Course Credit</th>
+                        <th scope = "col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if all_courses | length > 0 %}
+
+                    {% for course in all_courses %}
+                        <tr>
+  
+                            <td> {{ course['department']['code'] ~ course['course_num']}} </td>
+                            <td> {{ course['course_name'] }} </td>
+                            <td> {{ course['credit_hour'] }} </td>
+
+                            <td>
+                                <a class="btn btn-primary CCCS-button" href="{{ course['link'] }}" style="width: 100%;" role="button">Visit Class Page</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    {% else %}
+                        <tr>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>

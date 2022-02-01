@@ -1,6 +1,5 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-import flask_login
 
 
 # from mysite.config import config_all, flask_config, database_config
@@ -21,7 +20,6 @@ db = SQLAlchemy(app)
 from mysite import Database
 database_conn = Database.Database_handler()
 
-login_manager = flask_login.LoginManager()
 # login_manager.init_app(app)
 
 ### import last

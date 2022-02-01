@@ -6,20 +6,25 @@
 </script>
 
 <body>
-    
-    
     <div class="card col-md-8" style="margin:auto;">
 
         <ul class="nav nav-tabs" id="Manage_site_tabs">
             <li class="nav-item">
                 <a href="#ManageAnnouncements" class="nav-link active" data-bs-toggle="tab">Announcements</a>
             </li>
+
             <li class="nav-item">
                 <a href="#ManageUsers" class="nav-link" data-bs-toggle="tab">Users</a>
             </li>
+
+            <li class="nav-item">
+                <a href="#ManageAcademics" class="nav-link" data-bs-toggle="tab">Academics</a>
+            </li>
+            
             <li class="nav-item">
                 <a href="#ManageJoinTeamRequests" class="nav-link" data-bs-toggle="tab">Join Team Requests</a>
             </li>
+
             <li class="nav-item">
                 <a href="#ManageBugReports" class="nav-link" data-bs-toggle="tab">Bug Reports</a>
             </li>
@@ -33,21 +38,32 @@
                 {% include "site_management_templates/manage_users.html" %}
             </div>
 
+            <div class="tab-pane fade" id="ManageAcademics">
+                {% include "site_management_templates/manage_academics_templates/manage_academics_tabs.html" %}
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="manageDepartments">
+                        {% include "site_management_templates/manage_academics_templates/manage_departments.html" %}
+                    </div>
+        
+                    <div class="tab-pane fade" id="manageCourses">
+                        {% include "site_management_templates/manage_academics_templates/manage_courses.html" %}
+                    </div>
+
+                    <div class="tab-pane fade" id="ManageProfessors">
+                        {% include "site_management_templates/manage_academics_templates/manage_professors.html" %}
+                    </div>
+                </div>
+            </div>
+
             <div class="tab-pane fade" id="ManageJoinTeamRequests">
                 {% include "site_management_templates/manage_join_team_requests.html" %}
             </div>
+
             <div class="tab-pane fade" id="ManageBugReports">
                 {% include "site_management_templates/manage_bug_reports.html" %}
             </div>
-
         </div>
-
-
     </div>
-
 </body>
-
-
-
 
 {% endblock %} 
