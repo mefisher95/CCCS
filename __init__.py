@@ -15,6 +15,7 @@ app.config.from_object(config.__name__)
 
 app.secret_key = config.SECRET_KEY
 app.config['SQLALCHEMY_DATABASE_URI'] = config.SQLALCHEMY_DATABASE_URI
+app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)
 db = SQLAlchemy(app)
 
