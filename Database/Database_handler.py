@@ -422,4 +422,3 @@ class Database_handler():
         except Exception as error:
             log_error(error)
             return []
-
