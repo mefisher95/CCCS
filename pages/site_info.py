@@ -1,7 +1,7 @@
 from mysite.Database.Registration import Registrations
 
 
-AUTHORS = ['Michael Fisher']
+AUTHORS = ['Michael Fisher', 'Grant Clark']
 
 class Route: 
     def __init__(self, link : str, name : str) -> None :

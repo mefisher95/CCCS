@@ -130,7 +130,7 @@ def CISS240():
         menu_data = MENU_LINKS,
         site_data = SITE_DATA,
         course_data = course_data,
-        course_name = "CISS240",
+        # course_name = "CISS240",
         all_users = all_users,
         all_notes = all_notes,
         all_assignments = all_assignments, 
