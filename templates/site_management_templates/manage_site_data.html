@@ -1,33 +1,68 @@
 {% extends "base.html" %}
 
 {% block content %}
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+    <script>
+        $(document).ready(function(){
+
+            console.log("in the function :)");
+            $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+                localStorage.setItem('activeTab', $(e.target).attr('href'));
+            });
+            var activeTab = localStorage.getItem('activeTab');
+            if(activeTab){
+                $('#Manage_site_tabs a[href="' + activeTab + '"]').tab('show');
+            }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+
+            console.log("in sub function");
+            $('a[data-toggle="subtab"]').on('show.bs.tab', function(e) {
+                console.log('in lambda activation function');
+                localStorage.setItem('newactiveTab', $(e.target).attr('href'));
+            });
+            console.log('i have made it here');
+            var activeTab = localStorage.getItem('newactiveTab');
+            console.log(activeTab);
+            if(activeTab){
+                $('#manage_course_tabs a[href="' + activeTab + '"]').tab('show');
+            }
+        });
+
+    </script>
+</head>
 <body>
+
     <div class="card col-md-8" style="margin:auto;">
 
         <ul class="nav nav-tabs" id="Manage_site_tabs">
             <li class="nav-item">
-                <a href="#ManageAnnouncements" class="nav-link active" data-bs-toggle="tab">Announcements</a>
+                <a href="#ManageAnnouncements" class="nav-link active" data-toggle="tab">Announcements</a>
             </li>
 
             <li class="nav-item">
-                <a href="#ManageUsers" class="nav-link" data-bs-toggle="tab">Users</a>
+                <a href="#ManageUsers" class="nav-link" data-toggle="tab">Users</a>
             </li>
 
             <li class="nav-item">
-                <a href="#ManageAcademics" class="nav-link" data-bs-toggle="tab">Academics</a>
+                <a href="#ManageAcademics" class="nav-link" data-toggle="tab">Academics</a>
             </li>
             
             <li class="nav-item">
-                <a href="#ManageJoinTeamRequests" class="nav-link" data-bs-toggle="tab">Join Team Requests</a>
+                <a href="#ManageJoinTeamRequests" class="nav-link" data-toggle="tab">Join Team Requests</a>
             </li>
 
             <li class="nav-item">
-                <a href="#ManageBugReports" class="nav-link" data-bs-toggle="tab">Bug Reports</a>
+                <a href="#ManageBugReports" class="nav-link" data-toggle="tab">Bug Reports</a>
             </li>
         </ul>
         <div class="tab-content">
-            <div class="tab-pane show active" id="ManageAnnouncements">
+            <div class="tab-pane show active" id="ManageAnnouncements" >
                 {% include "site_management_templates/manage_announcements.html" %}
             </div>
 
@@ -37,6 +72,20 @@
 
             <div class="tab-pane fade" id="ManageAcademics">
                 {% include "site_management_templates/manage_academics_templates/manage_academics_tabs.html" %}
+                
+                <ul class="nav nav-tabs" id="manage_course_tabs">
+                    <li class="nav-item">
+                        <a href="#manageDepartments" class="nav-link active" data-toggle="subtab">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#manageCourses" class="nav-link" data-toggle="subtab">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ManageProfessors" class="nav-link" data-toggle="subtab">Professors</a>
+                    </li>
+                </ul>
+                
+                
                 <div class="tab-content">
                     <div class="tab-pane show active" id="manageDepartments">
                         {% include "site_management_templates/manage_academics_templates/manage_departments.html" %}

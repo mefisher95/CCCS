@@ -11,6 +11,8 @@ def manage_site_data() -> None:
     if not is_admin(): return redirect(url_for('home'))
 
 
+
+
     if request.method == "POST":
         if 'create_department_submit' in request.form: create_department()
 

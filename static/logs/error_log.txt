@@ -1015,3 +1015,51 @@ list index out of range
 TIMESTAMP >>> 2022-02-01 13:19:31.471332
 'project_name' is an invalid keyword argument for Course_Quizzes
 
+TIMESTAMP >>> 2022-03-02 18:57:54.186267
+(mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'EX' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'EX', 'name': 'example'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-03-02 18:57:54.188292
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'EX' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'EX', 'name': 'example'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj) (Background on this error at: https://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-03-02 18:57:54.189286
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'EX' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'EX', 'name': 'example'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj) (Background on this error at: https://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-03-02 18:57:54.189286
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'EX' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'EX', 'name': 'example'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj) (Background on this error at: https://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-03-02 18:57:54.189286
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'EX' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'EX', 'name': 'example'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj) (Background on this error at: https://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-03-02 18:57:54.190257
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'EX' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'EX', 'name': 'example'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj) (Background on this error at: https://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-03-02 18:57:54.192253
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'EX' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'EX', 'name': 'example'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj) (Background on this error at: https://sqlalche.me/e/14/7s2a)
+
+TIMESTAMP >>> 2022-03-02 18:57:54.192253
+This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (mysql.connector.errors.IntegrityError) 1062 (23000): Duplicate entry 'EX' for key 'code'
+[SQL: INSERT INTO `Department` (code, name) VALUES (%(code)s, %(name)s)]
+[parameters: {'code': 'EX', 'name': 'example'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj) (Background on this error at: https://sqlalche.me/e/14/7s2a)
+
