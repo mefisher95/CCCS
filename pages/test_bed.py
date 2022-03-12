@@ -7,6 +7,6 @@ from mysite.config import *
 from mysite.pages.site_info import ROUTES
 
 
-@app.route(ROUTES['index'].link)
-def index():
-    return redirect(url_for('home'))
+@app.route('/test_bed')
+def test_besd():
+    return redirect(url_for('course_template', course_code = "CISS", course_num = "240"))

@@ -1,9 +1,13 @@
+from fileinput import filename
 from flask import redirect, render_template, request, url_for
 from mysite import app, database_conn
 import datetime
+import mysite
 # from mysite.config import *
 from mysite.config.config_all import *
 from mysite.utils.security_utils import is_admin
+
+import os
 
 @app.route(ROUTES['manage_site_data'].link, methods = ['GET', 'POST'])
 def manage_site_data() -> None:
@@ -24,9 +28,9 @@ def manage_site_data() -> None:
 
         if 'toggle_admin_submit' in request.form: toggle_admin()
 
-        if "create_professor_submit" in request.form: create_professor()
+        # if "create_professor_submit" in request.form: create_professor()
 
-        if "delete_professor_submit" in request.form: delete_professor()
+        # if "delete_professor_submit" in request.form: delete_professor()
 
         if 'delete_user_submit' in request.form: delete_user()
 
@@ -40,7 +44,7 @@ def manage_site_data() -> None:
     all_users = database_conn.get_all_Users()
     all_join_requests = database_conn.get_all_join_team_requests()
     all_bug_reports = database_conn.get_all_bug_reports()
-    all_professors = database_conn.get_all_Professors()
+    # all_professors = database_conn.get_all_Professors()
     all_departments = database_conn.get_all_Departments()
     all_courses = database_conn.get_all_Courses()
 
@@ -53,12 +57,13 @@ def manage_site_data() -> None:
         all_users = all_users,
         all_join_requests = all_join_requests,
         all_bug_reports = all_bug_reports,
-        all_professors = all_professors, 
+        # all_professors = all_professors, 
         all_departments = all_departments,
         all_courses = all_courses
         )
 
 def create_course() -> None:
+
     dept_id = request.form['department_id']
     course_num = request.form['course_number']
     course_name = request.form['course_name']
@@ -69,13 +74,34 @@ def create_course() -> None:
     if course_link == "": 
         dep = database_conn.get_Department_by_id(dept_id)
 
-        try:
-            print('building handle', dep, course_num)
-            print(dep['code'] + course_num)
-            course_link = url_for(dep['code'] + course_num)
+        # try:
+        course_link = url_for('course_template', course_code = dep['code'], course_num = course_num)
+        print(course_link)
+
+        if not os.path.isdir('mysite/static/courses'): os.mkdir('mysite/static/courses')
+
+        course_dir = 'mysite/static/' + course_link
+        overview = course_dir + '/overview'
+        notes = course_dir + '/notes'
+        assignments = course_dir + '/assignments'
+        quizzes = course_dir + '/quizzes'
+        project = course_dir + '/project'
         
-        except: 
-            return redirect(url_for('course_not_found'))
+        if not os.path.isdir(course_dir): os.mkdir(course_dir)
+        if not os.path.isdir(overview): os.mkdir(overview)
+        if not os.path.isdir(assignments): os.mkdir(assignments)
+        if not os.path.isdir(quizzes): os.mkdir(quizzes)
+        if not os.path.isdir(project): os.mkdir(project)
+        if not os.path.isdir(notes): os.mkdir(notes)
+
+
+        # print(os.path.join(static, course_link))
+        # os.mkdir(os.path.join(static, course_link))
+
+
+        
+        # except: 
+        #     return redirect(url_for('course_not_found'))
             
 
     database_conn.add_Course(
@@ -106,22 +132,22 @@ def toggle_admin() -> None:
     modify_admin_data = eval(request.form['toggle_admin_submit'])
     database_conn.set_User_admin(modify_admin_data['id'], not modify_admin_data['admin'])
 
-def create_professor() -> None:
-    prof_title = request.form['professor_title']
-    prof_given_name = request.form['professor_given_name']
-    prof_family_name = request.form['professor_family_name']
-    prof_email = request.form['professor_email']
+# def create_professor() -> None:
+#     prof_title = request.form['professor_title']
+#     prof_given_name = request.form['professor_given_name']
+#     prof_family_name = request.form['professor_family_name']
+#     prof_email = request.form['professor_email']
 
-    database_conn.add_Professor(
-        title=prof_title,
-        given_name=prof_given_name,
-        family_name=prof_family_name,
-        email=prof_email
-    )
+#     database_conn.add_Professor(
+#         title=prof_title,
+#         given_name=prof_given_name,
+#         family_name=prof_family_name,
+#         email=prof_email
+#     )
 
-def delete_professor() -> None:
-    prof_id = request.form['delete_professor_submit']
-    database_conn.delete_Professor(prof_id)  
+# def delete_professor() -> None:
+#     prof_id = request.form['delete_professor_submit']
+#     database_conn.delete_Professor(prof_id)  
 
 def delete_user() -> None:
     user_id = request.form['delete_user_submit']

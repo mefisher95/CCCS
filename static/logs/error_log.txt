@@ -1063,3 +1063,24 @@ This Session's transaction has been rolled back due to a previous exception duri
 [parameters: {'code': 'EX', 'name': 'example'}]
 (Background on this error at: https://sqlalche.me/e/14/gkpj) (Background on this error at: https://sqlalche.me/e/14/7s2a)
 
+TIMESTAMP >>> 2022-03-11 16:43:45.195398
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '8'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-03-11 17:04:34.089859
+'dict' object has no attribute 'id'
+
+TIMESTAMP >>> 2022-03-11 17:06:13.090536
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '8'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-03-11 17:09:38.259944
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '8'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+

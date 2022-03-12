@@ -15,7 +15,6 @@ from mysite.Database.Bug_Report import Bug_Report
 
 from mysite.Database.Department import Department
 from mysite.Database.Courses import Courses
-from mysite.Database.Professor import Professor
 
 from mysite.Database.Course_Assignments import Course_Assignments
 from mysite.Database.Course_Notes import Course_Notes
@@ -514,6 +513,18 @@ class Database_handler():
 
     def delete_Course(self, id : int) -> bool:
         try:
+            users = self.get_all_Users_in_Course(id)
+            notes = self.get_all_Course_Notes_in_Course(id)
+            homework = self.get_all_Course_Homework_in_Course(id)
+            quizzes = self.get_all_Course_Quizzes_in_Course(id)
+            project = self.get_all_Course_Projects_in_Course(id)
+
+            for user in users: self.remove_User_from_Course_Assignment(user['id'], id)
+            for note in notes: self.remove_Course_Notes_from_Course(note['id'])
+            for work in homework: self.remove_Course_Homework_from_Course(work['id'])
+            for quiz in quizzes: self.remove_Course_Quiz_from_Course(quiz['id'])
+            for proj in project: self.remove_Course_Project_from_Course(proj['id'])
+
             Courses.query.filter_by(id = id).delete()
             self.db.session.commit()
             return True
@@ -581,61 +592,6 @@ class Database_handler():
             return False
 
 
-    ###########################################################################
-    # Professor Methods
-    ###########################################################################
-    def add_Professor(self, title : str, given_name : str, family_name : str, 
-                    email : str) -> int:
-        try:
-            new_professor = Professor(
-                title = title,
-                given_name = given_name,
-                family_name = family_name,
-                email = email
-            )
-
-            self.db.session.add(new_professor)
-            self.db.session.commit()
-
-            return new_professor.as_dict()['id']
-
-        except Exception as error:
-            log_error(error)
-            return -1
-    
-    def get_Professor_by_id(self, id : int) -> dict:
-        try:
-            professor = Professor.query.filter_by(id = id).first()
-            
-            if professor is None: return False
-            return professor.as_dict()
-
-        except Exception as error:
-            log_error(error)
-            return {}
-
-    def get_all_Professors(self) -> list:
-        try:
-            professors = self.db.session.query(
-                Professor
-            )
-
-            return sorted([x.as_dict() for x in professors], key=lambda d: (d['family_name'] is not None, d['family_name']))
-
-
-        except Exception as error:
-            log_error(error)
-            return []
-
-    def delete_Professor(self, id : int) -> bool:
-        try:
-            Professor.query.filter_by(id = id).delete()
-            self.db.session.commit()
-            return True
-        except Exception as error:
-            log_error(error)
-            return False
-    
     ###########################################################################
     # Bug Report Methods
     ###########################################################################
