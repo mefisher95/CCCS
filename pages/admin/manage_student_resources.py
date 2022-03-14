@@ -1,7 +1,5 @@
-from fileinput import filename
 from flask import redirect, render_template, request, url_for
 from mysite import app, database_conn
-import datetime
 import mysite
 # from mysite.config import *
 from mysite.config.config_all import *
@@ -9,8 +7,8 @@ from mysite.utils.security_utils import is_admin
 
 import os, shutil
 
-@app.route(ROUTES['manage_site_data'].link, methods = ['GET', 'POST'])
-def manage_site_data() -> None:
+@app.route(ROUTES['manage_student_resources'].link, methods = ['GET', 'POST'])
+def manage_student_resources() -> None:
 
     if not is_admin(): return redirect(url_for('home'))
 
@@ -23,36 +21,66 @@ def manage_site_data() -> None:
 
         if 'create_course_submit' in request.form: create_course()
 
-        if 'toggle_admin_submit' in request.form: toggle_admin()
+        if 'create_software_submit' in request.form: create_software()
 
-        if 'delete_user_submit' in request.form: delete_user()
+        if 'delete_software_submit' in request.form: delete_software()
 
-        if 'delete_join_team_submit' in request.form: delete_join_request()
+        if 'create_tutorial_submit' in request.form: create_tutorial()
 
-        if 'delete_bug_report_submit' in request.form: delete_bug_report()
-        
-        if 'announcement_submit' in request.form: create_announcement()
+        if 'delete_tutorial_submit' in request.form: delete_tutorial()
 
-    all_announcements = database_conn.get_all_Announcements()
-    all_users = database_conn.get_all_Users()
-    all_join_requests = database_conn.get_all_join_team_requests()
-    all_bug_reports = database_conn.get_all_bug_reports()
+
     all_departments = database_conn.get_all_Departments()
     all_courses = database_conn.get_all_Courses()
+    all_software = database_conn.get_all_Software()
+    all_tutorials = database_conn.get_all_Tutorial()
 
 
     return render_template(
-        'site_management_templates/manage_site_data.html',
+        'student_resources_management_templates/manage_student_resources.html',
         menu_data = MENU_LINKS,
         site_data = SITE_DATA,
-        all_announcements = all_announcements,
-        all_users = all_users,
-        all_join_requests = all_join_requests,
-        all_bug_reports = all_bug_reports,
-        # all_professors = all_professors, 
         all_departments = all_departments,
-        all_courses = all_courses
+        all_courses = all_courses, 
+        all_software = all_software,
+        all_tutorials = all_tutorials
         )
+
+def create_tutorial() -> None:
+    if not os.path.isdir('mysite/static/tutorials'): os.mkdir('mysite/static/tutorials')
+    
+    files = request.files.getlist("tutorial_list")
+    
+    for fl in files: 
+        filepath ='static/tutorials/' + fl.filename
+        fl.save('mysite/' + filepath) 
+
+        database_conn.add_Tutorial(
+            tutorial_name=fl.filename,
+            pdf_link=filepath
+        )
+
+def delete_tutorial() -> None: 
+    tutorial_id = request.form['delete_tutorial_submit']
+    tutorial = database_conn.get_Tutorial_by_ID(tutorial_id)
+
+    filepath = 'mysite/static/tutorials/' + tutorial['tutorial_name']
+    os.remove(filepath) 
+
+    database_conn.remove_Tutorial(tutorial_id)
+
+def create_software() -> None:
+    software_name = request.form['software_name']
+    link = request.form['software_link']
+
+    database_conn.add_Software(
+        software_name=software_name,
+        link=link
+    )
+
+def delete_software() -> None:
+    software_id = request.form['delete_software_submit']
+    database_conn.remove_Software(software_id)
 
 def create_course() -> None:
 
@@ -121,27 +149,3 @@ def delete_department() -> None:
     dept_id = request.form['delete_department_submit']
     database_conn.delete_Department(dept_id)
 
-def toggle_admin() -> None:
-    modify_admin_data = eval(request.form['toggle_admin_submit'])
-    database_conn.set_User_admin(modify_admin_data['id'], not modify_admin_data['admin'])
-
-def delete_user() -> None:
-    user_id = request.form['delete_user_submit']
-    database_conn.delete_User(user_id)
-
-def delete_join_request() -> None:
-    request_id = request.form['delete_join_team_submit']
-    database_conn.delete_join_team_request(request_id)
-
-def delete_bug_report() -> None:
-    bug_id = request.form['delete_bug_report_submit']
-    database_conn.delete_bug_report(bug_id)
-
-def create_announcement() -> None:
-    event_date = request.form['event_date']
-    event_message = request.form['event_message']
-    
-    delete_list = request.form.getlist('delete_list')
-
-    if event_message != "": database_conn.add_Announcement(event_message, event_date)
-    if len(delete_list): database_conn.delete_Announcement_list(delete_list)

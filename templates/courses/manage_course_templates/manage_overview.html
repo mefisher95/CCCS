@@ -1,0 +1,27 @@
+<form action = "{{ url_for('course_template', course_code = course_data['department']['code'], course_num = course_data['course_num']) }}" 
+        enctype='multipart/form-data'
+        method="post">
+    <div class="card" >
+        <div class = "card-header">
+            <h2>Manage Overview</h2>
+        </div>
+        <div class="card-body">
+            <table class = "table">
+                <thead>
+
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input id="input-b3" type="file" class="file" 
+                            data-show-upload="True" data-show-caption="true" name = "overview_file">
+                        </td>
+                        <td>
+                            <input type="submit" class="btn btn-primary CCCS-button" name="create_overview_submit">
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</form>

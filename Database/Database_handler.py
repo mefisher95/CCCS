@@ -21,6 +21,8 @@ from mysite.Database.Course_Notes import Course_Notes
 from mysite.Database.Course_Homework import Course_Homework
 from mysite.Database.Course_Quizzes import Course_Quizzes
 from mysite.Database.Course_Projects import Course_Projects
+from mysite.Database.Software import Software
+from mysite.Database.Tutorials import Tutorials
 
 
 
@@ -61,16 +63,126 @@ class Database_handler():
 
         self.db.create_all()
 
-        ###########################################################################
+    ###########################################################################
+    # Tutorial Methods
+    ###########################################################################
+    def add_Tutorial(self, tutorial_name : str, pdf_link: str) -> int:
+        try:
+            new_tutorial = Tutorials(
+                tutorial_name = tutorial_name,
+                pdf_link = pdf_link
+            )
+            self.db.session.add(new_tutorial)
+            self.db.session.commit()
+            return new_tutorial.as_dict()['id']
+
+        except Exception as error:
+            log_error(error)
+            return -1
+
+    def remove_Tutorial(self, tutorial_id : int) -> bool:
+        try:
+            Tutorials.query.filter_by(
+                id = tutorial_id
+            ).delete()
+            self.db.session.commit()
+
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+
+    def get_all_Tutorial(self) -> list:
+        try:
+            tutorial = self.db.session.query(
+                Tutorials
+            )
+
+            return sorted([x.as_dict() for x in tutorial], key = lambda d: (d['tutorial_name'] is not None, d['tutorial_name']))
+
+        except Exception as error:
+            log_error(error)
+            return []
+    
+    def get_Tutorial_by_ID(self, tutorial_id : int) -> dict:
+        try:
+            tutorial = Tutorials.query.filter_by(
+                id = tutorial_id
+            ).first()
+
+
+            return tutorial.as_dict()
+        except Exception as error:
+            log_error(error)
+            return {}
+
+
+    ###########################################################################
+    # Software Methods
+    ###########################################################################
+    def add_Software(self, software_name : str, link : str) -> int:
+        try:
+            new_software = Software(
+                software_name = software_name,
+                link = link
+            )
+            self.db.session.add(new_software)
+            self.db.session.commit()
+            return new_software.as_dict()['id']
+
+        except Exception as error:
+            log_error(error)
+            return -1
+        
+    def remove_Software(self, software_id : int) -> bool:
+        try:
+            Software.query.filter_by(
+                id = software_id
+            ).delete()
+            self.db.session.commit()
+
+            return True
+
+        except Exception as error:
+            log_error(error)
+            return False
+
+    def get_all_Software(self) -> list: 
+        try:
+            software = self.db.session.query(
+                Software
+            )
+
+            return sorted([x.as_dict() for x in software], key = lambda d: (d['software_name'] is not None, d['software_name']))
+
+        except Exception as error:
+            log_error(error)
+            return []
+        
+    def get_Software_by_ID(self, software_id : int) -> dict:
+        try:
+            software = Software.query.filter_by(
+                id = software_id
+            ).first()
+
+
+            return software.as_dict()
+        except Exception as error:
+            log_error(error)
+            return {}
+
+
+    ###########################################################################
     #   Course Project Methods
     ###########################################################################
-    def add_Course_Project(self, course_id : int, project_name : str, pdf_link : str, due_date : datetime) -> int:
+    def add_Course_Project(self, course_id : int, project_name : str, pdf_link : str, due_date : datetime = None) -> int:
         try:
             new_homework = Course_Projects(
                 Course_id = course_id,
                 project_name = project_name,
                 pdf_link = pdf_link,
-                due_date = due_date
+                due_date = datetime.now()
             )
 
             self.db.session.add(new_homework)
@@ -142,13 +254,13 @@ class Database_handler():
     ###########################################################################
     #   Course Quiz Methods
     ###########################################################################
-    def add_Course_Quiz(self, course_id : int, quiz_name : str, pdf_link : str, due_date : datetime) -> int:
+    def add_Course_Quiz(self, course_id : int, quiz_name : str, pdf_link : str, due_date : datetime = None) -> int:
         try:
             new_homework = Course_Quizzes(
                 Course_id = course_id,
                 quiz_name = quiz_name,
                 pdf_link = pdf_link,
-                due_date = due_date
+                due_date = datetime.now()
             )
 
             self.db.session.add(new_homework)
@@ -220,13 +332,13 @@ class Database_handler():
     ###########################################################################
     #   Course Homework Methods
     ###########################################################################
-    def add_Course_Homework(self, course_id : int, homework_name : str, pdf_link : str, due_date : datetime) -> int:
+    def add_Course_Homework(self, course_id : int, homework_name : str, pdf_link : str, due_date : datetime = None) -> int:
         try:
             new_homework = Course_Homework(
                 Course_id = course_id,
                 homework_name = homework_name,
                 pdf_link = pdf_link,
-                due_date = due_date
+                due_date = datetime.now()
             )
 
             self.db.session.add(new_homework)
@@ -358,7 +470,6 @@ class Database_handler():
             return {}
 
     def remove_Course_Notes_from_Course(self, notes_id : int) -> bool:
-        print('notes_id', notes_id)
         try:
             Course_Notes.query.filter_by(
                 id = notes_id
@@ -418,7 +529,7 @@ class Database_handler():
                 User_id = user_id,
                 Course_id = course_id
             ).delete()
-            
+
             self.db.session.commit()
             return True
 
@@ -519,7 +630,9 @@ class Database_handler():
             quizzes = self.get_all_Course_Quizzes_in_Course(id)
             project = self.get_all_Course_Projects_in_Course(id)
 
-            for user in users: self.remove_User_from_Course_Assignment(user['id'], id)
+            print(users)
+
+            for user in users: self.remove_User_from_Course_Assignment(user['User_id'], id)
             for note in notes: self.remove_Course_Notes_from_Course(note['id'])
             for work in homework: self.remove_Course_Homework_from_Course(work['id'])
             for quiz in quizzes: self.remove_Course_Quiz_from_Course(quiz['id'])

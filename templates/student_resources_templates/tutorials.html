@@ -1,27 +1,41 @@
-
-
-
-
-<form action = "{{ url_for('manage_site_data')}}" method="post">
-    <div class="card" >
-        <div class = "card-header">
-            <h2>Tutorials</h2>
-        </div>
-        <div class="card-body">
-            <table class = "table">
-                <thead>
-                    <tr>
-                        <th scope = "col">Given Name</th>
-                        <th scope = "col">Family Name</th>
-                        <th scope = "col">Username</th>
-                        <th scope = "col">Email</th>
-                        <th scope = "col">Admin</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-        </div>
+<div class="card" >
+    <div class = "card-header">
+        <h2>Tutorials</h2>
     </div>
-</form>
+    <div class="card-body">
+        <table class = "table">
+            <thead>
+                <tr>
+                    <th scope = "col">Title</th>
+                    <th scope = "col">View</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if all_tutorials | length > 0 %}
+
+                {% for tutorial in all_tutorials %}
+                    <tr>
+                        <td> {{ tutorial['tutorial_name'] }} </td>
+                        <td>
+                            <a class="btn btn-primary CCCS-button" href='{{url_for("view_tutorial", args = { "tutorial_id" : tutorial["id"]})}}' style="width: 100%;" role="button">View</a>
+                        </td>  
+                    </tr>
+                {% endfor %}
+
+                {% else %}
+                    <tr>
+                        <td>
+                            None
+                        </td>
+                        <td>
+                            None
+                        </td>
+
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+
+
+    </div>
+</div>

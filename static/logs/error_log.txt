@@ -1084,3 +1084,51 @@ TIMESTAMP >>> 2022-03-11 17:09:38.259944
 [parameters: {'id_1': '8'}]
 (Background on this error at: https://sqlalche.me/e/14/gkpj)
 
+TIMESTAMP >>> 2022-03-11 21:55:35.509340
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '40'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-03-11 21:55:39.503409
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '40'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-03-11 21:55:40.894572
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '40'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-03-12 23:11:52.787185
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '40'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-03-12 23:12:41.851123
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '40'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-03-12 23:13:11.150953
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '40'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-03-12 23:16:39.839294
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '40'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+
+TIMESTAMP >>> 2022-03-12 23:18:18.301733
+(mysql.connector.errors.IntegrityError) 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`cccs`.`course_assignments`, CONSTRAINT `course_assignments_ibfk_2` FOREIGN KEY (`Course_id`) REFERENCES `courses` (`id`))
+[SQL: DELETE FROM `Courses` WHERE `Courses`.id = %(id_1)s]
+[parameters: {'id_1': '40'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+

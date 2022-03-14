@@ -37,37 +37,36 @@
 
         <ul class="nav nav-tabs" id="Manage_site_tabs">
             <li class="nav-item">
-                <a href="#ManageAnnouncements" class="nav-link active" data-toggle="tab">Announcements</a>
+                <a href="#ManageAcademics" class="nav-link active" data-toggle="tab">Academics</a>
             </li>
-
             <li class="nav-item">
-                <a href="#ManageUsers" class="nav-link" data-toggle="tab">Users</a>
+                <a href="#ManageSoftware" class="nav-link" data-toggle="tab">Software</a>
             </li>
-
             <li class="nav-item">
-                <a href="#ManageJoinTeamRequests" class="nav-link" data-toggle="tab">Join Team Requests</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="#ManageBugReports" class="nav-link" data-toggle="tab">Bug Reports</a>
+                <a href="#ManageTutorials" class="nav-link" data-toggle="tab">Tutorials</a>
             </li>
         </ul>
         <div class="tab-content">
-            <div class="tab-pane show active" id="ManageAnnouncements" >
-                {% include "site_management_templates/manage_announcements.html" %}
+            <div class="tab-pane show active" id="ManageAcademics">
+                {% include "student_resources_management_templates/manage_academics_templates/manage_academics_tabs.html" %}
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="manageDepartments">
+                        {% include "student_resources_management_templates/manage_academics_templates/manage_departments.html" %}
+                    </div>
+        
+                    <div class="tab-pane fade" id="manageCourses">
+                        {% include "student_resources_management_templates/manage_academics_templates/manage_courses.html" %}
+                    </div>
+                </div>
             </div>
 
-            <div class="tab-pane fade" id="ManageUsers">
-                {% include "site_management_templates/manage_users.html" %}
+            <div class="tab-pane fade" id="ManageSoftware">
+                {% include "student_resources_management_templates/manage_software_templates/manage_software.html" %}
+
             </div>
 
-
-            <div class="tab-pane fade" id="ManageJoinTeamRequests">
-                {% include "site_management_templates/manage_join_team_requests.html" %}
-            </div>
-
-            <div class="tab-pane fade" id="ManageBugReports">
-                {% include "site_management_templates/manage_bug_reports.html" %}
+            <div class="tab-pane fade" id="ManageTutorials">
+                {% include "student_resources_management_templates/manage_tutorial_templates/manage_tutorial.html" %}
             </div>
         </div>
     </div>

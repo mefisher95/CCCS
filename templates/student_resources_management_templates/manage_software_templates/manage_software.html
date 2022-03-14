@@ -1,0 +1,58 @@
+<form action = "{{ url_for('manage_student_resources') }}" >
+    <div class="card" >
+        <div class = "card-header">
+            <h2>Manage Courses</h2>
+        </div>
+        <div class="card-body">
+            <table class = "table">
+                <thead>
+                    <div class="form-group">
+                    <tr>
+                        <th scope = "col">Software Name</th>
+                        <th scope = "col">Site Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if all_software | length > 0 %}
+
+                    {% for software in all_software %}
+                        <tr>
+                            <td> {{ course['software_name'] }} </td>
+                            <td> <a href="{{ software['link'] }}">{{ software['link'] }}</a> </td>
+
+                            <td>
+                                <button type ="submit" class="btn btn-primary CCCS-button" name="delete_software_submit" value="{{ software['id'] }}">Delete</button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    {% else %}
+                        <tr>
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <input type="text" class="form-control" name="software_name" placeholder="Introduction to Programming">
+                        </td>
+
+                        <td>
+                            <input type="text" class="form-control" name="software_link" placeholder="external-course-link-here">
+                        </td>
+
+                        <td>
+                            <input type="submit" class="btn btn-primary CCCS-button" name="create_software_submit">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</form>

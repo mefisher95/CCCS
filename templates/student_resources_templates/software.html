@@ -1,27 +1,42 @@
 
-
-
-
-<form action = "{{ url_for('manage_site_data')}}" method="post">
     <div class="card" >
         <div class = "card-header">
             <h2>Software</h2>
         </div>
         <div class="card-body">
             <table class = "table">
+                
                 <thead>
                     <tr>
-                        <th scope = "col">Given Name</th>
-                        <th scope = "col">Family Name</th>
-                        <th scope = "col">Username</th>
-                        <th scope = "col">Email</th>
-                        <th scope = "col">Admin</th>
+                        <th scope = "col">Software Name</th>
+                        <th scope = "col">Link</th>
                     </tr>
                 </thead>
                 <tbody>
+                    {% if all_software | length > 0 %}
+
+                    {% for software in all_software %}
+                        <tr>
+
+                            <td> {{ software['software_name'] }} </td>
+                            <td> <a href="{{ software['link'] }}">{{ software['link'] }}</a> </td>
+
+                        </tr>
+                    {% endfor %}
+
+                    {% else %}
+                        <tr>
+
+                            <td>
+                                None
+                            </td>
+                            <td>
+                                None
+                            </td>
+                        </tr>
+                    {% endif %}
 
                 </tbody>
             </table>
         </div>
     </div>
-</form>

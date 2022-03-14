@@ -1,9 +1,9 @@
-<form action = "{{ url_for('course_template', course_code = course_data['department']['code'], course_num = course_data['course_num']) }}" 
-        enctype='multipart/form-data'
-        method="post">
+<form action = "{{ url_for('manage_student_resources') }}" 
+    enctype='multipart/form-data'
+    method="post">
     <div class="card" >
         <div class = "card-header">
-            <h2>Manage Notes</h2>
+            <h2>Manage Tutorials</h2>
         </div>
         <div class="card-body">
             <table class = "table">
@@ -11,23 +11,23 @@
 
                     <tr>
                         <td>
-                            <input id="input-b3" type="file" class="file" multiple name = "notes_list">
+                            <input id="input-b3" type="file" class="file" multiple name = "tutorial_list">
                         </td>
                         <td>
-                            <input type="submit" class="btn btn-primary CCCS-button" name="create_notes_submit">
+                            <input type="submit" class="btn btn-primary CCCS-button" name="create_tutorial_submit">
                         </td>
                     </tr>
                 </thead>
                 <tbody>
-                    {% if all_notes | length > 0 %}
+                    {% if all_tutorials | length > 0 %}
 
-                    {% for note in all_notes %}
+                    {% for tutorial in all_tutorials %}
                         <tr>
-                            <td> {{ note['notes_name'] }} </td>
-                            <td> <a href="{{ note['pdf_link'] }}">{{ note['pdf_link'] }}</a> </td>
+                            <td> {{ tutorial['tutorial_name'] }} </td>
+                            <td> <a href="{{ tutorial['pdf_link'] }}">{{ tutorial['pdf_link'] }}</a> </td>
 
                             <td>
-                                <button type ="submit" class="btn btn-primary CCCS-button" name="delete_notes_submit" value="{{ note['id'] }}">Delete</button>
+                                <button type ="submit" class="btn btn-primary CCCS-button" name="delete_tutorial_submit" value="{{ tutorial['id'] }}">Delete</button>
                             </td>                            
 
                         </tr>

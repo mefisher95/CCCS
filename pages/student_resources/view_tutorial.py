@@ -8,24 +8,20 @@ from mysite.pages.site_info import *
 from mysite.utils.security_utils import is_admin
 
 
-@app.route('/view_notes<args>', methods=['GET', 'POST'])
-def view_notes(args):
+@app.route('/view_tutorial<args>', methods=['GET', 'POST'])
+def view_tutorial(args):
     args = eval(args)
-    course_id = args['course_id']
-    notes_id = args['notes_id']
+    # course_id = args['course_id']
+    tutorial_id = args['tutorial_id']
 
-
-    print(args)
-
-    if not is_allowed_course_access(course_id=course_id): return redirect(url_for('home'))
-    note_page = database_conn.get_Course_Notes_by_ID(notes_id)
-
+    # if not is_allowed_course_access(course_id=course_id): return redirect(url_for('home'))
+    tutorial_page = database_conn.get_Tutorial_by_ID(tutorial_id=tutorial_id)    
     
     return render_template(
         'view_pdf.html',
         menu_data = MENU_LINKS,
         site_data = SITE_DATA,
-        link = note_page['pdf_link']
+        link = tutorial_page['pdf_link']
     )
     
 

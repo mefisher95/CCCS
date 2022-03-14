@@ -17,8 +17,8 @@ class Route:
 ROUTES = { 
         "index" : Route("/", "Index"),
         "home" : Route("/home", "Home"),
-        # "document" : Route("/site-documentation", "Documentation"),
         "manage_site_data" : Route("/manage_site", "Manage Site"),
+        "manage_student_resources" : Route("/manage_student_resources", "Manage Student Resources"),
         "new_student_info" : Route("/new_student_info", "New Student Information"),
         "register" : Route("/SellUsYourSoul", "Register"),
         "finalize_register" : Route("/SoulSold", "Finalize Registration"),

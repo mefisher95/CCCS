@@ -3,6 +3,6 @@
         <h2>Course Overview</h2>
     </div>
     <div class="card-body">
-        {% include url_for('static', filename = 'courses/' + course_name + '/overview/' + course_name + '.html') %}
+        {{ overview | safe}}
     </div>
 </div>

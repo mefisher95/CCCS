@@ -1,4 +1,6 @@
-<form action = "{{ url_for('course_template', course_code = course_data['department']['code'], course_num = course_data['course_num']) }}" method="post">
+<form action = "{{ url_for('course_template', course_code = course_data['department']['code'], course_num = course_data['course_num']) }}" 
+        enctype='multipart/form-data'
+        method="post">
     <div class="card" >
         <div class = "card-header">
             <h2>Manage Assignments</h2>
@@ -7,24 +9,9 @@
             <table class = "table">
                 <thead>
                     <tr>
-                        <th scope = "col">Title</th>
-                        <th scope = "col">Link</th>
-                        <th scope = "col">Due Date</th>
-                        <th scope = "col">Delete</th>
-                    </tr>
-                    <tr>
                         <td>
-                            <input type="text" class="form-control" name="assignments_name" placeholder="Assignment 1">
+                            <input id="input-b3" type="file" class="file" multiple name = "assignments_list">
                         </td>
-                        <td>
-                            <input type="text" class="form-control" name="pdf_link" placeholder="https://drive.google.com/file/d/file-code-here/preview">
-                        </td>
-
-                        <td>
-                        <input type="date" class="datepicker" name="due_date">
-
-                        </td>
-
                         <td>
                             <input type="submit" class="btn btn-primary CCCS-button" name="create_assignments_submit">
                         </td>

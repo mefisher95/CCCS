@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_session import Session
+# from flask_session import Session
 from mysite.config import *
 import os
 # from mysite.config import config_all, flask_config, database_config
@@ -8,8 +8,6 @@ import os
 
 app = Flask(__name__)
 
-if os.path.isdir('static'):
-    print('found static')
 
 app.config.from_object(config.__name__)
 
@@ -17,7 +15,7 @@ app.secret_key = config.SECRET_KEY
 app.config['SQLALCHEMY_DATABASE_URI'] = config.SQLALCHEMY_DATABASE_URI
 app.config['SESSION_TYPE'] = 'filesystem'
 
-Session(app)
+# Session(app)
 
 db = SQLAlchemy(app)
 

@@ -5,6 +5,37 @@
 
 {% block content %}
 
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            console.log("in the function :)");
+            $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+                localStorage.setItem('course_tab', $(e.target).attr('href'));
+            });
+            var activeTab = localStorage.getItem('course_tab');
+            if(activeTab){
+                $('#Manage_site_tabs a[href="' + activeTab + '"]').tab('show');
+            }
+        });
+
+        $(document).ready(function(){
+
+            console.log("in the function :)");
+            $('a[data-bs-toggle="tab"]').on('show.bs.tab', function(e) {
+                localStorage.setItem('manage_course_tab', $(e.target).attr('href'));
+            });
+            var activeTab = localStorage.getItem('manage_course_tab');
+            if(activeTab){
+                $('#manage_course_tabs a[href="' + activeTab + '"]').tab('show');
+            }
+        });
+    </script>
+
+</head>
+
 <body>
     <div class="card col-md-8" style="margin:auto;">
 
@@ -12,27 +43,27 @@
 
         <ul class="nav nav-tabs" id="Manage_site_tabs">
             <li class="nav-item">
-                <a href="#Overview" class="nav-link active" data-bs-toggle="tab">Overview</a>
+                <a href="#Overview" class="nav-link active" data-toggle="tab">Overview</a>
             </li>
 
             <li class="nav-item">
-                <a href="#Notes" class="nav-link" data-bs-toggle="tab">Notes</a>
+                <a href="#Notes" class="nav-link" data-toggle="tab">Notes</a>
             </li>
 
             <li class="nav-item">
-                <a href="#Assignments" class="nav-link" data-bs-toggle="tab">Assignments</a>
+                <a href="#Assignments" class="nav-link" data-toggle="tab">Assignments</a>
             </li>
             
             <li class="nav-item">
-                <a href="#Quizzes" class="nav-link" data-bs-toggle="tab">Quizzes</a>
+                <a href="#Quizzes" class="nav-link" data-toggle="tab">Quizzes</a>
             </li>
             
             <li class="nav-item">
-                <a href="#Projects" class="nav-link" data-bs-toggle="tab">Projects</a>
+                <a href="#Projects" class="nav-link" data-toggle="tab">Projects</a>
             </li>
             {% if session['admin'] %}
                 <li class="nav-item">
-                    <a href="#ManageCourse" class="nav-link" data-bs-toggle="tab">Manage Course</a>
+                    <a href="#ManageCourse" class="nav-link" data-toggle="tab">Manage Course</a>
                 </li>
 
             {% endif %}
@@ -66,7 +97,10 @@
             <div class="tab-pane fade" id="ManageCourse">
                 {% include "courses/manage_course_templates/manage_course_tabs.html" %}
                 <div class="tab-content">
-                    <div class="tab-pane show active" id="ManageUsers">
+                    <div class="tab-pane show active" id="ManageOverview">
+                        {% include "courses/manage_course_templates/manage_overview.html" %}
+                    </div>
+                    <div class="tab-pane fade" id="ManageUsers">
                         {% include "courses/manage_course_templates/manage_users.html" %}
                     </div>
 

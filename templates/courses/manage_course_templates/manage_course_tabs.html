@@ -1,7 +1,12 @@
 <ul class="nav nav-tabs" id="Manage_course_tabs">
     {% if session['admin'] %}
+
+        <li class = "nav-item">
+            <a href="#ManageOverview" class="nav-link active" data-bs-toggle="tab">Manage Overview</a>
+        </li>
+
         <li class="nav-item">
-            <a href="#ManageUsers" class="nav-link active" data-bs-toggle="tab">Manage Users</a>
+            <a href="#ManageUsers" class="nav-link" data-bs-toggle="tab">Manage Users</a>
         </li>
 
         <li class="nav-item">
