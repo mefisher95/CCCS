@@ -13,6 +13,7 @@ def manage_student_resources() -> None:
     if not is_admin(): return redirect(url_for('home'))
 
     if request.method == "POST":
+        print(request.form)
         if 'create_department_submit' in request.form: create_department()
 
         if 'delete_course_submit' in request.form: delete_course()
@@ -72,6 +73,8 @@ def delete_tutorial() -> None:
 def create_software() -> None:
     software_name = request.form['software_name']
     link = request.form['software_link']
+
+    print(software_name, link)
 
     database_conn.add_Software(
         software_name=software_name,

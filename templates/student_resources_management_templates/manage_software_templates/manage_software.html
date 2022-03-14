@@ -1,7 +1,7 @@
-<form action = "{{ url_for('manage_student_resources') }}" >
+<form action = "{{ url_for('manage_student_resources') }}" method="post" >
     <div class="card" >
         <div class = "card-header">
-            <h2>Manage Courses</h2>
+            <h2>Manage Software</h2>
         </div>
         <div class="card-body">
             <table class = "table">
@@ -17,7 +17,7 @@
 
                     {% for software in all_software %}
                         <tr>
-                            <td> {{ course['software_name'] }} </td>
+                            <td> {{ software['software_name'] }} </td>
                             <td> <a href="{{ software['link'] }}">{{ software['link'] }}</a> </td>
 
                             <td>
